@@ -1,0 +1,846 @@
+rules:
+- id: vibe-fw-django-raw-sql
+  message: '[VIBE-SEC][framework] Django raw SQL concatenation / extra(where=) risks.
+    KB: languages/python/django-security.md'
+  severity: ERROR
+  languages:
+  - python
+  pattern-either:
+  - pattern: cursor.execute(f"...")
+  - pattern: cursor.execute(... % ...)
+  - pattern: .$M.raw(f"...")
+  - pattern: .$M.extra(where=[...])
+  metadata:
+    cwe: CWE-89
+    kb_path: languages/python/django-security.md
+    framework: django
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-django-mark-safe
+  message: '[VIBE-SEC][framework] mark_safe on dynamic content → XSS. KB: languages/python/django-security.md'
+  severity: ERROR
+  languages:
+  - python
+  pattern: mark_safe(...)
+  metadata:
+    cwe: CWE-79
+    framework: django
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-django-debug
+  message: '[VIBE-SEC][framework] DEBUG=True must not ship to production.'
+  severity: WARNING
+  languages:
+  - python
+  pattern: DEBUG = True
+  metadata:
+    cwe: CWE-489
+    framework: django
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-flask-debug
+  message: '[VIBE-SEC][framework] Flask debug mode enables interactive debugger /
+    code exec risk.'
+  severity: ERROR
+  languages:
+  - python
+  pattern-either:
+  - pattern: app.run(..., debug=True, ...)
+  - pattern: app.run(debug=True)
+  - pattern: app.config['DEBUG'] = True
+  metadata:
+    cwe: CWE-489
+    framework: flask
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-flask-render-string
+  message: '[VIBE-SEC][framework] render_template_string with user input → SSTI.'
+  severity: ERROR
+  languages:
+  - python
+  pattern: render_template_string(...)
+  metadata:
+    cwe: CWE-94
+    framework: flask
+    kb_path: languages/python/template-injection.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-express-send-req
+  message: '[VIBE-SEC][framework] Sending raw request data can reflect XSS / open
+    redirect.'
+  severity: WARNING
+  languages:
+  - javascript
+  - typescript
+  pattern-either:
+  - pattern: res.send(req.body)
+  - pattern: res.send(req.query)
+  - pattern: res.send(req.params)
+  - pattern: res.redirect(req.query.$Q)
+  metadata:
+    cwe: CWE-79
+    framework: express
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-express-cors-star
+  message: '[VIBE-SEC][framework] CORS origin * with credentials.'
+  severity: WARNING
+  languages:
+  - javascript
+  - typescript
+  pattern-either:
+  - pattern: 'cors({origin: ''*'', credentials: true, ...})'
+  - pattern: 'cors({origin: "*", credentials: true, ...})'
+  metadata:
+    cwe: CWE-942
+    framework: express
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-react-dangehtml
+  message: '[VIBE-SEC][framework] dangerouslySetInnerHTML XSS sink.'
+  severity: ERROR
+  languages:
+  - javascript
+  - typescript
+  pattern: <... dangerouslySetInnerHTML={...} />
+  metadata:
+    cwe: CWE-79
+    framework: react
+    kb_path: languages/javascript/react-security.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-spring-spel
+  message: '[VIBE-SEC][framework] SpEL parseExpression on untrusted input.'
+  severity: ERROR
+  languages:
+  - java
+  pattern-either:
+  - pattern: new SpelExpressionParser().parseExpression(...)
+  - pattern: (new SpelExpressionParser()).parseExpression(...)
+  metadata:
+    cwe: CWE-94
+    framework: spring
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-spring-actuator-expose
+  message: '[VIBE-SEC][framework] Review actuator exposure configuration.'
+  severity: WARNING
+  languages:
+  - generic
+  pattern-regex: management\.endpoints\.web\.exposure\.include\s*=\s*\*
+  metadata:
+    cwe: CWE-200
+    framework: spring
+    kb_path: languages/java/spring-boot-actuator.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-ef-fromsqlraw
+  message: '[VIBE-SEC][framework] FromSqlRaw/ExecuteSqlRaw with concatenation.'
+  severity: ERROR
+  languages:
+  - csharp
+  pattern-either:
+  - pattern: FromSqlRaw($S + ...)
+  - pattern: ExecuteSqlRaw($S + ...)
+  - pattern: FromSqlRaw($"...")
+  metadata:
+    cwe: CWE-89
+    framework: efcore
+    kb_path: languages/csharp/sql-injection-ef.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-rails-where-sql
+  message: '[VIBE-SEC][framework] Rails where with string interpolation.'
+  severity: ERROR
+  languages:
+  - ruby
+  pattern-either:
+  - pattern: where("...#{...}...")
+  - pattern: find_by_sql("...#{...}...")
+  - pattern: where("..." + ...)
+  metadata:
+    cwe: CWE-89
+    framework: rails
+    kb_path: languages/ruby/sql-injection.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-rails-yaml-load
+  message: '[VIBE-SEC][framework] YAML.load unsafe deserialization.'
+  severity: ERROR
+  languages:
+  - ruby
+  pattern: YAML.load(...)
+  metadata:
+    cwe: CWE-502
+    framework: rails
+    kb_path: languages/ruby/yaml-deserialization.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-ts-as-body
+  message: '[VIBE-SEC][framework] Casting request JSON with `as` skips validation.'
+  severity: WARNING
+  languages:
+  - typescript
+  pattern-either:
+  - pattern: (await $R.json()) as $T
+  - pattern: $X as any
+  metadata:
+    cwe: CWE-20
+    framework: nestjs-next
+    kb_path: languages/typescript/zod-validation-bypass.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-go-text-template
+  message: '[VIBE-SEC][framework] text/template without escaping in HTML contexts.'
+  severity: WARNING
+  languages:
+  - go
+  pattern: template.New(...)
+  metadata:
+    cwe: CWE-79
+    framework: stdlib
+    kb_path: languages/go/template-injection.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-sol-tx-origin
+  message: '[VIBE-SEC][framework] tx.origin auth antipattern.'
+  severity: ERROR
+  languages:
+  - solidity
+  pattern: tx.origin
+  metadata:
+    cwe: CWE-346
+    framework: solidity
+    kb_path: languages/solidity/tx-origin.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-sol-delegatecall
+  message: '[VIBE-SEC][framework] delegatecall to dynamic target.'
+  severity: WARNING
+  languages:
+  - solidity
+  pattern: .$X.delegatecall(...)
+  metadata:
+    cwe: CWE-829
+    framework: solidity
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-php-db-raw
+  message: '[VIBE-SEC][framework] DB::raw / whereRaw concatenation class.'
+  severity: WARNING
+  languages:
+  - php
+  pattern-either:
+  - pattern: DB::raw(...)
+  - pattern: whereRaw(...)
+  - pattern: selectRaw(...)
+  metadata:
+    cwe: CWE-89
+    framework: laravel
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-joblib-load
+  message: '[VIBE-SEC][framework] joblib.load can execute pickle-like payloads.'
+  severity: ERROR
+  languages:
+  - python
+  pattern: joblib.load(...)
+  metadata:
+    cwe: CWE-502
+    framework: sklearn
+    kb_path: languages/python/pickle-rce.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-torch-load
+  message: '[VIBE-SEC][framework] torch.load weights_only=False historical RCE class.'
+  severity: WARNING
+  languages:
+  - python
+  pattern-either:
+  - pattern: torch.load(...)
+  - pattern: torch.load(..., weights_only=False, ...)
+  metadata:
+    cwe: CWE-502
+    framework: pytorch
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-node-exec
+  message: '[VIBE-SEC][framework] child_process exec family.'
+  severity: ERROR
+  languages:
+  - javascript
+  - typescript
+  pattern-either:
+  - pattern: exec(...)
+  - pattern: execSync(...)
+  - pattern: child_process.exec(...)
+  metadata:
+    cwe: CWE-78
+    framework: node
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-java-runtime-exec
+  message: '[VIBE-SEC][framework] Runtime.exec command injection sink.'
+  severity: ERROR
+  languages:
+  - java
+  pattern: Runtime.getRuntime().exec(...)
+  metadata:
+    cwe: CWE-78
+    framework: java-se
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-binaryformatter
+  message: '[VIBE-SEC][framework] BinaryFormatter deserialize RCE class.'
+  severity: ERROR
+  languages:
+  - csharp
+  pattern: new BinaryFormatter()
+  metadata:
+    cwe: CWE-502
+    framework: dotnet
+    kb_path: languages/csharp/deserialization.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-php-unserialize
+  message: '[VIBE-SEC][framework] unserialize user data.'
+  severity: ERROR
+  languages:
+  - php
+  pattern: unserialize(...)
+  metadata:
+    cwe: CWE-502
+    framework: php
+    kb_path: languages/php/unserialize-rce.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-python-assert-security
+  message: '[VIBE-SEC][framework] assert used as security control (stripped with -O).'
+  severity: WARNING
+  languages:
+  - python
+  pattern: assert $COND
+  metadata:
+    cwe: CWE-703
+    framework: python
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-next-public-secret
+  message: '[VIBE-SEC][framework] NEXT_PUBLIC_ env often leaks to client — review
+    secrets.'
+  severity: WARNING
+  languages:
+  - javascript
+  - typescript
+  pattern-regex: NEXT_PUBLIC_[A-Z0-9_]*(SECRET|KEY|TOKEN|PASSWORD)
+  metadata:
+    cwe: CWE-312
+    framework: nextjs
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-python-open-join
+  message: '[VIBE-SEC][framework] open(os.path.join(base, user)) without resolve jail.'
+  severity: WARNING
+  languages:
+  - python
+  pattern: open(os.path.join(...), ...)
+  metadata:
+    cwe: CWE-22
+    kb_path: languages/python/path-traversal.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-js-readfile-concat
+  message: '[VIBE-SEC][framework] fs.readFile with concatenated user path.'
+  severity: WARNING
+  languages:
+  - javascript
+  - typescript
+  pattern-either:
+  - pattern: fs.readFile(... + ..., ...)
+  - pattern: fs.readFileSync(... + ..., ...)
+  - pattern: readFile(... + ..., ...)
+  metadata:
+    cwe: CWE-22
+    kb_path: common/path-traversal.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-python-requests-get
+  message: '[VIBE-SEC][framework] requests to user-controlled URL — SSRF review.'
+  severity: WARNING
+  languages:
+  - python
+  pattern-either:
+  - pattern: requests.get($URL)
+  - pattern: requests.post($URL, ...)
+  - pattern: urllib.request.urlopen($URL)
+  metadata:
+    cwe: CWE-918
+    kb_path: languages/python/ssrf-python.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-js-fetch-user
+  message: '[VIBE-SEC][framework] fetch/axios to user URL — SSRF review on server.'
+  severity: WARNING
+  languages:
+  - javascript
+  - typescript
+  pattern-either:
+  - pattern: fetch($URL)
+  - pattern: axios.get($URL)
+  - pattern: axios($URL)
+  metadata:
+    cwe: CWE-918
+    kb_path: languages/javascript/ssrf-node.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-rails-update-params
+  message: '[VIBE-SEC][framework] update(params) without strong params.'
+  severity: WARNING
+  languages:
+  - ruby
+  pattern-either:
+  - pattern: $M.update(params)
+  - pattern: $M.update_attributes(params)
+  - pattern: $M.assign_attributes(params)
+  metadata:
+    cwe: CWE-915
+    framework: rails
+    kb_path: languages/ruby/mass-assignment.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-jwt-decode
+  message: '[VIBE-SEC][framework] jwt.decode without verify is not authentication.'
+  severity: WARNING
+  languages:
+  - javascript
+  - typescript
+  pattern-either:
+  - pattern: jwt.decode(...)
+  - pattern: 'jwt.decode($T, {complete: true})'
+  metadata:
+    cwe: CWE-287
+    kb_path: languages/javascript/jwt-misuse.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-js-settimeout-string
+  message: '[VIBE-SEC][framework] setTimeout/setInterval with string is eval-like.'
+  severity: ERROR
+  languages:
+  - javascript
+  - typescript
+  pattern-either:
+  - pattern: setTimeout("...", ...)
+  - pattern: setInterval("...", ...)
+  - pattern: setTimeout('...', ...)
+  - pattern: setInterval('...', ...)
+  metadata:
+    cwe: CWE-95
+    kb_path: languages/javascript/eval-injection.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-java-processbuilder
+  message: '[VIBE-SEC][framework] ProcessBuilder may execute OS commands.'
+  severity: ERROR
+  languages:
+  - java
+  pattern: new ProcessBuilder(...)
+  metadata:
+    cwe: CWE-78
+    kb_path: common/injection.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-go-exec-command
+  message: '[VIBE-SEC][framework] exec.Command with user input.'
+  severity: WARNING
+  languages:
+  - go
+  pattern: exec.Command(...)
+  metadata:
+    cwe: CWE-78
+    kb_path: common/injection.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-rust-command
+  message: '[VIBE-SEC][framework] std::process::Command — review args.'
+  severity: WARNING
+  languages:
+  - rust
+  pattern: Command::new(...)
+  metadata:
+    cwe: CWE-78
+    kb_path: common/injection.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-python-sqlalchemy-text
+  message: '[VIBE-SEC][framework] SQLAlchemy text() with f-string.'
+  severity: ERROR
+  languages:
+  - python
+  pattern-either:
+  - pattern: text(f"...")
+  - pattern: text(f'...')
+  metadata:
+    cwe: CWE-89
+    framework: sqlalchemy
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-fw-hardcoded-password-assign
+  message: '[VIBE-SEC][framework] Hardcoded password assignment smell.'
+  severity: WARNING
+  languages:
+  - python
+  - javascript
+  - typescript
+  - java
+  - go
+  pattern-either:
+  - pattern: password = "..."
+  - pattern: password = '...'
+  - pattern: PASSWORD = "..."
+  metadata:
+    cwe: CWE-798
+    kb_path: common/broken-auth.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'

@@ -1,0 +1,99 @@
+rules:
+- id: vibe-ruby-yaml-load
+  message: '[VIBE-SEC] YAML.load / YAML.unsafe_load can deserialize arbitrary objects
+    (RCE). Note: on Ruby 3.1+ / Psych 4 plain YAML.load is safe-by-default (aliases
+    to safe_load), but YAML.unsafe_load is the current unsafe sink and older Psych 3
+    keeps YAML.load unsafe. Prefer YAML.safe_load. KB: languages/ruby/yaml-deserialization.md'
+  severity: ERROR
+  languages:
+  - ruby
+  pattern-either:
+  - pattern: YAML.load(...)
+  - pattern: Psych.load(...)
+  - pattern: YAML.unsafe_load(...)
+  - pattern: Psych.unsafe_load(...)
+  metadata:
+    cwe: CWE-502
+    kb_path: languages/ruby/yaml-deserialization.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-ruby-eval
+  message: '[VIBE-SEC] eval/instance_eval/class_eval execute code. KB: languages/ruby/command-injection.md'
+  severity: ERROR
+  languages:
+  - ruby
+  pattern-either:
+  - pattern: eval(...)
+  - pattern: instance_eval(...)
+  - pattern: class_eval(...)
+  metadata:
+    cwe: CWE-95
+    kb_path: languages/ruby/sql-injection.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-ruby-system
+  message: '[VIBE-SEC] system/exec/` ` with interpolation is command injection. KB:
+    languages/ruby/command-injection.md'
+  severity: ERROR
+  languages:
+  - ruby
+  pattern-either:
+  - pattern: system(...)
+  - pattern: exec(...)
+  - pattern: Open3.capture2(...)
+  metadata:
+    cwe: CWE-78
+    kb_path: languages/ruby/command-injection.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-ruby-sql-interpolation
+  message: '[VIBE-SEC] SQL string interpolation bypasses ActiveRecord safety. KB:
+    languages/ruby/sql-injection.md'
+  severity: ERROR
+  languages:
+  - ruby
+  pattern-either:
+  - pattern: where("...#{...}...")
+  - pattern: find_by_sql("...#{...}...")
+  - pattern: where('...' + ...)
+  metadata:
+    cwe: CWE-89
+    kb_path: languages/ruby/sql-injection.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'

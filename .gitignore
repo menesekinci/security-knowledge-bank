@@ -1,0 +1,44 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*~
+.idea/
+.vscode/
+*.code-workspace
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+
+# Semgrep / tooling caches
+.semgrep/
+.semgrep_results/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Local vector DB / embeddings binary dumps (keep markdown chunks)
+*.chroma/
+*.qdrant/
+*.faiss
+*.npy
+*.pkl
+
+# Logs / temp
+*.log
+tmp/
+temp/
+.cache/
+
+# OS junk
+ehthumbs.db
+
+# Internal agent scratch / local helpers
+.hermes/
+.open-instructions.txt

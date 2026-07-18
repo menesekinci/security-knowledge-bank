@@ -1,0 +1,194 @@
+rules:
+# ──────────────────────────────────────────
+# Angular Security
+# ──────────────────────────────────────────
+- id: vibe-v4-angular-bypass-security
+  message: "[VIBE-SEC][v4] DomSanitizer bypassSecurityTrustX used — XSS unless source is trusted. KB: languages/javascript/angular-security.md"
+  severity: ERROR
+  languages: [javascript, typescript]
+  pattern-either:
+  - pattern: bypassSecurityTrustHtml(...)
+  - pattern: bypassSecurityTrustScript(...)
+  - pattern: bypassSecurityTrustUrl(...)
+  - pattern: bypassSecurityTrustResourceUrl(...)
+  - pattern: bypassSecurityTrustStyle(...)
+  metadata:
+    cwe: CWE-79
+    vibe-v4: true
+    kb_path: languages/javascript/angular-security.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/vendor/**", "**/*_test.ts", "**/*_test.js", "**/*.spec.ts"]
+
+- id: vibe-v4-angular-env-exposed
+  message: "[VIBE-SEC][v4] Angular environment.ts with secrets — bundles into client-side code. KB: languages/javascript/angular-security.md"
+  severity: WARNING
+  languages: [javascript, typescript]
+  pattern-either:
+  - pattern: "environment.apiKey"
+  - pattern: "environment.secret"
+  - pattern: "environment.token"
+  - pattern: "environment.password"
+  metadata:
+    cwe: CWE-200
+    vibe-v4: true
+    kb_path: languages/javascript/angular-security.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/vendor/**", "**/*.spec.ts"]
+
+# ──────────────────────────────────────────
+# Svelte Security
+# ──────────────────────────────────────────
+- id: vibe-v4-svelte-event-modifier
+  message: "[VIBE-SEC][v4] Svelte {@html ...} renders raw HTML without escaping — XSS if the value is user-controlled. KB: languages/javascript/svelte-security.md"
+  severity: ERROR
+  languages: [generic]
+  patterns:
+  - pattern-either:
+    - pattern-regex: "\\{@html\\s"
+  metadata:
+    cwe: CWE-79
+    vibe-v4: true
+    kb_path: languages/javascript/svelte-security.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/vendor/**"]
+
+# ──────────────────────────────────────────
+# Terraform / IaC Security
+# ──────────────────────────────────────────
+- id: vibe-v4-terraform-hardcoded
+  message: "[VIBE-SEC][v4] Terraform variable with hardcoded sensitive value. KB: common/cloud-security/terraform-security.md"
+  severity: ERROR
+  languages: [terraform, hcl]
+  pattern-either:
+  - pattern: "password     = \"...\""
+  - pattern: "secret_key   = \"...\""
+  - pattern: "access_key   = \"...\""
+  - pattern: "private_key  = \"...\""
+  - pattern: "connection_string = \"...\""
+  metadata:
+    cwe: CWE-798
+    vibe-v4: true
+    kb_path: common/cloud-security/terraform-security.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/vendor/**"]
+
+- id: vibe-v4-terraform-s3-public
+  message: "[VIBE-SEC][v4] S3 bucket with public access block disabled. KB: common/cloud-security/terraform-security.md"
+  severity: ERROR
+  languages: [terraform, hcl]
+  patterns:
+  - pattern-either:
+    - pattern: "acl = \"public-read\""
+    - pattern: "acl = \"public-read-write\""
+  metadata:
+    cwe: CWE-732
+    vibe-v4: true
+    kb_path: common/cloud-security/terraform-security.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/vendor/**"]
+
+- id: vibe-v4-terraform-iam-wildcard
+  message: "[VIBE-SEC][v4] IAM policy with wildcard Action — too permissive. KB: common/cloud-security/terraform-security.md"
+  severity: WARNING
+  languages: [terraform, hcl]
+  patterns:
+  - pattern-either:
+    - pattern: "Action = \"*\""
+    - pattern: "Action = [\"*\"]"
+    - pattern: "Resource = \"*\""
+  metadata:
+    cwe: CWE-284
+    vibe-v4: true
+    kb_path: common/cloud-security/terraform-security.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/vendor/**"]
+
+# ──────────────────────────────────────────
+# Serverless / Lambda Security
+# ──────────────────────────────────────────
+- id: vibe-v4-serverless-hardcoded-env
+  message: "[VIBE-SEC][v4] Serverless function with hardcoded secret in environment. KB: common/cloud-security/serverless-security.md"
+  severity: ERROR
+  languages: [generic]
+  pattern-either:
+  - pattern-regex: "AWS_ACCESS_KEY_ID\\s*[:=]\\s*[\"'][A-Za-z0-9/+]{8,}"
+  - pattern-regex: "AWS_SECRET_ACCESS_KEY\\s*[:=]\\s*[\"'][A-Za-z0-9/+]{8,}"
+  metadata:
+    cwe: CWE-798
+    vibe-v4: true
+    kb_path: common/cloud-security/serverless-security.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/vendor/**"]
+
+# ──────────────────────────────────────────
+# WebAuthn Security
+# ──────────────────────────────────────────
+- id: vibe-v4-webauthn-no-challenge
+  message: "[VIBE-SEC][v4] WebAuthn create/get without proper challenge — replay attack risk. KB: common/webauthn-security.md"
+  severity: ERROR
+  languages: [javascript, typescript]
+  pattern-either:
+  - pattern: "navigator.credentials.create(...)"
+  - pattern: "navigator.credentials.get(...)"
+  metadata:
+    cwe: CWE-287
+    vibe-v4: true
+    kb_path: common/webauthn-security.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/vendor/**"]
+
+# ──────────────────────────────────────────
+# OIDC Security
+# ──────────────────────────────────────────
+- id: vibe-v4-oidc-no-pkce
+  message: "[VIBE-SEC][v4] OAuth/OIDC flow without PKCE — authorization code interception risk. KB: common/oidc-saml-security.md"
+  severity: WARNING
+  languages: [javascript, typescript, python, java, go, ruby]
+  patterns:
+  - pattern-either:
+    - pattern: "response_type=\"code\""
+    - pattern: "response_type: 'code'"
+  metadata:
+    cwe: CWE-1275
+    vibe-v4: true
+    kb_path: common/oidc-saml-security.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/vendor/**"]
+
+# ──────────────────────────────────────────
+# CDN / WAF Security
+# ──────────────────────────────────────────
+- id: vibe-v4-waf-disabled
+  message: "[VIBE-SEC][v4] WAF security level set too low or disabled. KB: common/server/lb-cdn-waf-security.md"
+  severity: WARNING
+  languages: [yaml, generic]
+  patterns:
+  - pattern-either:
+    - pattern: "security_level: \"off\""
+    - pattern: "security_level: \"low\""
+    - pattern: "waf_mode: \"off\""
+  metadata:
+    cwe: CWE-16
+    vibe-v4: true
+    kb_path: common/server/lb-cdn-waf-security.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/vendor/**"]
+
+# ──────────────────────────────────────────
+# RAG Poisoning
+# ──────────────────────────────────────────
+- id: vibe-v4-rag-unsanitized-ingest
+  message: "[VIBE-SEC][v4] RAG document ingestion without content sanitization — poisoning risk. KB: common/rag-poisoning.md"
+  severity: WARNING
+  languages: [python, javascript, typescript]
+  pattern-either:
+  - pattern: "add_documents(...)"
+  - pattern: "from_documents(...)"
+  - pattern: "load_and_split(...)"
+  - pattern: "add_texts(...)"
+  metadata:
+    cwe: CWE-913
+    vibe-v4: true
+    kb_path: common/rag-poisoning.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/vendor/**"]

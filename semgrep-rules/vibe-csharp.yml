@@ -1,0 +1,92 @@
+rules:
+- id: vibe-csharp-binaryformatter
+  message: '[VIBE-SEC] BinaryFormatter is obsolete and RCE-prone. Use safe serializers.
+    KB: languages/csharp/deserialization.md'
+  severity: ERROR
+  languages:
+  - csharp
+  pattern-either:
+  - pattern: new BinaryFormatter()
+  - pattern: (new BinaryFormatter()).Deserialize(...)
+  metadata:
+    cwe: CWE-502
+    kb_path: languages/csharp/deserialization.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-csharp-sql-concat
+  message: '[VIBE-SEC] Concatenated SQL strings enable injection. Use parameters.
+    KB: languages/csharp/sql-injection-ef.md'
+  severity: ERROR
+  languages:
+  - csharp
+  pattern-either:
+  - pattern: new SqlCommand(... + ..., ...)
+  - pattern: $CMD.CommandText = ... + ...
+  - pattern: FromSqlRaw($S + ...)
+  - pattern: ExecuteSqlRaw($S + ...)
+  metadata:
+    cwe: CWE-89
+    kb_path: languages/csharp/sql-injection-ef.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-csharp-xxe
+  message: '[VIBE-SEC] XmlDocument/XmlTextReader may resolve external entities. Harden
+    DTD settings. KB: languages/csharp/xxe-attacks.md'
+  severity: WARNING
+  languages:
+  - csharp
+  pattern-either:
+  - pattern: new XmlDocument()
+  - pattern: new XmlTextReader(...)
+  metadata:
+    cwe: CWE-611
+    kb_path: languages/csharp/xxe-attacks.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-csharp-viewstate-mac-false
+  message: '[VIBE-SEC] enableViewStateMac=false weakens ASP.NET integrity protections.'
+  severity: WARNING
+  languages:
+  - csharp
+  pattern-regex: enableViewStateMac\s*=\s*\"?false\"?
+  metadata:
+    cwe: CWE-345
+    kb_path: languages/csharp/aspnet-misconfig.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'

@@ -1,0 +1,115 @@
+rules:
+- id: vibe-java-objectinputstream
+  message: '[VIBE-SEC] Java deserialization via ObjectInputStream can RCE. Avoid on
+    untrusted data. KB: languages/java/deserialization-rce.md'
+  severity: ERROR
+  languages:
+  - java
+  pattern-either:
+  - pattern: new ObjectInputStream(...)
+  - pattern: (ObjectInputStream $O).readObject()
+  metadata:
+    cwe: CWE-502
+    kb_path: languages/java/deserialization-rce.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-java-runtime-exec
+  message: '[VIBE-SEC] Runtime.exec / ProcessBuilder with user input is command injection.
+    KB: languages/java/expression-injection.md'
+  severity: ERROR
+  languages:
+  - java
+  pattern-either:
+  - pattern: Runtime.getRuntime().exec(...)
+  - pattern: (new ProcessBuilder(...)).start()
+  metadata:
+    cwe: CWE-78
+    kb_path: common/injection.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-java-sql-concat
+  message: '[VIBE-SEC] SQL string concatenation enables injection. Use PreparedStatement.
+    KB: languages/java/sql-injection.md'
+  severity: ERROR
+  languages:
+  - java
+  pattern-either:
+  - pattern: $C.createStatement().executeQuery("..." + ...)
+  - pattern: $C.prepareStatement("..." + ...)
+  - pattern: $C.createStatement().executeUpdate("..." + ...)
+  metadata:
+    cwe: CWE-89
+    kb_path: languages/java/sql-injection.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-java-xxe-documentbuilder
+  message: '[VIBE-SEC] XML parsers without XXE hardening are dangerous. Disable external
+    entities. KB: languages/java/xxe.md'
+  severity: WARNING
+  languages:
+  - java
+  pattern-either:
+  - pattern: DocumentBuilderFactory.newInstance()
+  - pattern: SAXParserFactory.newInstance()
+  - pattern: XMLInputFactory.newInstance()
+  metadata:
+    cwe: CWE-611
+    kb_path: languages/java/xxe.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-java-scriptengine-eval
+  message: '[VIBE-SEC] ScriptEngine.eval executes arbitrary script. KB: languages/java/nashorn-scriptengine.md'
+  severity: ERROR
+  languages:
+  - java
+  pattern: $E.eval(...)
+  metadata:
+    cwe: CWE-94
+    kb_path: languages/java/nashorn-scriptengine.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'

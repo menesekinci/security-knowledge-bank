@@ -1,0 +1,90 @@
+rules:
+- id: vibe-sol-tx-origin
+  message: '[VIBE-SEC] tx.origin for auth is phishing-prone; use msg.sender. KB: languages/solidity/tx-origin.md'
+  severity: ERROR
+  languages:
+  - solidity
+  pattern: tx.origin
+  metadata:
+    cwe: CWE-346
+    kb_path: languages/solidity/tx-origin.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-sol-delegatecall
+  message: '[VIBE-SEC] delegatecall to untrusted address risks storage takeover. KB:
+    languages/solidity/'
+  severity: WARNING
+  languages:
+  - solidity
+  pattern-either:
+  - pattern: delegatecall(...)
+  - pattern: .$X.delegatecall(...)
+  metadata:
+    cwe: CWE-829
+    kb_path: languages/solidity/delegatecall-proxy.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-sol-selfdestruct
+  message: '[VIBE-SEC] selfdestruct/suicide can brick contracts or force-send ETH.'
+  severity: WARNING
+  languages:
+  - solidity
+  pattern-either:
+  - pattern: selfdestruct(...)
+  - pattern: suicide(...)
+  metadata:
+    cwe: CWE-284
+    kb_path: languages/solidity/access-control.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-sol-block-timestamp
+  message: '[VIBE-SEC] block.timestamp/blockhash are miner-influenced; not secure
+    randomness. KB: languages/solidity/'
+  severity: WARNING
+  languages:
+  - solidity
+  pattern-either:
+  - pattern: block.timestamp
+  - pattern: block.number
+  - pattern: blockhash(...)
+  metadata:
+    cwe: CWE-330
+    kb_path: languages/solidity/weak-randomness.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'

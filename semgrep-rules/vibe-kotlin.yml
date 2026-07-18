@@ -1,0 +1,41 @@
+rules:
+- id: vibe-kotlin-not-null-assert
+  message: '[VIBE-SEC] !! null assertion crashes or hides null bugs. KB: languages/kotlin/null-safety-bypass.md'
+  severity: WARNING
+  languages:
+  - kotlin
+  pattern: $X!!
+  metadata:
+    cwe: CWE-476
+    kb_path: languages/kotlin/null-safety-bypass.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-kotlin-runtime-exec
+  message: '[VIBE-SEC] Runtime.exec with user input is command injection.'
+  severity: ERROR
+  languages:
+  - kotlin
+  pattern: Runtime.getRuntime().exec(...)
+  metadata:
+    cwe: CWE-78
+    kb_path: languages/kotlin/spring-kotlin-misconfig.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'

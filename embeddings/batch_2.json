@@ -1,0 +1,4932 @@
+[
+  {
+    "file": "languages_javascript_service-worker-attacks_07_attack-vector-5--postmess.md",
+    "source": "languages/javascript/service-worker-attacks.md",
+    "chunks": 10,
+    "chunk": 7,
+    "heading": "Attack Vector 5: PostMessage to Service Worker",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_javascript_service-worker-attacks_08_attack-vector-6--service.md",
+    "source": "languages/javascript/service-worker-attacks.md",
+    "chunks": 10,
+    "chunk": 8,
+    "heading": "Attack Vector 6: Service Worker Update Hijacking",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_javascript_service-worker-attacks_09_prevention-checklist.md",
+    "source": "languages/javascript/service-worker-attacks.md",
+    "chunks": 10,
+    "chunk": 9,
+    "heading": "Prevention Checklist",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_javascript_service-worker-attacks_10_references.md",
+    "source": "languages/javascript/service-worker-attacks.md",
+    "chunks": 10,
+    "chunk": 10,
+    "heading": "References",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_javascript_ssrf-node.md",
+    "source": "languages/javascript/ssrf-node.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_javascript_svelte-security_01_intro.md",
+    "source": "languages/javascript/svelte-security.md",
+    "chunks": 10,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_javascript_svelte-security_02_overview.md",
+    "source": "languages/javascript/svelte-security.md",
+    "chunks": 10,
+    "chunk": 2,
+    "heading": "Overview",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_javascript_svelte-security_03_1--vulnerability-explanat.md",
+    "source": "languages/javascript/svelte-security.md",
+    "chunks": 10,
+    "chunk": 3,
+    "heading": "1. Vulnerability Explanation \u2014 Svelte/SvelteKit Specific Risks",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_javascript_svelte-security_04_2--how-ai-generates-these.md",
+    "source": "languages/javascript/svelte-security.md",
+    "chunks": 10,
+    "chunk": 4,
+    "heading": "2. How AI Generates These Vulnerabilities",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_javascript_svelte-security_05_3--vulnerable-code-exampl.md",
+    "source": "languages/javascript/svelte-security.md",
+    "chunks": 10,
+    "chunk": 5,
+    "heading": "3. Vulnerable Code Examples",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_javascript_svelte-security_06_4--secure-code-fix.md",
+    "source": "languages/javascript/svelte-security.md",
+    "chunks": 10,
+    "chunk": 6,
+    "heading": "4. Secure Code Fix",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_javascript_svelte-security_07_5--real-cves--verified-vi.md",
+    "source": "languages/javascript/svelte-security.md",
+    "chunks": 10,
+    "chunk": 7,
+    "heading": "5. Real CVEs (Verified via NVD)",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_javascript_svelte-security_08_6--prevention-checklist.md",
+    "source": "languages/javascript/svelte-security.md",
+    "chunks": 10,
+    "chunk": 8,
+    "heading": "6. Prevention Checklist",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_javascript_svelte-security_09_7--vibe-coding-red-flags.md",
+    "source": "languages/javascript/svelte-security.md",
+    "chunks": 10,
+    "chunk": 9,
+    "heading": "7. Vibe-Coding Red Flags (Svelte/SvelteKit-Specific)",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_javascript_svelte-security_10_references.md",
+    "source": "languages/javascript/svelte-security.md",
+    "chunks": 10,
+    "chunk": 10,
+    "heading": "References",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_javascript_timing-attacks-js_01_intro.md",
+    "source": "languages/javascript/timing-attacks-js.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_javascript_timing-attacks-js_02_overview.md",
+    "source": "languages/javascript/timing-attacks-js.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "Overview",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_javascript_timing-attacks-js_03_cve-2023-46809--node-js-r.md",
+    "source": "languages/javascript/timing-attacks-js.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "CVE-2023-46809: Node.js RSA PKCS#1 v1.5 Decryption Timing (Marvin Attack)",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_javascript_timing-attacks-js_04_cve-2026-21713--node-js-w.md",
+    "source": "languages/javascript/timing-attacks-js.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "CVE-2026-21713: Node.js Web Crypto HMAC/KMAC Non-Constant-Time Verification",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_javascript_timing-attacks-js_05_general-timing-attack-pat.md",
+    "source": "languages/javascript/timing-attacks-js.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "General Timing Attack Patterns in JS/TS",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_javascript_timing-attacks-js_06_typescript-specific-consi.md",
+    "source": "languages/javascript/timing-attacks-js.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "TypeScript-Specific Considerations",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_javascript_timing-attacks-js_07_node-js-crypto-timingsafe.md",
+    "source": "languages/javascript/timing-attacks-js.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "Node.js crypto.timingSafeEqual Limitations",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_javascript_timing-attacks-js_08_references.md",
+    "source": "languages/javascript/timing-attacks-js.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "References",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_javascript_vue-nuxt-security_01_intro.md",
+    "source": "languages/javascript/vue-nuxt-security.md",
+    "chunks": 10,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_javascript_vue-nuxt-security_02_overview.md",
+    "source": "languages/javascript/vue-nuxt-security.md",
+    "chunks": 10,
+    "chunk": 2,
+    "heading": "Overview",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_javascript_vue-nuxt-security_03_1--vulnerability-explanat.md",
+    "source": "languages/javascript/vue-nuxt-security.md",
+    "chunks": 10,
+    "chunk": 3,
+    "heading": "1. Vulnerability Explanation \u2014 Vue/Nuxt Specific Risks",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_javascript_vue-nuxt-security_04_2--how-ai---vibe-coding-g.md",
+    "source": "languages/javascript/vue-nuxt-security.md",
+    "chunks": 10,
+    "chunk": 4,
+    "heading": "2. How AI / Vibe Coding Generates This",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_javascript_vue-nuxt-security_05_3--vulnerable-code-exampl.md",
+    "source": "languages/javascript/vue-nuxt-security.md",
+    "chunks": 10,
+    "chunk": 5,
+    "heading": "3. Vulnerable Code Examples",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_javascript_vue-nuxt-security_06_4--secure-code-fix.md",
+    "source": "languages/javascript/vue-nuxt-security.md",
+    "chunks": 10,
+    "chunk": 6,
+    "heading": "4. Secure Code Fix",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_javascript_vue-nuxt-security_07_5--real-cves.md",
+    "source": "languages/javascript/vue-nuxt-security.md",
+    "chunks": 10,
+    "chunk": 7,
+    "heading": "5. Real CVEs",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_javascript_vue-nuxt-security_08_6--prevention-checklist.md",
+    "source": "languages/javascript/vue-nuxt-security.md",
+    "chunks": 10,
+    "chunk": 8,
+    "heading": "6. Prevention Checklist",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_javascript_vue-nuxt-security_09_7--vibe-coding-red-flags.md",
+    "source": "languages/javascript/vue-nuxt-security.md",
+    "chunks": 10,
+    "chunk": 9,
+    "heading": "7. Vibe-Coding Red Flags",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_javascript_vue-nuxt-security_10_verification---source-url.md",
+    "source": "languages/javascript/vue-nuxt-security.md",
+    "chunks": 10,
+    "chunk": 10,
+    "heading": "Verification / Source URLs",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_javascript_xss_01_intro.md",
+    "source": "languages/javascript/xss.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_javascript_xss_02_vulnerability-explanation.md",
+    "source": "languages/javascript/xss.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "Vulnerability Explanation",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_javascript_xss_03_how-ai---vibe-coding-gene.md",
+    "source": "languages/javascript/xss.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "How AI / Vibe Coding Generates This",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_javascript_xss_04_vulnerable-code-examples.md",
+    "source": "languages/javascript/xss.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "Vulnerable Code Examples",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_javascript_xss_05_secure-code-fix.md",
+    "source": "languages/javascript/xss.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "Secure Code Fix",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_javascript_xss_06_prevention-checklist.md",
+    "source": "languages/javascript/xss.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "Prevention Checklist",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_javascript_xss_07_real-world-cves.md",
+    "source": "languages/javascript/xss.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "Real-World CVEs",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_javascript_xss_08_vibe-coding-red-flags.md",
+    "source": "languages/javascript/xss.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "Vibe Coding Red Flags",
+    "category": "language-vuln",
+    "language": "javascript",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_kotlin_android-keystore.md",
+    "source": "languages/kotlin/android-keystore.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "kotlin",
+    "severity": "high"
+  },
+  {
+    "file": "languages_kotlin_android-security-deep_01_intro.md",
+    "source": "languages/kotlin/android-security-deep.md",
+    "chunks": 9,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "kotlin",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_kotlin_android-security-deep_02_overview.md",
+    "source": "languages/kotlin/android-security-deep.md",
+    "chunks": 9,
+    "chunk": 2,
+    "heading": "Overview",
+    "category": "language-vuln",
+    "language": "kotlin",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_kotlin_android-security-deep_03_table-of-contents.md",
+    "source": "languages/kotlin/android-security-deep.md",
+    "chunks": 9,
+    "chunk": 3,
+    "heading": "Table of Contents",
+    "category": "language-vuln",
+    "language": "kotlin",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_kotlin_android-security-deep_04_1--intent-interception.md",
+    "source": "languages/kotlin/android-security-deep.md",
+    "chunks": 9,
+    "chunk": 4,
+    "heading": "1. Intent Interception",
+    "category": "language-vuln",
+    "language": "kotlin",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_kotlin_android-security-deep_05_2--content-provider-leaks.md",
+    "source": "languages/kotlin/android-security-deep.md",
+    "chunks": 9,
+    "chunk": 5,
+    "heading": "2. Content Provider Leaks",
+    "category": "language-vuln",
+    "language": "kotlin",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_kotlin_android-security-deep_06_3--webview-javascript-bri.md",
+    "source": "languages/kotlin/android-security-deep.md",
+    "chunks": 9,
+    "chunk": 6,
+    "heading": "3. WebView JavaScript Bridge",
+    "category": "language-vuln",
+    "language": "kotlin",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_kotlin_android-security-deep_07_4--exported-components.md",
+    "source": "languages/kotlin/android-security-deep.md",
+    "chunks": 9,
+    "chunk": 7,
+    "heading": "4. Exported Components",
+    "category": "language-vuln",
+    "language": "kotlin",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_kotlin_android-security-deep_08_5--cves---real-world-exam.md",
+    "source": "languages/kotlin/android-security-deep.md",
+    "chunks": 9,
+    "chunk": 8,
+    "heading": "5. CVEs & Real-World Examples",
+    "category": "language-vuln",
+    "language": "kotlin",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_kotlin_android-security-deep_09_references.md",
+    "source": "languages/kotlin/android-security-deep.md",
+    "chunks": 9,
+    "chunk": 9,
+    "heading": "References",
+    "category": "language-vuln",
+    "language": "kotlin",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_kotlin_case-studies_android-case-studies_01_intro.md",
+    "source": "languages/kotlin/case-studies/android-case-studies.md",
+    "chunks": 6,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "case-study",
+    "language": "kotlin",
+    "severity": "high"
+  },
+  {
+    "file": "languages_kotlin_case-studies_android-case-studies_02_case-study-1--microsoft.md",
+    "source": "languages/kotlin/case-studies/android-case-studies.md",
+    "chunks": 6,
+    "chunk": 2,
+    "heading": "Case Study 1: Microsoft \"Dirty Stream\" Attack \u2014 Android Content Provider Path Traversal",
+    "category": "case-study",
+    "language": "kotlin",
+    "severity": "high"
+  },
+  {
+    "file": "languages_kotlin_case-studies_android-case-studies_03_case-study-2--microsoft-a.md",
+    "source": "languages/kotlin/case-studies/android-case-studies.md",
+    "chunks": 6,
+    "chunk": 3,
+    "heading": "Case Study 2: Microsoft Android SDK Intent Redirection (2025-2026)",
+    "category": "case-study",
+    "language": "kotlin",
+    "severity": "high"
+  },
+  {
+    "file": "languages_kotlin_case-studies_android-case-studies_04_case-study-3--android-con.md",
+    "source": "languages/kotlin/case-studies/android-case-studies.md",
+    "chunks": 6,
+    "chunk": 4,
+    "heading": "Case Study 3: Android Content Provider SQL Injection (Bug Bounty Writeup)",
+    "category": "case-study",
+    "language": "kotlin",
+    "severity": "high"
+  },
+  {
+    "file": "languages_kotlin_case-studies_android-case-studies_05_case-study-4--parler-data.md",
+    "source": "languages/kotlin/case-studies/android-case-studies.md",
+    "chunks": 6,
+    "chunk": 5,
+    "heading": "Case Study 4: Parler Data Breach \u2014 Android Content Provider Metadata Leak",
+    "category": "case-study",
+    "language": "kotlin",
+    "severity": "high"
+  },
+  {
+    "file": "languages_kotlin_case-studies_android-case-studies_06_references.md",
+    "source": "languages/kotlin/case-studies/android-case-studies.md",
+    "chunks": 6,
+    "chunk": 6,
+    "heading": "References",
+    "category": "case-study",
+    "language": "kotlin",
+    "severity": "high"
+  },
+  {
+    "file": "languages_kotlin_case-studies_android-explicit-broadcast-per.md",
+    "source": "languages/kotlin/case-studies/android-explicit-broadcast-permission-escalation.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "kotlin",
+    "severity": "high"
+  },
+  {
+    "file": "languages_kotlin_case-studies_jetpack-navigation-deep-link-b.md",
+    "source": "languages/kotlin/case-studies/jetpack-navigation-deep-link-bypass.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "kotlin",
+    "severity": "high"
+  },
+  {
+    "file": "languages_kotlin_case-studies_stagefright-2015-android.md",
+    "source": "languages/kotlin/case-studies/stagefright-2015-android.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "kotlin",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_kotlin_data-class-copy.md",
+    "source": "languages/kotlin/data-class-copy.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "kotlin",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_kotlin_hardening-checklist.md",
+    "source": "languages/kotlin/hardening-checklist.md",
+    "chunks": 1,
+    "category": "checklist",
+    "language": "kotlin",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_kotlin_index.md",
+    "source": "languages/kotlin/index.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "kotlin",
+    "severity": "high"
+  },
+  {
+    "file": "languages_kotlin_jetpack-security_01_intro.md",
+    "source": "languages/kotlin/jetpack-security.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "kotlin",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_kotlin_jetpack-security_02_1--side-effects-security.md",
+    "source": "languages/kotlin/jetpack-security.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "1. Side Effects Security",
+    "category": "language-vuln",
+    "language": "kotlin",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_kotlin_jetpack-security_03_2---remember--misuse---se.md",
+    "source": "languages/kotlin/jetpack-security.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "2. `remember` Misuse & Security Implications",
+    "category": "language-vuln",
+    "language": "kotlin",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_kotlin_jetpack-security_04_3--navigation-security.md",
+    "source": "languages/kotlin/jetpack-security.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "3. Navigation Security",
+    "category": "language-vuln",
+    "language": "kotlin",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_kotlin_jetpack-security_05_4--compositionlocal-secur.md",
+    "source": "languages/kotlin/jetpack-security.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "4. CompositionLocal Security",
+    "category": "language-vuln",
+    "language": "kotlin",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_kotlin_jetpack-security_06_5--implicit-intent-handli.md",
+    "source": "languages/kotlin/jetpack-security.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "5. Implicit Intent Handling in Compose",
+    "category": "language-vuln",
+    "language": "kotlin",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_kotlin_jetpack-security_07_6--secure-compose-hardeni.md",
+    "source": "languages/kotlin/jetpack-security.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "6. Secure Compose Hardening Checklist",
+    "category": "language-vuln",
+    "language": "kotlin",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_kotlin_jetpack-security_08_references.md",
+    "source": "languages/kotlin/jetpack-security.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "References",
+    "category": "language-vuln",
+    "language": "kotlin",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_kotlin_null-safety-bypass.md",
+    "source": "languages/kotlin/null-safety-bypass.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "kotlin",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_kotlin_spring-kotlin-misconfig.md",
+    "source": "languages/kotlin/spring-kotlin-misconfig.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "kotlin",
+    "severity": "high"
+  },
+  {
+    "file": "languages_php_case-studies_cmsms-type-juggling-auth-bypass.md",
+    "source": "languages/php/case-studies/cmsms-type-juggling-auth-bypass.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "php",
+    "severity": "high"
+  },
+  {
+    "file": "languages_php_case-studies_cve-2025-29306-foxcms-unserialize.md",
+    "source": "languages/php/case-studies/cve-2025-29306-foxcms-unserialize-rce.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "php",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_php_case-studies_cve-2025-4396-relevanssi-sql-inje.md",
+    "source": "languages/php/case-studies/cve-2025-4396-relevanssi-sql-injection.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "php",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_php_case-studies_cve-2025-54068-livewire-rce.md",
+    "source": "languages/php/case-studies/cve-2025-54068-livewire-rce.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "php",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_php_case-studies_cve-2025-7384-wordpress-contact-f.md",
+    "source": "languages/php/case-studies/cve-2025-7384-wordpress-contact-form-entries-rce.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "php",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_php_case-studies_essentialplugin-wordpress-supply-.md",
+    "source": "languages/php/case-studies/essentialplugin-wordpress-supply-chain-2025.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "php",
+    "severity": "high"
+  },
+  {
+    "file": "languages_php_case-studies_laravel-lang-composer-supply-chai.md",
+    "source": "languages/php/case-studies/laravel-lang-composer-supply-chain-attack-2026.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "php",
+    "severity": "high"
+  },
+  {
+    "file": "languages_php_case-studies_nextcloud-wordpress-unserialize-r.md",
+    "source": "languages/php/case-studies/nextcloud-wordpress-unserialize-rce-via-cookies.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "php",
+    "severity": "high"
+  },
+  {
+    "file": "languages_php_case-studies_wordpress-file-manager-rce-cve-20.md",
+    "source": "languages/php/case-studies/wordpress-file-manager-rce-cve-2020-25213.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "php",
+    "severity": "high"
+  },
+  {
+    "file": "languages_php_case-studies_wordpress-prestashop-supply-chain.md",
+    "source": "languages/php/case-studies/wordpress-prestashop-supply-chain.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "php",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_php_command-injection.md",
+    "source": "languages/php/command-injection.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "php",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_php_crypto-misuse.md",
+    "source": "languages/php/crypto-misuse.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "php",
+    "severity": "high"
+  },
+  {
+    "file": "languages_php_file-upload-bypass.md",
+    "source": "languages/php/file-upload-bypass.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "php",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_php_hardening-checklist.md",
+    "source": "languages/php/hardening-checklist.md",
+    "chunks": 1,
+    "category": "checklist",
+    "language": "php",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_php_index.md",
+    "source": "languages/php/index.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "php",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_php_laravel-security.md",
+    "source": "languages/php/laravel-security.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "php",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_php_lfi-rfi.md",
+    "source": "languages/php/lfi-rfi.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "php",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_php_phar-deserialization.md",
+    "source": "languages/php/phar-deserialization.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "php",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_php_session-security.md",
+    "source": "languages/php/session-security.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "php",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_php_sql-injection.md",
+    "source": "languages/php/sql-injection.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "php",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_php_symfony-security.md",
+    "source": "languages/php/symfony-security.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "php",
+    "severity": "high"
+  },
+  {
+    "file": "languages_php_type-juggling.md",
+    "source": "languages/php/type-juggling.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "php",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_php_unserialize-rce.md",
+    "source": "languages/php/unserialize-rce.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "php",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_php_wordpress-security.md",
+    "source": "languages/php/wordpress-security.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "php",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_2024-cve-roundup_01_intro.md",
+    "source": "languages/python/2024-cve-roundup.md",
+    "chunks": 10,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_2024-cve-roundup_02_overview.md",
+    "source": "languages/python/2024-cve-roundup.md",
+    "chunks": 10,
+    "chunk": 2,
+    "heading": "Overview",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_2024-cve-roundup_03_critical--cvss-9-0-10-0.md",
+    "source": "languages/python/2024-cve-roundup.md",
+    "chunks": 10,
+    "chunk": 3,
+    "heading": "Critical (CVSS 9.0-10.0)",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_2024-cve-roundup_04_high-severity--cvss-7-0-8.md",
+    "source": "languages/python/2024-cve-roundup.md",
+    "chunks": 10,
+    "chunk": 4,
+    "heading": "High Severity (CVSS 7.0-8.9)",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_2024-cve-roundup_05_medium-severity--cvss-4-0.md",
+    "source": "languages/python/2024-cve-roundup.md",
+    "chunks": 10,
+    "chunk": 5,
+    "heading": "Medium Severity (CVSS 4.0-6.9)",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_2024-cve-roundup_06_application-level-cves.md",
+    "source": "languages/python/2024-cve-roundup.md",
+    "chunks": 10,
+    "chunk": 6,
+    "heading": "Application-Level CVEs",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_2024-cve-roundup_07_framework---library-cves.md",
+    "source": "languages/python/2024-cve-roundup.md",
+    "chunks": 10,
+    "chunk": 7,
+    "heading": "Framework / Library CVEs Quick Reference",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_2024-cve-roundup_08_cpython-standard-library.md",
+    "source": "languages/python/2024-cve-roundup.md",
+    "chunks": 10,
+    "chunk": 8,
+    "heading": "CPython Standard Library CVEs Quick Reference",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_2024-cve-roundup_09_trends-and-takeaways.md",
+    "source": "languages/python/2024-cve-roundup.md",
+    "chunks": 10,
+    "chunk": 9,
+    "heading": "Trends and Takeaways",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_2024-cve-roundup_10_references.md",
+    "source": "languages/python/2024-cve-roundup.md",
+    "chunks": 10,
+    "chunk": 10,
+    "heading": "References",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_case-studies_cve-2025-64459-django-sql-inje.md",
+    "source": "languages/python/case-studies/cve-2025-64459-django-sql-injection.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_case-studies_django-secret-key-hardcoded.md",
+    "source": "languages/python/case-studies/django-secret-key-hardcoded.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_case-studies_flask-debug-mode-production.md",
+    "source": "languages/python/case-studies/flask-debug-mode-production.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_case-studies_nltk-pickle-rce.md",
+    "source": "languages/python/case-studies/nltk-pickle-rce.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_case-studies_pypi-malicious-packages-2023.md",
+    "source": "languages/python/case-studies/pypi-malicious-packages-2023.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_case-studies_python-eval-code-injection.md",
+    "source": "languages/python/case-studies/python-eval-code-injection.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_case-studies_python-path-traversal.md",
+    "source": "languages/python/case-studies/python-path-traversal.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_case-studies_pytorch-dependency-confusion.md",
+    "source": "languages/python/case-studies/pytorch-dependency-confusion.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_command-injection_01_intro.md",
+    "source": "languages/python/command-injection.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_command-injection_02_vulnerability-explanation.md",
+    "source": "languages/python/command-injection.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "Vulnerability Explanation",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_command-injection_03_how-ai---vibe-coding-gene.md",
+    "source": "languages/python/command-injection.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "How AI / Vibe Coding Generates This",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_command-injection_04_vulnerable-code-example.md",
+    "source": "languages/python/command-injection.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "Vulnerable Code Example",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_command-injection_05_secure-code-fix.md",
+    "source": "languages/python/command-injection.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "Secure Code Fix",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_command-injection_06_prevention-checklist.md",
+    "source": "languages/python/command-injection.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "Prevention Checklist",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_command-injection_07_real-world-cves.md",
+    "source": "languages/python/command-injection.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "Real-World CVEs",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_command-injection_08_vibe-coding-red-flags.md",
+    "source": "languages/python/command-injection.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "Vibe Coding Red Flags",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_crypto-mistakes_01_intro.md",
+    "source": "languages/python/crypto-mistakes.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_crypto-mistakes_02_vulnerability-explanation.md",
+    "source": "languages/python/crypto-mistakes.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "Vulnerability Explanation",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_crypto-mistakes_03_how-ai---vibe-coding-gene.md",
+    "source": "languages/python/crypto-mistakes.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "How AI / Vibe Coding Generates This",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_crypto-mistakes_04_vulnerable-code-example.md",
+    "source": "languages/python/crypto-mistakes.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "Vulnerable Code Example",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_crypto-mistakes_05_secure-code-fix.md",
+    "source": "languages/python/crypto-mistakes.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "Secure Code Fix",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_crypto-mistakes_06_prevention-checklist.md",
+    "source": "languages/python/crypto-mistakes.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "Prevention Checklist",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_crypto-mistakes_07_real-world-cves.md",
+    "source": "languages/python/crypto-mistakes.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "Real-World CVEs",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_crypto-mistakes_08_vibe-coding-red-flags.md",
+    "source": "languages/python/crypto-mistakes.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "Vibe Coding Red Flags",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_dependency-safety_01_intro.md",
+    "source": "languages/python/dependency-safety.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_dependency-safety_02_vulnerability-explanation.md",
+    "source": "languages/python/dependency-safety.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "Vulnerability Explanation",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_dependency-safety_03_how-ai---vibe-coding-gene.md",
+    "source": "languages/python/dependency-safety.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "How AI / Vibe Coding Generates This",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_dependency-safety_04_vulnerable-code-example.md",
+    "source": "languages/python/dependency-safety.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "Vulnerable Code Example",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_dependency-safety_05_secure-code-fix.md",
+    "source": "languages/python/dependency-safety.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "Secure Code Fix",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_dependency-safety_06_prevention-checklist.md",
+    "source": "languages/python/dependency-safety.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "Prevention Checklist",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_dependency-safety_07_real-world-supply-chain-a.md",
+    "source": "languages/python/dependency-safety.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "Real-World Supply Chain Attacks",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_dependency-safety_08_vibe-coding-red-flags.md",
+    "source": "languages/python/dependency-safety.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "Vibe Coding Red Flags",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_django-drf-security_01_intro.md",
+    "source": "languages/python/django-drf-security.md",
+    "chunks": 12,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_python_django-drf-security_02_overview.md",
+    "source": "languages/python/django-drf-security.md",
+    "chunks": 12,
+    "chunk": 2,
+    "heading": "Overview",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_python_django-drf-security_03_1--permission-classes.md",
+    "source": "languages/python/django-drf-security.md",
+    "chunks": 12,
+    "chunk": 3,
+    "heading": "1. Permission Classes",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_python_django-drf-security_04_2--throttling.md",
+    "source": "languages/python/django-drf-security.md",
+    "chunks": 12,
+    "chunk": 4,
+    "heading": "2. Throttling",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_python_django-drf-security_05_3--serializer-validation.md",
+    "source": "languages/python/django-drf-security.md",
+    "chunks": 12,
+    "chunk": 5,
+    "heading": "3. Serializer Validation",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_python_django-drf-security_06_4--browsable-api-in-produ.md",
+    "source": "languages/python/django-drf-security.md",
+    "chunks": 12,
+    "chunk": 6,
+    "heading": "4. Browsable API in Production",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_python_django-drf-security_07_5--authentication-securit.md",
+    "source": "languages/python/django-drf-security.md",
+    "chunks": 12,
+    "chunk": 7,
+    "heading": "5. Authentication Security",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_python_django-drf-security_08_6--pagination-to-prevent.md",
+    "source": "languages/python/django-drf-security.md",
+    "chunks": 12,
+    "chunk": 8,
+    "heading": "6. Pagination to Prevent DoS",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_python_django-drf-security_09_7--cors-configuration.md",
+    "source": "languages/python/django-drf-security.md",
+    "chunks": 12,
+    "chunk": 9,
+    "heading": "7. CORS Configuration",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_python_django-drf-security_10_8--version-recommendation.md",
+    "source": "languages/python/django-drf-security.md",
+    "chunks": 12,
+    "chunk": 10,
+    "heading": "8. Version Recommendations",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_python_django-drf-security_11_9--common-ai-produced-mis.md",
+    "source": "languages/python/django-drf-security.md",
+    "chunks": 12,
+    "chunk": 11,
+    "heading": "9. Common AI-Produced Misconfigurations",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_python_django-drf-security_12_verification---source-url.md",
+    "source": "languages/python/django-drf-security.md",
+    "chunks": 12,
+    "chunk": 12,
+    "heading": "Verification / Source URLs",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_python_django-security_01_intro.md",
+    "source": "languages/python/django-security.md",
+    "chunks": 12,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_django-security_02_overview.md",
+    "source": "languages/python/django-security.md",
+    "chunks": 12,
+    "chunk": 2,
+    "heading": "Overview",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_django-security_03_1--sql-injection-protecti.md",
+    "source": "languages/python/django-security.md",
+    "chunks": 12,
+    "chunk": 3,
+    "heading": "1. SQL Injection Protections",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_django-security_04_2--cross-site-request-for.md",
+    "source": "languages/python/django-security.md",
+    "chunks": 12,
+    "chunk": 4,
+    "heading": "2. Cross-Site Request Forgery (CSRF)",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_django-security_05_3--cross-site-scripting.md",
+    "source": "languages/python/django-security.md",
+    "chunks": 12,
+    "chunk": 5,
+    "heading": "3. Cross-Site Scripting (XSS) Protection",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_django-security_06_4--session-security.md",
+    "source": "languages/python/django-security.md",
+    "chunks": 12,
+    "chunk": 6,
+    "heading": "4. Session Security",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_django-security_07_5--middleware-ordering.md",
+    "source": "languages/python/django-security.md",
+    "chunks": 12,
+    "chunk": 7,
+    "heading": "5. Middleware Ordering",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_django-security_08_6--additional-security-he.md",
+    "source": "languages/python/django-security.md",
+    "chunks": 12,
+    "chunk": 8,
+    "heading": "6. Additional Security Headers",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_django-security_09_7--cve-roundup.md",
+    "source": "languages/python/django-security.md",
+    "chunks": 12,
+    "chunk": 9,
+    "heading": "7. CVE Roundup",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_django-security_10_8--version-recommendation.md",
+    "source": "languages/python/django-security.md",
+    "chunks": 12,
+    "chunk": 10,
+    "heading": "8. Version Recommendations",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_django-security_11_9--common-ai-produced-mis.md",
+    "source": "languages/python/django-security.md",
+    "chunks": 12,
+    "chunk": 11,
+    "heading": "9. Common AI-Produced Misconfigurations",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_django-security_12_verification---source-url.md",
+    "source": "languages/python/django-security.md",
+    "chunks": 12,
+    "chunk": 12,
+    "heading": "Verification / Source URLs",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_eval-exec_01_intro.md",
+    "source": "languages/python/eval-exec.md",
+    "chunks": 7,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_eval-exec_02_vulnerability-explanation.md",
+    "source": "languages/python/eval-exec.md",
+    "chunks": 7,
+    "chunk": 2,
+    "heading": "Vulnerability Explanation",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_eval-exec_03_how-ai---vibe-coding-gene.md",
+    "source": "languages/python/eval-exec.md",
+    "chunks": 7,
+    "chunk": 3,
+    "heading": "How AI / Vibe Coding Generates This",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_eval-exec_04_secure-code-fix.md",
+    "source": "languages/python/eval-exec.md",
+    "chunks": 7,
+    "chunk": 4,
+    "heading": "Secure Code Fix",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_eval-exec_05_prevention-checklist.md",
+    "source": "languages/python/eval-exec.md",
+    "chunks": 7,
+    "chunk": 5,
+    "heading": "Prevention Checklist",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_eval-exec_06_real-world-cves.md",
+    "source": "languages/python/eval-exec.md",
+    "chunks": 7,
+    "chunk": 6,
+    "heading": "Real-World CVEs",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_eval-exec_07_vibe-coding-red-flags.md",
+    "source": "languages/python/eval-exec.md",
+    "chunks": 7,
+    "chunk": 7,
+    "heading": "Vibe Coding Red Flags",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_fastapi-security_01_intro.md",
+    "source": "languages/python/fastapi-security.md",
+    "chunks": 10,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_fastapi-security_02_overview.md",
+    "source": "languages/python/fastapi-security.md",
+    "chunks": 10,
+    "chunk": 2,
+    "heading": "Overview",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_fastapi-security_03_1--vulnerability-explanat.md",
+    "source": "languages/python/fastapi-security.md",
+    "chunks": 10,
+    "chunk": 3,
+    "heading": "1. Vulnerability Explanation \u2014 FastAPI's Unique Attack Surface",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_fastapi-security_04_2--how-ai---vibe-coding-g.md",
+    "source": "languages/python/fastapi-security.md",
+    "chunks": 10,
+    "chunk": 4,
+    "heading": "2. How AI / Vibe Coding Generates These Vulnerabilities",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_fastapi-security_05_3--vulnerable-code-exampl.md",
+    "source": "languages/python/fastapi-security.md",
+    "chunks": 10,
+    "chunk": 5,
+    "heading": "3. Vulnerable Code Examples",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_fastapi-security_06_4--secure-code-fixes.md",
+    "source": "languages/python/fastapi-security.md",
+    "chunks": 10,
+    "chunk": 6,
+    "heading": "4. Secure Code Fixes",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_fastapi-security_07_5--real-cves---vulnerabil.md",
+    "source": "languages/python/fastapi-security.md",
+    "chunks": 10,
+    "chunk": 7,
+    "heading": "5. Real CVEs / Vulnerabilities",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_fastapi-security_08_6--prevention-checklist.md",
+    "source": "languages/python/fastapi-security.md",
+    "chunks": 10,
+    "chunk": 8,
+    "heading": "6. Prevention Checklist",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_fastapi-security_09_7--vibe-coding-red-flags.md",
+    "source": "languages/python/fastapi-security.md",
+    "chunks": 10,
+    "chunk": 9,
+    "heading": "7. Vibe-Coding Red Flags (FastAPI-Specific)",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_fastapi-security_10_8--references.md",
+    "source": "languages/python/fastapi-security.md",
+    "chunks": 10,
+    "chunk": 10,
+    "heading": "8. References",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_flask-django-misconfig_01_intro.md",
+    "source": "languages/python/flask-django-misconfig.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_flask-django-misconfig_02_vulnerability-explanation.md",
+    "source": "languages/python/flask-django-misconfig.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "Vulnerability Explanation",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_flask-django-misconfig_03_how-ai---vibe-coding-gene.md",
+    "source": "languages/python/flask-django-misconfig.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "How AI / Vibe Coding Generates This",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_flask-django-misconfig_04_vulnerable-code-examples.md",
+    "source": "languages/python/flask-django-misconfig.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "Vulnerable Code Examples",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_flask-django-misconfig_05_secure-code-fix.md",
+    "source": "languages/python/flask-django-misconfig.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "Secure Code Fix",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_flask-django-misconfig_06_prevention-checklist.md",
+    "source": "languages/python/flask-django-misconfig.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "Prevention Checklist",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_flask-django-misconfig_07_real-world-cves.md",
+    "source": "languages/python/flask-django-misconfig.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "Real-World CVEs",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_flask-django-misconfig_08_vibe-coding-red-flags.md",
+    "source": "languages/python/flask-django-misconfig.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "Vibe Coding Red Flags",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_hardening-checklist.md",
+    "source": "languages/python/hardening-checklist.md",
+    "chunks": 1,
+    "category": "checklist",
+    "language": "python",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_python_index.md",
+    "source": "languages/python/index.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_python_insecure-deserialization-alt_01_intro.md",
+    "source": "languages/python/insecure-deserialization-alt.md",
+    "chunks": 10,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_insecure-deserialization-alt_02_overview.md",
+    "source": "languages/python/insecure-deserialization-alt.md",
+    "chunks": 10,
+    "chunk": 2,
+    "heading": "Overview",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_insecure-deserialization-alt_03_library-security-matrix.md",
+    "source": "languages/python/insecure-deserialization-alt.md",
+    "chunks": 10,
+    "chunk": 3,
+    "heading": "Library Security Matrix",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_insecure-deserialization-alt_04_cve-2026-24009--pyyaml-de.md",
+    "source": "languages/python/insecure-deserialization-alt.md",
+    "chunks": 10,
+    "chunk": 4,
+    "heading": "CVE-2026-24009: PyYAML Deserialization in Docling (Critical)",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_insecure-deserialization-alt_05_cve-2020-14343--pyyaml-fu.md",
+    "source": "languages/python/insecure-deserialization-alt.md",
+    "chunks": 10,
+    "chunk": 5,
+    "heading": "CVE-2020-14343: PyYAML FullLoader Incomplete Fix",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_insecure-deserialization-alt_06_jsonpickle--pickle-in-jso.md",
+    "source": "languages/python/insecure-deserialization-alt.md",
+    "chunks": 10,
+    "chunk": 6,
+    "heading": "jsonpickle: Pickle in JSON Clothing",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_insecure-deserialization-alt_07_msgpack--mostly-safe--not.md",
+    "source": "languages/python/insecure-deserialization-alt.md",
+    "chunks": 10,
+    "chunk": 7,
+    "heading": "msgpack: Mostly Safe, Not Invulnerable",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_insecure-deserialization-alt_08_safe-serialization-decisi.md",
+    "source": "languages/python/insecure-deserialization-alt.md",
+    "chunks": 10,
+    "chunk": 8,
+    "heading": "Safe Serialization Decision Tree",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_insecure-deserialization-alt_09_comparison-table--exploit.md",
+    "source": "languages/python/insecure-deserialization-alt.md",
+    "chunks": 10,
+    "chunk": 9,
+    "heading": "Comparison Table: Exploit Payloads",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_insecure-deserialization-alt_10_references.md",
+    "source": "languages/python/insecure-deserialization-alt.md",
+    "chunks": 10,
+    "chunk": 10,
+    "heading": "References",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_path-traversal_01_intro.md",
+    "source": "languages/python/path-traversal.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_path-traversal_02_vulnerability-explanation.md",
+    "source": "languages/python/path-traversal.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "Vulnerability Explanation",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_path-traversal_03_how-ai---vibe-coding-gene.md",
+    "source": "languages/python/path-traversal.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "How AI / Vibe Coding Generates This",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_path-traversal_04_vulnerable-code-example.md",
+    "source": "languages/python/path-traversal.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "Vulnerable Code Example",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_path-traversal_05_secure-code-fix.md",
+    "source": "languages/python/path-traversal.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "Secure Code Fix",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_path-traversal_06_prevention-checklist.md",
+    "source": "languages/python/path-traversal.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "Prevention Checklist",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_path-traversal_07_real-world-cves.md",
+    "source": "languages/python/path-traversal.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "Real-World CVEs",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_path-traversal_08_vibe-coding-red-flags.md",
+    "source": "languages/python/path-traversal.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "Vibe Coding Red Flags",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_pickle-rce_01_intro.md",
+    "source": "languages/python/pickle-rce.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_pickle-rce_02_vulnerability-explanation.md",
+    "source": "languages/python/pickle-rce.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "Vulnerability Explanation",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_pickle-rce_03_how-ai---vibe-coding-gene.md",
+    "source": "languages/python/pickle-rce.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "How AI / Vibe Coding Generates This",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_pickle-rce_04_vulnerable-code-example.md",
+    "source": "languages/python/pickle-rce.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "Vulnerable Code Example",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_pickle-rce_05_secure-code-fix.md",
+    "source": "languages/python/pickle-rce.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "Secure Code Fix",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_pickle-rce_06_real-world-cves.md",
+    "source": "languages/python/pickle-rce.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "Real-World CVEs",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_pickle-rce_07_prevention-checklist.md",
+    "source": "languages/python/pickle-rce.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "Prevention Checklist",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_pickle-rce_08_vibe-coding-red-flags.md",
+    "source": "languages/python/pickle-rce.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "Vibe Coding Red Flags",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_side-channel_01_intro.md",
+    "source": "languages/python/side-channel.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_python_side-channel_02_overview.md",
+    "source": "languages/python/side-channel.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "Overview",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_python_side-channel_03_cve-2023-50782--python-cr.md",
+    "source": "languages/python/side-channel.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "CVE-2023-50782: python-cryptography \u2014 Bleichenbacher Padding/Timing Oracle",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_python_side-channel_04_cve-2024-23342--python-ec.md",
+    "source": "languages/python/side-channel.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "CVE-2024-23342: python-ecdsa \u2014 Minerva Timing Side-Channel",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_python_side-channel_05_cve-2021-23336--python-we.md",
+    "source": "languages/python/side-channel.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "CVE-2021-23336: Python Web Cache Poisoning Side-Channel",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_python_side-channel_06_additional-python-side-ch.md",
+    "source": "languages/python/side-channel.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "Additional Python Side-Channel Patterns",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_python_side-channel_07_detection-and-prevention.md",
+    "source": "languages/python/side-channel.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "Detection and Prevention",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_python_side-channel_08_references.md",
+    "source": "languages/python/side-channel.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "References",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_python_sql-injection_01_intro.md",
+    "source": "languages/python/sql-injection.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_sql-injection_02_vulnerability-explanation.md",
+    "source": "languages/python/sql-injection.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "Vulnerability Explanation",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_sql-injection_03_how-ai---vibe-coding-gene.md",
+    "source": "languages/python/sql-injection.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "How AI / Vibe Coding Generates This",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_sql-injection_04_vulnerable-code-example.md",
+    "source": "languages/python/sql-injection.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "Vulnerable Code Example",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_sql-injection_05_secure-code-fix.md",
+    "source": "languages/python/sql-injection.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "Secure Code Fix",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_sql-injection_06_prevention-checklist.md",
+    "source": "languages/python/sql-injection.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "Prevention Checklist",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_sql-injection_07_real-world-cves.md",
+    "source": "languages/python/sql-injection.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "Real-World CVEs",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_sql-injection_08_vibe-coding-red-flags.md",
+    "source": "languages/python/sql-injection.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "Vibe Coding Red Flags",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_ssrf-python_01_intro.md",
+    "source": "languages/python/ssrf-python.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_ssrf-python_02_overview.md",
+    "source": "languages/python/ssrf-python.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "Overview",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_ssrf-python_03_cve-2024-35195--requests.md",
+    "source": "languages/python/ssrf-python.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "CVE-2024-35195: requests Library Session Certificate Bypass",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_ssrf-python_04_cve-2024-37891--urllib3-p.md",
+    "source": "languages/python/ssrf-python.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "CVE-2024-37891: urllib3 Proxy-Authorization Leak on Cross-Origin Redirect",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_ssrf-python_05_cve-2025-53643--aiohttp-r.md",
+    "source": "languages/python/ssrf-python.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "CVE-2025-53643: aiohttp Request Smuggling / SSRF",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_ssrf-python_06_python-ssrf-bypass-techni.md",
+    "source": "languages/python/ssrf-python.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "Python SSRF Bypass Techniques",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_ssrf-python_07_ssrf-prevention-checklist.md",
+    "source": "languages/python/ssrf-python.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "SSRF Prevention Checklist for Python",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_ssrf-python_08_references.md",
+    "source": "languages/python/ssrf-python.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "References",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_supply-chain-deep_01_intro.md",
+    "source": "languages/python/supply-chain-deep.md",
+    "chunks": 10,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_supply-chain-deep_02_overview.md",
+    "source": "languages/python/supply-chain-deep.md",
+    "chunks": 10,
+    "chunk": 2,
+    "heading": "Overview",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_supply-chain-deep_03_attack-vector-1--dependen.md",
+    "source": "languages/python/supply-chain-deep.md",
+    "chunks": 10,
+    "chunk": 3,
+    "heading": "Attack Vector 1: Dependency Confusion",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_supply-chain-deep_04_attack-vector-2--typosqua.md",
+    "source": "languages/python/supply-chain-deep.md",
+    "chunks": 10,
+    "chunk": 4,
+    "heading": "Attack Vector 2: Typosquatting Campaigns",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_supply-chain-deep_05_attack-vector-3--package.md",
+    "source": "languages/python/supply-chain-deep.md",
+    "chunks": 10,
+    "chunk": 5,
+    "heading": "Attack Vector 3: Package Hijacking (Account Takeover)",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_supply-chain-deep_06_attack-vector-4--pep-668.md",
+    "source": "languages/python/supply-chain-deep.md",
+    "chunks": 10,
+    "chunk": 6,
+    "heading": "Attack Vector 4: PEP 668 and Environment Isolation",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_supply-chain-deep_07_attack-vector-5--hash-pin.md",
+    "source": "languages/python/supply-chain-deep.md",
+    "chunks": 10,
+    "chunk": 7,
+    "heading": "Attack Vector 5: Hash Pinning Failures",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_supply-chain-deep_08_real-attack-timeline--202.md",
+    "source": "languages/python/supply-chain-deep.md",
+    "chunks": 10,
+    "chunk": 8,
+    "heading": "Real Attack Timeline (2024-2025)",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_supply-chain-deep_09_defense-in-depth-strategy.md",
+    "source": "languages/python/supply-chain-deep.md",
+    "chunks": 10,
+    "chunk": 9,
+    "heading": "Defense-in-Depth Strategy",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_supply-chain-deep_10_references.md",
+    "source": "languages/python/supply-chain-deep.md",
+    "chunks": 10,
+    "chunk": 10,
+    "heading": "References",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "high"
+  },
+  {
+    "file": "languages_python_template-injection_01_intro.md",
+    "source": "languages/python/template-injection.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_template-injection_02_vulnerability-explanation.md",
+    "source": "languages/python/template-injection.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "Vulnerability Explanation",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_template-injection_03_how-ai---vibe-coding-gene.md",
+    "source": "languages/python/template-injection.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "How AI / Vibe Coding Generates This",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_template-injection_04_vulnerable-code-example.md",
+    "source": "languages/python/template-injection.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "Vulnerable Code Example",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_template-injection_05_secure-code-fix.md",
+    "source": "languages/python/template-injection.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "Secure Code Fix",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_template-injection_06_prevention-checklist.md",
+    "source": "languages/python/template-injection.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "Prevention Checklist",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_template-injection_07_real-world-cves.md",
+    "source": "languages/python/template-injection.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "Real-World CVEs",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_template-injection_08_vibe-coding-red-flags.md",
+    "source": "languages/python/template-injection.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "Vibe Coding Red Flags",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_python_timing-attacks_01_intro.md",
+    "source": "languages/python/timing-attacks.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_python_timing-attacks_02_overview.md",
+    "source": "languages/python/timing-attacks.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "Overview",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_python_timing-attacks_03_cve-2023-50782--python-cr.md",
+    "source": "languages/python/timing-attacks.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "CVE-2023-50782: python-cryptography \u2014 Marvin/Bleichenbacher RSA Timing Oracle",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_python_timing-attacks_04_cve-2020-25659--python-cr.md",
+    "source": "languages/python/timing-attacks.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "CVE-2020-25659: python-cryptography \u2014 Bleichenbacher RSA Decryption Timing",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_python_timing-attacks_05_cve-2024-23342--python-ec.md",
+    "source": "languages/python/timing-attacks.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "CVE-2024-23342: python-ecdsa \u2014 Minerva ECDSA Nonce Timing Attack",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_python_timing-attacks_06_general-vulnerable-patter.md",
+    "source": "languages/python/timing-attacks.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "General Vulnerable Patterns in Python",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_python_timing-attacks_07_detection-tools---prevent.md",
+    "source": "languages/python/timing-attacks.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "Detection Tools & Prevention",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_python_timing-attacks_08_references.md",
+    "source": "languages/python/timing-attacks.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "References",
+    "category": "language-vuln",
+    "language": "python",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_ruby_case-studies_cve-2013-0156-rails-yaml-rce.md",
+    "source": "languages/ruby/case-studies/cve-2013-0156-rails-yaml-rce.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "ruby",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_ruby_case-studies_cve-2016-2098-rails-render-rce.md",
+    "source": "languages/ruby/case-studies/cve-2016-2098-rails-render-rce.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "ruby",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_ruby_case-studies_cve-2024-54133-actionpack-csp-by.md",
+    "source": "languages/ruby/case-studies/cve-2024-54133-actionpack-csp-bypass.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "ruby",
+    "severity": "low"
+  },
+  {
+    "file": "languages_ruby_case-studies_cve-2025-24293-active-storage-rc.md",
+    "source": "languages/ruby/case-studies/cve-2025-24293-active-storage-rce.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "ruby",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_ruby_case-studies_rubygems-hijacking-2020.md",
+    "source": "languages/ruby/case-studies/rubygems-hijacking-2020.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "ruby",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_ruby_command-injection.md",
+    "source": "languages/ruby/command-injection.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "ruby",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_ruby_hardening-checklist.md",
+    "source": "languages/ruby/hardening-checklist.md",
+    "chunks": 1,
+    "category": "checklist",
+    "language": "ruby",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_ruby_idor-rails.md",
+    "source": "languages/ruby/idor-rails.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "ruby",
+    "severity": "high"
+  },
+  {
+    "file": "languages_ruby_index.md",
+    "source": "languages/ruby/index.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "ruby",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_ruby_mass-assignment.md",
+    "source": "languages/ruby/mass-assignment.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "ruby",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_ruby_rails-security_01_intro.md",
+    "source": "languages/ruby/rails-security.md",
+    "chunks": 10,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "ruby",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_ruby_rails-security_02_1--route-security.md",
+    "source": "languages/ruby/rails-security.md",
+    "chunks": 10,
+    "chunk": 2,
+    "heading": "1. Route Security",
+    "category": "language-vuln",
+    "language": "ruby",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_ruby_rails-security_03_2--view-escaping---xss-pr.md",
+    "source": "languages/ruby/rails-security.md",
+    "chunks": 10,
+    "chunk": 3,
+    "heading": "2. View Escaping & XSS Prevention",
+    "category": "language-vuln",
+    "language": "ruby",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_ruby_rails-security_04_3--activestorage-security.md",
+    "source": "languages/ruby/rails-security.md",
+    "chunks": 10,
+    "chunk": 4,
+    "heading": "3. ActiveStorage Security",
+    "category": "language-vuln",
+    "language": "ruby",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_ruby_rails-security_05_4--actionmailer-injection.md",
+    "source": "languages/ruby/rails-security.md",
+    "chunks": 10,
+    "chunk": 5,
+    "heading": "4. ActionMailer Injection",
+    "category": "language-vuln",
+    "language": "ruby",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_ruby_rails-security_06_5--csrf-protection.md",
+    "source": "languages/ruby/rails-security.md",
+    "chunks": 10,
+    "chunk": 6,
+    "heading": "5. CSRF Protection",
+    "category": "language-vuln",
+    "language": "ruby",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_ruby_rails-security_07_6--sql-injection-in-rails.md",
+    "source": "languages/ruby/rails-security.md",
+    "chunks": 10,
+    "chunk": 7,
+    "heading": "6. SQL Injection in Rails",
+    "category": "language-vuln",
+    "language": "ruby",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_ruby_rails-security_08_7--mass-assignment.md",
+    "source": "languages/ruby/rails-security.md",
+    "chunks": 10,
+    "chunk": 8,
+    "heading": "7. Mass Assignment",
+    "category": "language-vuln",
+    "language": "ruby",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_ruby_rails-security_09_8--hardened-rails-configu.md",
+    "source": "languages/ruby/rails-security.md",
+    "chunks": 10,
+    "chunk": 9,
+    "heading": "8. Hardened Rails Configuration",
+    "category": "language-vuln",
+    "language": "ruby",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_ruby_rails-security_10_references.md",
+    "source": "languages/ruby/rails-security.md",
+    "chunks": 10,
+    "chunk": 10,
+    "heading": "References",
+    "category": "language-vuln",
+    "language": "ruby",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_ruby_redos.md",
+    "source": "languages/ruby/redos.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "ruby",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_ruby_session-security.md",
+    "source": "languages/ruby/session-security.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "ruby",
+    "severity": "high"
+  },
+  {
+    "file": "languages_ruby_sql-injection.md",
+    "source": "languages/ruby/sql-injection.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "ruby",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_ruby_symbol-dos.md",
+    "source": "languages/ruby/symbol-dos.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "ruby",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_ruby_yaml-deserialization.md",
+    "source": "languages/ruby/yaml-deserialization.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "ruby",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_rust_2024-cve-roundup-rust.md",
+    "source": "languages/rust/2024-cve-roundup-rust.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "rust",
+    "severity": "high"
+  },
+  {
+    "file": "languages_rust_actix-axum-security_01_intro.md",
+    "source": "languages/rust/actix-axum-security.md",
+    "chunks": 10,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "rust",
+    "severity": "high"
+  },
+  {
+    "file": "languages_rust_actix-axum-security_02_1--extractor-security.md",
+    "source": "languages/rust/actix-axum-security.md",
+    "chunks": 10,
+    "chunk": 2,
+    "heading": "1. Extractor Security",
+    "category": "language-vuln",
+    "language": "rust",
+    "severity": "high"
+  },
+  {
+    "file": "languages_rust_actix-axum-security_03_2--middleware-ordering.md",
+    "source": "languages/rust/actix-axum-security.md",
+    "chunks": 10,
+    "chunk": 3,
+    "heading": "2. Middleware Ordering",
+    "category": "language-vuln",
+    "language": "rust",
+    "severity": "high"
+  },
+  {
+    "file": "languages_rust_actix-axum-security_04_3--websocket-authenticati.md",
+    "source": "languages/rust/actix-axum-security.md",
+    "chunks": 10,
+    "chunk": 4,
+    "heading": "3. WebSocket Authentication",
+    "category": "language-vuln",
+    "language": "rust",
+    "severity": "high"
+  },
+  {
+    "file": "languages_rust_actix-axum-security_05_4--cors-configuration.md",
+    "source": "languages/rust/actix-axum-security.md",
+    "chunks": 10,
+    "chunk": 5,
+    "heading": "4. CORS Configuration",
+    "category": "language-vuln",
+    "language": "rust",
+    "severity": "high"
+  },
+  {
+    "file": "languages_rust_actix-axum-security_06_5--rate-limiting.md",
+    "source": "languages/rust/actix-axum-security.md",
+    "chunks": 10,
+    "chunk": 6,
+    "heading": "5. Rate Limiting",
+    "category": "language-vuln",
+    "language": "rust",
+    "severity": "high"
+  },
+  {
+    "file": "languages_rust_actix-axum-security_07_6--actix-web-specific--un.md",
+    "source": "languages/rust/actix-axum-security.md",
+    "chunks": 10,
+    "chunk": 7,
+    "heading": "6. Actix-Web Specific: Unsafe Code Risks",
+    "category": "language-vuln",
+    "language": "rust",
+    "severity": "high"
+  },
+  {
+    "file": "languages_rust_actix-axum-security_08_7--security-headers.md",
+    "source": "languages/rust/actix-axum-security.md",
+    "chunks": 10,
+    "chunk": 8,
+    "heading": "7. Security Headers",
+    "category": "language-vuln",
+    "language": "rust",
+    "severity": "high"
+  },
+  {
+    "file": "languages_rust_actix-axum-security_09_8--actix-axum-security-ch.md",
+    "source": "languages/rust/actix-axum-security.md",
+    "chunks": 10,
+    "chunk": 9,
+    "heading": "8. Actix/Axum Security Checklist",
+    "category": "language-vuln",
+    "language": "rust",
+    "severity": "high"
+  },
+  {
+    "file": "languages_rust_actix-axum-security_10_references.md",
+    "source": "languages/rust/actix-axum-security.md",
+    "chunks": 10,
+    "chunk": 10,
+    "heading": "References",
+    "category": "language-vuln",
+    "language": "rust",
+    "severity": "high"
+  },
+  {
+    "file": "languages_rust_async-security.md",
+    "source": "languages/rust/async-security.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "rust",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_rust_cargo-supply-chain.md",
+    "source": "languages/rust/cargo-supply-chain.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "rust",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_rust_case-studies_cratedepression-supply-chain-att.md",
+    "source": "languages/rust/case-studies/cratedepression-supply-chain-attack.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "rust",
+    "severity": "high"
+  },
+  {
+    "file": "languages_rust_case-studies_cve-2018-1000657-vecdeque-out-of.md",
+    "source": "languages/rust/case-studies/cve-2018-1000657-vecdeque-out-of-bounds.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "rust",
+    "severity": "high"
+  },
+  {
+    "file": "languages_rust_case-studies_cve-2020-36317-serde-panic-safet.md",
+    "source": "languages/rust/case-studies/cve-2020-36317-serde-panic-safety.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "rust",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_rust_case-studies_cve-2025-68260-linux-kernel-unsa.md",
+    "source": "languages/rust/case-studies/cve-2025-68260-linux-kernel-unsafe-uaf.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "rust",
+    "severity": "high"
+  },
+  {
+    "file": "languages_rust_concurrency-issues.md",
+    "source": "languages/rust/concurrency-issues.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "rust",
+    "severity": "high"
+  },
+  {
+    "file": "languages_rust_crypto-mistakes.md",
+    "source": "languages/rust/crypto-mistakes.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "rust",
+    "severity": "high"
+  },
+  {
+    "file": "languages_rust_ffi-risks.md",
+    "source": "languages/rust/ffi-risks.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "rust",
+    "severity": "high"
+  },
+  {
+    "file": "languages_rust_hardening-checklist.md",
+    "source": "languages/rust/hardening-checklist.md",
+    "chunks": 1,
+    "category": "checklist",
+    "language": "rust",
+    "severity": "high"
+  },
+  {
+    "file": "languages_rust_index.md",
+    "source": "languages/rust/index.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "rust",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_rust_memory-safety-bypasses.md",
+    "source": "languages/rust/memory-safety-bypasses.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "rust",
+    "severity": "high"
+  },
+  {
+    "file": "languages_rust_no-std-security.md",
+    "source": "languages/rust/no-std-security.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "rust",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_rust_pin-safety.md",
+    "source": "languages/rust/pin-safety.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "rust",
+    "severity": "high"
+  },
+  {
+    "file": "languages_rust_proc-macro-security.md",
+    "source": "languages/rust/proc-macro-security.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "rust",
+    "severity": "high"
+  },
+  {
+    "file": "languages_rust_rust-ffi-deep.md",
+    "source": "languages/rust/rust-ffi-deep.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "rust",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_rust_unsafe-rust.md",
+    "source": "languages/rust/unsafe-rust.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "rust",
+    "severity": "high"
+  },
+  {
+    "file": "languages_rust_web-framework-risks_01_intro.md",
+    "source": "languages/rust/web-framework-risks.md",
+    "chunks": 6,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "rust",
+    "severity": "high"
+  },
+  {
+    "file": "languages_rust_web-framework-risks_02_overview.md",
+    "source": "languages/rust/web-framework-risks.md",
+    "chunks": 6,
+    "chunk": 2,
+    "heading": "Overview",
+    "category": "language-vuln",
+    "language": "rust",
+    "severity": "high"
+  },
+  {
+    "file": "languages_rust_web-framework-risks_03_common-cross-framework-is.md",
+    "source": "languages/rust/web-framework-risks.md",
+    "chunks": 6,
+    "chunk": 3,
+    "heading": "Common Cross-Framework Issues",
+    "category": "language-vuln",
+    "language": "rust",
+    "severity": "high"
+  },
+  {
+    "file": "languages_rust_web-framework-risks_04_framework-specific-risks.md",
+    "source": "languages/rust/web-framework-risks.md",
+    "chunks": 6,
+    "chunk": 4,
+    "heading": "Framework-Specific Risks",
+    "category": "language-vuln",
+    "language": "rust",
+    "severity": "high"
+  },
+  {
+    "file": "languages_rust_web-framework-risks_05_real-cves.md",
+    "source": "languages/rust/web-framework-risks.md",
+    "chunks": 6,
+    "chunk": 5,
+    "heading": "Real CVEs",
+    "category": "language-vuln",
+    "language": "rust",
+    "severity": "high"
+  },
+  {
+    "file": "languages_rust_web-framework-risks_06_prevention-checklist.md",
+    "source": "languages/rust/web-framework-risks.md",
+    "chunks": 6,
+    "chunk": 6,
+    "heading": "Prevention Checklist",
+    "category": "language-vuln",
+    "language": "rust",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_access-control_01_intro.md",
+    "source": "languages/solidity/access-control.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_solidity_access-control_02_what-is-it---explanation.md",
+    "source": "languages/solidity/access-control.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "What Is It? (Explanation)",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_solidity_access-control_03_ai---vibe-coding-patterns.md",
+    "source": "languages/solidity/access-control.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "AI / Vibe Coding Patterns",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_solidity_access-control_04_vulnerable-code--solidity.md",
+    "source": "languages/solidity/access-control.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "Vulnerable Code (Solidity)",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_solidity_access-control_05_secure-fix--openzeppelin.md",
+    "source": "languages/solidity/access-control.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "Secure Fix (OpenZeppelin patterns)",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_solidity_access-control_06_prevention-checklist.md",
+    "source": "languages/solidity/access-control.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "Prevention Checklist",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_solidity_access-control_07_real-incidents.md",
+    "source": "languages/solidity/access-control.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "Real Incidents",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_solidity_access-control_08_vibe-coding-red-flags.md",
+    "source": "languages/solidity/access-control.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "Vibe Coding Red Flags",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_solidity_case-studies_dao-hack-2016-reentrancy.md",
+    "source": "languages/solidity/case-studies/dao-hack-2016-reentrancy.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "solidity",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_solidity_case-studies_euler-finance-2023-flash-loa.md",
+    "source": "languages/solidity/case-studies/euler-finance-2023-flash-loan-attack.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "solidity",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_solidity_case-studies_poly-network-2021-610m-hack.md",
+    "source": "languages/solidity/case-studies/poly-network-2021-610m-hack.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "solidity",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_solidity_case-studies_wormhole-bridge-2022-signatu.md",
+    "source": "languages/solidity/case-studies/wormhole-bridge-2022-signature-bypass.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_delegatecall-proxy_01_intro.md",
+    "source": "languages/solidity/delegatecall-proxy.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_solidity_delegatecall-proxy_02_what-is-it.md",
+    "source": "languages/solidity/delegatecall-proxy.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "What Is It?",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_solidity_delegatecall-proxy_03_ai---vibe-coding-patterns.md",
+    "source": "languages/solidity/delegatecall-proxy.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "AI / Vibe Coding Patterns",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_solidity_delegatecall-proxy_04_vulnerable-code--solidity.md",
+    "source": "languages/solidity/delegatecall-proxy.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "Vulnerable Code (Solidity)",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_solidity_delegatecall-proxy_05_secure-fix--openzeppelin.md",
+    "source": "languages/solidity/delegatecall-proxy.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "Secure Fix (OpenZeppelin Proxy patterns)",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_solidity_delegatecall-proxy_06_prevention-checklist.md",
+    "source": "languages/solidity/delegatecall-proxy.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "Prevention Checklist",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_solidity_delegatecall-proxy_07_real-incidents.md",
+    "source": "languages/solidity/delegatecall-proxy.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "Real Incidents",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_solidity_delegatecall-proxy_08_vibe-coding-red-flags.md",
+    "source": "languages/solidity/delegatecall-proxy.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "Vibe Coding Red Flags",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_solidity_dos-gas_01_intro.md",
+    "source": "languages/solidity/dos-gas.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_dos-gas_02_what-is-it---explanation.md",
+    "source": "languages/solidity/dos-gas.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "What Is It? (Explanation)",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_dos-gas_03_ai---vibe-coding-patterns.md",
+    "source": "languages/solidity/dos-gas.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "AI / Vibe Coding Patterns",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_dos-gas_04_vulnerable-code--solidity.md",
+    "source": "languages/solidity/dos-gas.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "Vulnerable Code (Solidity)",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_dos-gas_05_secure-fix--pull-over-pus.md",
+    "source": "languages/solidity/dos-gas.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "Secure Fix (Pull over push, bounded batches)",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_dos-gas_06_prevention-checklist.md",
+    "source": "languages/solidity/dos-gas.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "Prevention Checklist",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_dos-gas_07_real-incidents.md",
+    "source": "languages/solidity/dos-gas.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "Real Incidents",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_dos-gas_08_vibe-coding-red-flags.md",
+    "source": "languages/solidity/dos-gas.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "Vibe Coding Red Flags",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_flash-loan.md",
+    "source": "languages/solidity/flash-loan.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_solidity_front-running_01_intro.md",
+    "source": "languages/solidity/front-running.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_front-running_02_what-is-it---explanation.md",
+    "source": "languages/solidity/front-running.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "What Is It? (Explanation)",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_front-running_03_ai---vibe-coding-patterns.md",
+    "source": "languages/solidity/front-running.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "AI / Vibe Coding Patterns",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_front-running_04_vulnerable-code--solidity.md",
+    "source": "languages/solidity/front-running.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "Vulnerable Code (Solidity)",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_front-running_05_secure-fix--oz---protocol.md",
+    "source": "languages/solidity/front-running.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "Secure Fix (OZ + protocol patterns)",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_front-running_06_prevention-checklist.md",
+    "source": "languages/solidity/front-running.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "Prevention Checklist",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_front-running_07_real-incidents.md",
+    "source": "languages/solidity/front-running.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "Real Incidents",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_front-running_08_vibe-coding-red-flags.md",
+    "source": "languages/solidity/front-running.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "Vibe Coding Red Flags",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_hardening-checklist.md",
+    "source": "languages/solidity/hardening-checklist.md",
+    "chunks": 1,
+    "category": "checklist",
+    "language": "solidity",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_solidity_index.md",
+    "source": "languages/solidity/index.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_solidity_integer-overflow_01_intro.md",
+    "source": "languages/solidity/integer-overflow.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_integer-overflow_02_what-is-it---explanation.md",
+    "source": "languages/solidity/integer-overflow.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "What Is It? (Explanation)",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_integer-overflow_03_ai---vibe-coding-patterns.md",
+    "source": "languages/solidity/integer-overflow.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "AI / Vibe Coding Patterns",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_integer-overflow_04_vulnerable-code--solidity.md",
+    "source": "languages/solidity/integer-overflow.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "Vulnerable Code (Solidity)",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_integer-overflow_05_secure-fix--openzeppelin.md",
+    "source": "languages/solidity/integer-overflow.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "Secure Fix (OpenZeppelin / 0.8 patterns)",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_integer-overflow_06_prevention-checklist.md",
+    "source": "languages/solidity/integer-overflow.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "Prevention Checklist",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_integer-overflow_07_real-incidents.md",
+    "source": "languages/solidity/integer-overflow.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "Real Incidents",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_integer-overflow_08_vibe-coding-red-flags.md",
+    "source": "languages/solidity/integer-overflow.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "Vibe Coding Red Flags",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_oracle-manipulation.md",
+    "source": "languages/solidity/oracle-manipulation.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_solidity_reentrancy.md",
+    "source": "languages/solidity/reentrancy.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_solidity_tx-origin.md",
+    "source": "languages/solidity/tx-origin.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_solidity_unchecked-calls_01_intro.md",
+    "source": "languages/solidity/unchecked-calls.md",
+    "chunks": 7,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_unchecked-calls_02_ai---vibe-coding-patterns.md",
+    "source": "languages/solidity/unchecked-calls.md",
+    "chunks": 7,
+    "chunk": 2,
+    "heading": "AI / Vibe Coding Patterns",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_unchecked-calls_03_vulnerable-code--solidity.md",
+    "source": "languages/solidity/unchecked-calls.md",
+    "chunks": 7,
+    "chunk": 3,
+    "heading": "Vulnerable Code (Solidity)",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_unchecked-calls_04_secure-fix--oz-safeerc20.md",
+    "source": "languages/solidity/unchecked-calls.md",
+    "chunks": 7,
+    "chunk": 4,
+    "heading": "Secure Fix (OZ SafeERC20 + checked call)",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_unchecked-calls_05_prevention-checklist.md",
+    "source": "languages/solidity/unchecked-calls.md",
+    "chunks": 7,
+    "chunk": 5,
+    "heading": "Prevention Checklist",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_unchecked-calls_06_real-incidents.md",
+    "source": "languages/solidity/unchecked-calls.md",
+    "chunks": 7,
+    "chunk": 6,
+    "heading": "Real Incidents",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_unchecked-calls_07_vibe-coding-red-flags.md",
+    "source": "languages/solidity/unchecked-calls.md",
+    "chunks": 7,
+    "chunk": 7,
+    "heading": "Vibe Coding Red Flags",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_weak-randomness_01_intro.md",
+    "source": "languages/solidity/weak-randomness.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_weak-randomness_02_what-is-it---explanation.md",
+    "source": "languages/solidity/weak-randomness.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "What Is It? (Explanation)",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_weak-randomness_03_ai---vibe-coding-patterns.md",
+    "source": "languages/solidity/weak-randomness.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "AI / Vibe Coding Patterns",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_weak-randomness_04_vulnerable-code--solidity.md",
+    "source": "languages/solidity/weak-randomness.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "Vulnerable Code (Solidity)",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_weak-randomness_05_secure-fix--vrf---commit.md",
+    "source": "languages/solidity/weak-randomness.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "Secure Fix (VRF / commit-reveal / off-chain)",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_weak-randomness_06_prevention-checklist.md",
+    "source": "languages/solidity/weak-randomness.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "Prevention Checklist",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_weak-randomness_07_real-incidents.md",
+    "source": "languages/solidity/weak-randomness.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "Real Incidents",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_solidity_weak-randomness_08_vibe-coding-red-flags.md",
+    "source": "languages/solidity/weak-randomness.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "Vibe Coding Red Flags",
+    "category": "language-vuln",
+    "language": "solidity",
+    "severity": "high"
+  },
+  {
+    "file": "languages_swift_case-studies_ios-case-studies_01_intro.md",
+    "source": "languages/swift/case-studies/ios-case-studies.md",
+    "chunks": 6,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "case-study",
+    "language": "swift",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_swift_case-studies_ios-case-studies_02_case-study-1--granola-ios.md",
+    "source": "languages/swift/case-studies/ios-case-studies.md",
+    "chunks": 6,
+    "chunk": 2,
+    "heading": "Case Study 1: Granola iOS API Key Exposure (TRA-2025-07)",
+    "category": "case-study",
+    "language": "swift",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_swift_case-studies_ios-case-studies_03_case-study-2--deepseek-io.md",
+    "source": "languages/swift/case-studies/ios-case-studies.md",
+    "chunks": 6,
+    "chunk": 3,
+    "heading": "Case Study 2: DeepSeek iOS App \u2014 ATS Disabled, Data Sent over HTTP",
+    "category": "case-study",
+    "language": "swift",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_swift_case-studies_ios-case-studies_04_case-study-3--apple--sign.md",
+    "source": "languages/swift/case-studies/ios-case-studies.md",
+    "chunks": 6,
+    "chunk": 4,
+    "heading": "Case Study 3: Apple \"Sign in with Apple\" Authentication Bypass ($100,000 Bounty)",
+    "category": "case-study",
+    "language": "swift",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_swift_case-studies_ios-case-studies_05_case-study-4--sam-curry-e.md",
+    "source": "languages/swift/case-studies/ios-case-studies.md",
+    "chunks": 6,
+    "chunk": 5,
+    "heading": "Case Study 4: Sam Curry et al. \u2014 Apple Bug Bounty Mass Hunt (55 Vulnerabilities)",
+    "category": "case-study",
+    "language": "swift",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_swift_case-studies_ios-case-studies_06_references.md",
+    "source": "languages/swift/case-studies/ios-case-studies.md",
+    "chunks": 6,
+    "chunk": 6,
+    "heading": "References",
+    "category": "case-study",
+    "language": "swift",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_swift_case-studies_ios-deep-link-hijacking-health-.md",
+    "source": "languages/swift/case-studies/ios-deep-link-hijacking-health-app.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "swift",
+    "severity": "high"
+  },
+  {
+    "file": "languages_swift_case-studies_temu-universal-link-hijacking.md",
+    "source": "languages/swift/case-studies/temu-universal-link-hijacking.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "swift",
+    "severity": "high"
+  },
+  {
+    "file": "languages_swift_case-studies_xcodeghost-2015-supply-chain.md",
+    "source": "languages/swift/case-studies/xcodeghost-2015-supply-chain.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "swift",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_swift_deep-links.md",
+    "source": "languages/swift/deep-links.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "swift",
+    "severity": "high"
+  },
+  {
+    "file": "languages_swift_hardening-checklist.md",
+    "source": "languages/swift/hardening-checklist.md",
+    "chunks": 1,
+    "category": "checklist",
+    "language": "swift",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_swift_index.md",
+    "source": "languages/swift/index.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "swift",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_swift_ios-security-deep_01_intro.md",
+    "source": "languages/swift/ios-security-deep.md",
+    "chunks": 9,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "swift",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_swift_ios-security-deep_02_overview.md",
+    "source": "languages/swift/ios-security-deep.md",
+    "chunks": 9,
+    "chunk": 2,
+    "heading": "Overview",
+    "category": "language-vuln",
+    "language": "swift",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_swift_ios-security-deep_03_table-of-contents.md",
+    "source": "languages/swift/ios-security-deep.md",
+    "chunks": 9,
+    "chunk": 3,
+    "heading": "Table of Contents",
+    "category": "language-vuln",
+    "language": "swift",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_swift_ios-security-deep_04_1--app-transport-security.md",
+    "source": "languages/swift/ios-security-deep.md",
+    "chunks": 9,
+    "chunk": 4,
+    "heading": "1. App Transport Security (ATS)",
+    "category": "language-vuln",
+    "language": "swift",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_swift_ios-security-deep_05_2--data-protection.md",
+    "source": "languages/swift/ios-security-deep.md",
+    "chunks": 9,
+    "chunk": 5,
+    "heading": "2. Data Protection",
+    "category": "language-vuln",
+    "language": "swift",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_swift_ios-security-deep_06_3--keychain-accessibility.md",
+    "source": "languages/swift/ios-security-deep.md",
+    "chunks": 9,
+    "chunk": 6,
+    "heading": "3. Keychain Accessibility",
+    "category": "language-vuln",
+    "language": "swift",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_swift_ios-security-deep_07_4--jailbreak-detection.md",
+    "source": "languages/swift/ios-security-deep.md",
+    "chunks": 9,
+    "chunk": 7,
+    "heading": "4. Jailbreak Detection",
+    "category": "language-vuln",
+    "language": "swift",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_swift_ios-security-deep_08_5--cves---real-world-exam.md",
+    "source": "languages/swift/ios-security-deep.md",
+    "chunks": 9,
+    "chunk": 8,
+    "heading": "5. CVEs & Real-World Examples",
+    "category": "language-vuln",
+    "language": "swift",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_swift_ios-security-deep_09_references.md",
+    "source": "languages/swift/ios-security-deep.md",
+    "chunks": 9,
+    "chunk": 9,
+    "heading": "References",
+    "category": "language-vuln",
+    "language": "swift",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_swift_keychain-storage.md",
+    "source": "languages/swift/keychain-storage.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "swift",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_swift_swiftui-security_01_intro.md",
+    "source": "languages/swift/swiftui-security.md",
+    "chunks": 9,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "swift",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_swift_swiftui-security_02_1--swiftui-data-flow-secu.md",
+    "source": "languages/swift/swiftui-security.md",
+    "chunks": 9,
+    "chunk": 2,
+    "heading": "1. SwiftUI Data Flow Security",
+    "category": "language-vuln",
+    "language": "swift",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_swift_swiftui-security_03_2--navigationlink---deep.md",
+    "source": "languages/swift/swiftui-security.md",
+    "chunks": 9,
+    "chunk": 3,
+    "heading": "2. NavigationLink & Deep Link Security",
+    "category": "language-vuln",
+    "language": "swift",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_swift_swiftui-security_04_3--data-injection---state.md",
+    "source": "languages/swift/swiftui-security.md",
+    "chunks": 9,
+    "chunk": 4,
+    "heading": "3. Data Injection & State Manipulation",
+    "category": "language-vuln",
+    "language": "swift",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_swift_swiftui-security_05_4--ats--app-transport-sec.md",
+    "source": "languages/swift/swiftui-security.md",
+    "chunks": 9,
+    "chunk": 5,
+    "heading": "4. ATS (App Transport Security)",
+    "category": "language-vuln",
+    "language": "swift",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_swift_swiftui-security_06_5--swiftui-preview-securi.md",
+    "source": "languages/swift/swiftui-security.md",
+    "chunks": 9,
+    "chunk": 6,
+    "heading": "5. SwiftUI Preview Security",
+    "category": "language-vuln",
+    "language": "swift",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_swift_swiftui-security_07_6--background-task-securi.md",
+    "source": "languages/swift/swiftui-security.md",
+    "chunks": 9,
+    "chunk": 7,
+    "heading": "6. Background Task Security",
+    "category": "language-vuln",
+    "language": "swift",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_swift_swiftui-security_08_7--swiftui-hardening-chec.md",
+    "source": "languages/swift/swiftui-security.md",
+    "chunks": 9,
+    "chunk": 8,
+    "heading": "7. SwiftUI Hardening Checklist",
+    "category": "language-vuln",
+    "language": "swift",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_swift_swiftui-security_09_references.md",
+    "source": "languages/swift/swiftui-security.md",
+    "chunks": 9,
+    "chunk": 9,
+    "heading": "References",
+    "category": "language-vuln",
+    "language": "swift",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_typescript_2024-2026-cve-roundup.md",
+    "source": "languages/typescript/2024-2026-cve-roundup.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_typescript_case-studies_nextjs-middleware-bypass.md",
+    "source": "languages/typescript/case-studies/nextjs-middleware-bypass.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "typescript",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_typescript_case-studies_nextjs-ssrf-cve-2025-57822.md",
+    "source": "languages/typescript/case-studies/nextjs-ssrf-cve-2025-57822.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "typescript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_typescript_case-studies_react2shell-rce-cve-2025-5.md",
+    "source": "languages/typescript/case-studies/react2shell-rce-cve-2025-55182.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "typescript",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_typescript_case-studies_trpc-prototype-pollution-c.md",
+    "source": "languages/typescript/case-studies/trpc-prototype-pollution-cve-2025-68130.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "typescript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_typescript_case-studies_type-confusion-2023.md",
+    "source": "languages/typescript/case-studies/type-confusion-2023.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "typescript",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_typescript_decorator-abuse_01_intro.md",
+    "source": "languages/typescript/decorator-abuse.md",
+    "chunks": 6,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_typescript_decorator-abuse_02_vulnerability-explanation.md",
+    "source": "languages/typescript/decorator-abuse.md",
+    "chunks": 6,
+    "chunk": 2,
+    "heading": "Vulnerability Explanation",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_typescript_decorator-abuse_03_how-ai---vibe-coding-gene.md",
+    "source": "languages/typescript/decorator-abuse.md",
+    "chunks": 6,
+    "chunk": 3,
+    "heading": "How AI / Vibe Coding Generates This",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_typescript_decorator-abuse_04_secure-code-fix.md",
+    "source": "languages/typescript/decorator-abuse.md",
+    "chunks": 6,
+    "chunk": 4,
+    "heading": "Secure Code Fix",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_typescript_decorator-abuse_05_prevention-checklist.md",
+    "source": "languages/typescript/decorator-abuse.md",
+    "chunks": 6,
+    "chunk": 5,
+    "heading": "Prevention Checklist",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_typescript_decorator-abuse_06_vibe-coding-red-flags.md",
+    "source": "languages/typescript/decorator-abuse.md",
+    "chunks": 6,
+    "chunk": 6,
+    "heading": "Vibe Coding Red Flags",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_typescript_hardening-checklist.md",
+    "source": "languages/typescript/hardening-checklist.md",
+    "chunks": 1,
+    "category": "checklist",
+    "language": "typescript",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_typescript_index.md",
+    "source": "languages/typescript/index.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_typescript_nestjs-security_01_intro.md",
+    "source": "languages/typescript/nestjs-security.md",
+    "chunks": 7,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_typescript_nestjs-security_02_vulnerability-explanation.md",
+    "source": "languages/typescript/nestjs-security.md",
+    "chunks": 7,
+    "chunk": 2,
+    "heading": "Vulnerability Explanation",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_typescript_nestjs-security_03_how-ai---vibe-coding-gene.md",
+    "source": "languages/typescript/nestjs-security.md",
+    "chunks": 7,
+    "chunk": 3,
+    "heading": "How AI / Vibe Coding Generates This",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_typescript_nestjs-security_04_vulnerable-code-examples.md",
+    "source": "languages/typescript/nestjs-security.md",
+    "chunks": 7,
+    "chunk": 4,
+    "heading": "Vulnerable Code Examples + Secure Code Fix",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_typescript_nestjs-security_05_prevention-checklist.md",
+    "source": "languages/typescript/nestjs-security.md",
+    "chunks": 7,
+    "chunk": 5,
+    "heading": "Prevention Checklist",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_typescript_nestjs-security_06_real-cves---case-refs.md",
+    "source": "languages/typescript/nestjs-security.md",
+    "chunks": 7,
+    "chunk": 6,
+    "heading": "Real CVEs / Case Refs",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_typescript_nestjs-security_07_vibe-coding-red-flags.md",
+    "source": "languages/typescript/nestjs-security.md",
+    "chunks": 7,
+    "chunk": 7,
+    "heading": "Vibe-Coding Red Flags",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "high"
+  },
+  {
+    "file": "languages_typescript_next-typescript-security.md",
+    "source": "languages/typescript/next-typescript-security.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_typescript_react-nextjs-deep_01_intro.md",
+    "source": "languages/typescript/react-nextjs-deep.md",
+    "chunks": 10,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_typescript_react-nextjs-deep_02_1--vulnerability-explanat.md",
+    "source": "languages/typescript/react-nextjs-deep.md",
+    "chunks": 10,
+    "chunk": 2,
+    "heading": "1. Vulnerability Explanation \u2014 How AI Generates React/Next.js Apps with Critical Flaws",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_typescript_react-nextjs-deep_03_2--how-ai---vibe-coding-g.md",
+    "source": "languages/typescript/react-nextjs-deep.md",
+    "chunks": 10,
+    "chunk": 3,
+    "heading": "2. How AI / Vibe Coding Generates These Vulnerabilities",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_typescript_react-nextjs-deep_04_3--vulnerable-code-exampl.md",
+    "source": "languages/typescript/react-nextjs-deep.md",
+    "chunks": 10,
+    "chunk": 4,
+    "heading": "3. Vulnerable Code Examples",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_typescript_react-nextjs-deep_05_4--secure-code-fix.md",
+    "source": "languages/typescript/react-nextjs-deep.md",
+    "chunks": 10,
+    "chunk": 5,
+    "heading": "4. Secure Code Fix",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_typescript_react-nextjs-deep_06_5--react-next-js-specific.md",
+    "source": "languages/typescript/react-nextjs-deep.md",
+    "chunks": 10,
+    "chunk": 6,
+    "heading": "5. React/Next.js Specific Vulnerabilities (Verified CVEs)",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_typescript_react-nextjs-deep_07_6--prevention-checklist.md",
+    "source": "languages/typescript/react-nextjs-deep.md",
+    "chunks": 10,
+    "chunk": 7,
+    "heading": "6. Prevention Checklist (15 Items)",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_typescript_react-nextjs-deep_08_7--vibe-coding-red-flags.md",
+    "source": "languages/typescript/react-nextjs-deep.md",
+    "chunks": 10,
+    "chunk": 8,
+    "heading": "7. Vibe-Coding Red Flags (15 Items)",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_typescript_react-nextjs-deep_09_key-takeaways.md",
+    "source": "languages/typescript/react-nextjs-deep.md",
+    "chunks": 10,
+    "chunk": 9,
+    "heading": "Key Takeaways",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_typescript_react-nextjs-deep_10_references.md",
+    "source": "languages/typescript/react-nextjs-deep.md",
+    "chunks": 10,
+    "chunk": 10,
+    "heading": "References",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "critical"
+  },
+  {
+    "file": "languages_typescript_reflect-metadata_01_intro.md",
+    "source": "languages/typescript/reflect-metadata.md",
+    "chunks": 6,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_typescript_reflect-metadata_02_vulnerability-explanation.md",
+    "source": "languages/typescript/reflect-metadata.md",
+    "chunks": 6,
+    "chunk": 2,
+    "heading": "Vulnerability Explanation",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_typescript_reflect-metadata_03_how-ai---vibe-coding-gene.md",
+    "source": "languages/typescript/reflect-metadata.md",
+    "chunks": 6,
+    "chunk": 3,
+    "heading": "How AI / Vibe Coding Generates This",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_typescript_reflect-metadata_04_secure-code-fix.md",
+    "source": "languages/typescript/reflect-metadata.md",
+    "chunks": 6,
+    "chunk": 4,
+    "heading": "Secure Code Fix",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_typescript_reflect-metadata_05_prevention-checklist.md",
+    "source": "languages/typescript/reflect-metadata.md",
+    "chunks": 6,
+    "chunk": 5,
+    "heading": "Prevention Checklist",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_typescript_reflect-metadata_06_vibe-coding-red-flags.md",
+    "source": "languages/typescript/reflect-metadata.md",
+    "chunks": 6,
+    "chunk": 6,
+    "heading": "Vibe Coding Red Flags",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_typescript_type-safety-bypass_01_intro.md",
+    "source": "languages/typescript/type-safety-bypass.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_typescript_type-safety-bypass_02_vulnerability-explanation.md",
+    "source": "languages/typescript/type-safety-bypass.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "Vulnerability Explanation",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_typescript_type-safety-bypass_03_how-ai---vibe-coding-gene.md",
+    "source": "languages/typescript/type-safety-bypass.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "How AI / Vibe Coding Generates This",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_typescript_type-safety-bypass_04_vulnerable-code-examples.md",
+    "source": "languages/typescript/type-safety-bypass.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "Vulnerable Code Examples + Secure Code Fix",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_typescript_type-safety-bypass_05_prevention-checklist--zod.md",
+    "source": "languages/typescript/type-safety-bypass.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "Prevention Checklist (Zod / Runtime Validation Integration)",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_typescript_type-safety-bypass_06_real-cves---case-refs.md",
+    "source": "languages/typescript/type-safety-bypass.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "Real CVEs / Case Refs",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_typescript_type-safety-bypass_07_vibe-coding-red-flags.md",
+    "source": "languages/typescript/type-safety-bypass.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "Vibe-Coding Red Flags",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_typescript_type-safety-bypass_08_prevention--summary.md",
+    "source": "languages/typescript/type-safety-bypass.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "Prevention (Summary)",
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "medium"
+  },
+  {
+    "file": "languages_typescript_zod-validation-bypass.md",
+    "source": "languages/typescript/zod-validation-bypass.md",
+    "chunks": 1,
+    "category": "language-vuln",
+    "language": "typescript",
+    "severity": "high"
+  },
+  {
+    "file": "resources_ai-prompt-templates.md",
+    "source": "resources/ai-prompt-templates.md",
+    "chunks": 1,
+    "category": "resource",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "resources_case-study-template.md",
+    "source": "resources/case-study-template.md",
+    "chunks": 1,
+    "category": "resource",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "resources_index.md",
+    "source": "resources/index.md",
+    "chunks": 1,
+    "category": "resource",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "resources_quickstart-guide.md",
+    "source": "resources/quickstart-guide.md",
+    "chunks": 1,
+    "category": "resource",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "resources_severity-matrix.md",
+    "source": "resources/severity-matrix.md",
+    "chunks": 1,
+    "category": "resource",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "vibe-coding-specific_ai-hallucination-catalog_01_intro.md",
+    "source": "vibe-coding-specific/ai-hallucination-catalog.md",
+    "chunks": 6,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "vibe-coding-specific_ai-hallucination-catalog_02_table-of-contents.md",
+    "source": "vibe-coding-specific/ai-hallucination-catalog.md",
+    "chunks": 6,
+    "chunk": 2,
+    "heading": "Table of Contents",
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "vibe-coding-specific_ai-hallucination-catalog_03_1--hallucination-types.md",
+    "source": "vibe-coding-specific/ai-hallucination-catalog.md",
+    "chunks": 6,
+    "chunk": 3,
+    "heading": "1. Hallucination Types",
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "vibe-coding-specific_ai-hallucination-catalog_04_2--real-world-cases.md",
+    "source": "vibe-coding-specific/ai-hallucination-catalog.md",
+    "chunks": 6,
+    "chunk": 4,
+    "heading": "2. Real World Cases",
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "vibe-coding-specific_ai-hallucination-catalog_05_3--how-to-protect-yoursel.md",
+    "source": "vibe-coding-specific/ai-hallucination-catalog.md",
+    "chunks": 6,
+    "chunk": 5,
+    "heading": "3. How to Protect Yourself",
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "vibe-coding-specific_ai-hallucination-catalog_06_4--references.md",
+    "source": "vibe-coding-specific/ai-hallucination-catalog.md",
+    "chunks": 6,
+    "chunk": 6,
+    "heading": "4. References",
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "vibe-coding-specific_ai-model-security_01_intro.md",
+    "source": "vibe-coding-specific/ai-model-security.md",
+    "chunks": 9,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "vibe-coding-specific_ai-model-security_02_what-is-ai-model-security.md",
+    "source": "vibe-coding-specific/ai-model-security.md",
+    "chunks": 9,
+    "chunk": 2,
+    "heading": "What Is AI Model Security?",
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "vibe-coding-specific_ai-model-security_03_why-vibe-coding-makes-thi.md",
+    "source": "vibe-coding-specific/ai-model-security.md",
+    "chunks": 9,
+    "chunk": 3,
+    "heading": "Why Vibe Coding Makes This Worse",
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "vibe-coding-specific_ai-model-security_04_attack-categories.md",
+    "source": "vibe-coding-specific/ai-model-security.md",
+    "chunks": 9,
+    "chunk": 4,
+    "heading": "Attack Categories",
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "vibe-coding-specific_ai-model-security_05_real-world-incidents---ca.md",
+    "source": "vibe-coding-specific/ai-model-security.md",
+    "chunks": 9,
+    "chunk": 5,
+    "heading": "Real-World Incidents & Case Studies",
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "vibe-coding-specific_ai-model-security_06_prevention-checklist.md",
+    "source": "vibe-coding-specific/ai-model-security.md",
+    "chunks": 9,
+    "chunk": 6,
+    "heading": "Prevention Checklist",
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "vibe-coding-specific_ai-model-security_07_cves---relevant-reference.md",
+    "source": "vibe-coding-specific/ai-model-security.md",
+    "chunks": 9,
+    "chunk": 7,
+    "heading": "CVEs & Relevant References",
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "vibe-coding-specific_ai-model-security_08_testing-for-model-securit.md",
+    "source": "vibe-coding-specific/ai-model-security.md",
+    "chunks": 9,
+    "chunk": 8,
+    "heading": "Testing for Model Security",
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "vibe-coding-specific_ai-model-security_09_references.md",
+    "source": "vibe-coding-specific/ai-model-security.md",
+    "chunks": 9,
+    "chunk": 9,
+    "heading": "References",
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "vibe-coding-specific_ai-prompt-leaking_01_intro.md",
+    "source": "vibe-coding-specific/ai-prompt-leaking.md",
+    "chunks": 9,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "vibe-coding-specific_ai-prompt-leaking_02_what-is-prompt-leaking.md",
+    "source": "vibe-coding-specific/ai-prompt-leaking.md",
+    "chunks": 9,
+    "chunk": 2,
+    "heading": "What Is Prompt Leaking?",
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "vibe-coding-specific_ai-prompt-leaking_03_why-vibe-coding-makes-thi.md",
+    "source": "vibe-coding-specific/ai-prompt-leaking.md",
+    "chunks": 9,
+    "chunk": 3,
+    "heading": "Why Vibe Coding Makes This Worse",
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "vibe-coding-specific_ai-prompt-leaking_04_attack-categories.md",
+    "source": "vibe-coding-specific/ai-prompt-leaking.md",
+    "chunks": 9,
+    "chunk": 4,
+    "heading": "Attack Categories",
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "vibe-coding-specific_ai-prompt-leaking_05_real-world-incidents---ca.md",
+    "source": "vibe-coding-specific/ai-prompt-leaking.md",
+    "chunks": 9,
+    "chunk": 5,
+    "heading": "Real-World Incidents & Case Studies",
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "vibe-coding-specific_ai-prompt-leaking_06_prevention-checklist.md",
+    "source": "vibe-coding-specific/ai-prompt-leaking.md",
+    "chunks": 9,
+    "chunk": 6,
+    "heading": "Prevention Checklist",
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "vibe-coding-specific_ai-prompt-leaking_07_cves---vulnerability-refe.md",
+    "source": "vibe-coding-specific/ai-prompt-leaking.md",
+    "chunks": 9,
+    "chunk": 7,
+    "heading": "CVEs & Vulnerability References",
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "vibe-coding-specific_ai-prompt-leaking_08_testing-for-prompt-leakin.md",
+    "source": "vibe-coding-specific/ai-prompt-leaking.md",
+    "chunks": 9,
+    "chunk": 8,
+    "heading": "Testing for Prompt Leaking",
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "vibe-coding-specific_ai-prompt-leaking_09_references.md",
+    "source": "vibe-coding-specific/ai-prompt-leaking.md",
+    "chunks": 9,
+    "chunk": 9,
+    "heading": "References",
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "vibe-coding-specific_context-poisoning.md",
+    "source": "vibe-coding-specific/context-poisoning.md",
+    "chunks": 1,
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "vibe-coding-specific_copy-paste-2.md",
+    "source": "vibe-coding-specific/copy-paste-2.md",
+    "chunks": 1,
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "vibe-coding-specific_credential-leaks.md",
+    "source": "vibe-coding-specific/credential-leaks.md",
+    "chunks": 1,
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "vibe-coding-specific_fake-security-code.md",
+    "source": "vibe-coding-specific/fake-security-code.md",
+    "chunks": 1,
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "vibe-coding-specific_hallucinated-packages.md",
+    "source": "vibe-coding-specific/hallucinated-packages.md",
+    "chunks": 1,
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "vibe-coding-specific_index.md",
+    "source": "vibe-coding-specific/index.md",
+    "chunks": 1,
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "vibe-coding-specific_license-compliance.md",
+    "source": "vibe-coding-specific/license-compliance.md",
+    "chunks": 1,
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "vibe-coding-specific_outdated-apis.md",
+    "source": "vibe-coding-specific/outdated-apis.md",
+    "chunks": 1,
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "vibe-coding-specific_overreliance.md",
+    "source": "vibe-coding-specific/overreliance.md",
+    "chunks": 1,
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "vibe-coding-specific_prompt-injection-bypass.md",
+    "source": "vibe-coding-specific/prompt-injection-bypass.md",
+    "chunks": 1,
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "vibe-coding-specific_test-blindness.md",
+    "source": "vibe-coding-specific/test-blindness.md",
+    "chunks": 1,
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "vibe-coding-specific_training-data-poisoning_01_intro.md",
+    "source": "vibe-coding-specific/training-data-poisoning.md",
+    "chunks": 9,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "vibe-coding-specific_training-data-poisoning_02_what-is-training-data-poi.md",
+    "source": "vibe-coding-specific/training-data-poisoning.md",
+    "chunks": 9,
+    "chunk": 2,
+    "heading": "What Is Training Data Poisoning?",
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "vibe-coding-specific_training-data-poisoning_03_why-vibe-coding-makes-thi.md",
+    "source": "vibe-coding-specific/training-data-poisoning.md",
+    "chunks": 9,
+    "chunk": 3,
+    "heading": "Why Vibe Coding Makes This Worse",
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "vibe-coding-specific_training-data-poisoning_04_attack-categories.md",
+    "source": "vibe-coding-specific/training-data-poisoning.md",
+    "chunks": 9,
+    "chunk": 4,
+    "heading": "Attack Categories",
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "vibe-coding-specific_training-data-poisoning_05_real-world-incidents---ca.md",
+    "source": "vibe-coding-specific/training-data-poisoning.md",
+    "chunks": 9,
+    "chunk": 5,
+    "heading": "Real-World Incidents & Case Studies",
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "vibe-coding-specific_training-data-poisoning_06_prevention-checklist.md",
+    "source": "vibe-coding-specific/training-data-poisoning.md",
+    "chunks": 9,
+    "chunk": 6,
+    "heading": "Prevention Checklist",
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "vibe-coding-specific_training-data-poisoning_07_cves---relevant-reference.md",
+    "source": "vibe-coding-specific/training-data-poisoning.md",
+    "chunks": 9,
+    "chunk": 7,
+    "heading": "CVEs & Relevant References",
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "vibe-coding-specific_training-data-poisoning_08_testing-for-training-data.md",
+    "source": "vibe-coding-specific/training-data-poisoning.md",
+    "chunks": 9,
+    "chunk": 8,
+    "heading": "Testing for Training Data Poisoning",
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "vibe-coding-specific_training-data-poisoning_09_references.md",
+    "source": "vibe-coding-specific/training-data-poisoning.md",
+    "chunks": 9,
+    "chunk": 9,
+    "heading": "References",
+    "category": "vibe-coding",
+    "language": "common",
+    "severity": "critical"
+  }
+]

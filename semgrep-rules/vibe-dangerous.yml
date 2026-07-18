@@ -1,0 +1,296 @@
+rules:
+- id: vibe-dangerous-eval-python
+  message: '[VIBE-SEC][builtin] eval/exec'
+  severity: ERROR
+  languages:
+  - python
+  pattern-either:
+  - pattern: eval(...)
+  - pattern: exec(...)
+  metadata:
+    cwe: CWE-95
+    builtin: true
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-dangerous-eval-js
+  message: '[VIBE-SEC][builtin] eval/Function'
+  severity: ERROR
+  languages:
+  - javascript
+  - typescript
+  pattern-either:
+  - pattern: eval(...)
+  - pattern: new Function(...)
+  metadata:
+    cwe: CWE-95
+    builtin: true
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-dangerous-pickle
+  message: '[VIBE-SEC][builtin] pickle load'
+  severity: ERROR
+  languages:
+  - python
+  pattern-either:
+  - pattern: pickle.loads(...)
+  - pattern: pickle.load(...)
+  metadata:
+    cwe: CWE-502
+    builtin: true
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-dangerous-gets
+  message: '[VIBE-SEC][builtin] gets'
+  severity: ERROR
+  languages:
+  - c
+  - cpp
+  pattern: gets(...)
+  metadata:
+    cwe: CWE-242
+    builtin: true
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-dangerous-strcpy
+  message: '[VIBE-SEC][builtin] strcpy/sprintf'
+  severity: ERROR
+  languages:
+  - c
+  - cpp
+  pattern-either:
+  - pattern: strcpy(...)
+  - pattern: sprintf(...)
+  metadata:
+    cwe: CWE-120
+    builtin: true
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-dangerous-system-c
+  message: '[VIBE-SEC][builtin] system()'
+  severity: ERROR
+  languages:
+  - c
+  - cpp
+  pattern: system(...)
+  metadata:
+    cwe: CWE-78
+    builtin: true
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-dangerous-unserialize
+  message: '[VIBE-SEC][builtin] unserialize'
+  severity: ERROR
+  languages:
+  - php
+  pattern: unserialize(...)
+  metadata:
+    cwe: CWE-502
+    builtin: true
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-dangerous-yaml-load
+  message: '[VIBE-SEC][builtin] YAML.load'
+  severity: ERROR
+  languages:
+  - ruby
+  pattern: YAML.load(...)
+  metadata:
+    cwe: CWE-502
+    builtin: true
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-dangerous-binaryformatter
+  message: '[VIBE-SEC][builtin] BinaryFormatter'
+  severity: ERROR
+  languages:
+  - csharp
+  pattern: new BinaryFormatter()
+  metadata:
+    cwe: CWE-502
+    builtin: true
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-dangerous-objectinputstream
+  message: '[VIBE-SEC][builtin] ObjectInputStream'
+  severity: ERROR
+  languages:
+  - java
+  pattern: new ObjectInputStream(...)
+  metadata:
+    cwe: CWE-502
+    builtin: true
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-dangerous-tx-origin
+  message: '[VIBE-SEC][builtin] tx.origin'
+  severity: ERROR
+  languages:
+  - solidity
+  pattern: tx.origin
+  metadata:
+    cwe: CWE-346
+    builtin: true
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-dangerous-child-process
+  message: '[VIBE-SEC][builtin] child_process.exec'
+  severity: ERROR
+  languages:
+  - javascript
+  - typescript
+  pattern-either:
+  - pattern: child_process.exec(...)
+  - pattern: child_process.execSync(...)
+  metadata:
+    cwe: CWE-78
+    builtin: true
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-dangerous-shell-true
+  message: '[VIBE-SEC][builtin] shell=True'
+  severity: ERROR
+  languages:
+  - python
+  pattern: subprocess.$F(..., shell=True, ...)
+  metadata:
+    cwe: CWE-78
+    builtin: true
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-dangerous-os-system
+  message: '[VIBE-SEC][builtin] os.system'
+  severity: ERROR
+  languages:
+  - python
+  pattern: os.system(...)
+  metadata:
+    cwe: CWE-78
+    builtin: true
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'

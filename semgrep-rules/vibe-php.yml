@@ -1,0 +1,139 @@
+rules:
+- id: vibe-php-unserialize
+  message: '[VIBE-SEC] unserialize on untrusted data can RCE via object injection.
+    Prefer json_decode. KB: languages/php/unserialize-rce.md'
+  severity: ERROR
+  languages:
+  - php
+  pattern: unserialize(...)
+  metadata:
+    cwe: CWE-502
+    kb_path: languages/php/unserialize-rce.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-php-eval
+  message: '[VIBE-SEC] eval() executes arbitrary PHP. KB: languages/php/command-injection.md'
+  severity: ERROR
+  languages:
+  - php
+  pattern: eval(...)
+  metadata:
+    cwe: CWE-95
+    kb_path: common/injection.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-php-command
+  message: '[VIBE-SEC] system/exec/shell_exec/passthru with user input is RCE. KB:
+    languages/php/command-injection.md'
+  severity: ERROR
+  languages:
+  - php
+  pattern-either:
+  - pattern: system(...)
+  - pattern: exec(...)
+  - pattern: shell_exec(...)
+  - pattern: passthru(...)
+  - pattern: popen(...)
+  metadata:
+    cwe: CWE-78
+    kb_path: languages/php/command-injection.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-php-include-user
+  message: '[VIBE-SEC] Dynamic include/require enables LFI/RFI. Use allowlists. KB:
+    languages/php/lfi-rfi.md'
+  severity: ERROR
+  languages:
+  - php
+  pattern-either:
+  - pattern: include($VAR)
+  - pattern: include_once($VAR)
+  - pattern: require($VAR)
+  - pattern: require_once($VAR)
+  metadata:
+    cwe: CWE-98
+    kb_path: languages/php/lfi-rfi.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-php-loose-compare
+  message: '[VIBE-SEC] Loose comparison (==) enables type juggling auth bypass. Use
+    ===. KB: languages/php/type-juggling.md'
+  severity: WARNING
+  languages:
+  - php
+  pattern-either:
+  - pattern: $PASSWORD == $HASH
+  - pattern: $HASH == $PASSWORD
+  - pattern: $TOKEN == $EXPECTED
+  metadata:
+    cwe: CWE-697
+    kb_path: languages/php/type-juggling.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-php-md5-password
+  message: '[VIBE-SEC] md5/sha1 for passwords is broken. Use password_hash. KB: languages/php/session-security.md'
+  severity: WARNING
+  languages:
+  - php
+  pattern-either:
+  - pattern: md5($PASSWORD)
+  - pattern: sha1($PASSWORD)
+  metadata:
+    cwe: CWE-328
+    kb_path: languages/php/crypto-misuse.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'

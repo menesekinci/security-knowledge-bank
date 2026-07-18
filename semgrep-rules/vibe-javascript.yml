@@ -1,0 +1,244 @@
+rules:
+- id: vibe-js-eval
+  message: '[VIBE-SEC] eval() / new Function() execute arbitrary JS. KB: languages/javascript/eval-injection.md'
+  severity: ERROR
+  languages:
+  - javascript
+  - typescript
+  pattern-either:
+  - pattern: eval(...)
+  - pattern: new Function(...)
+  - pattern: Function(...)
+  metadata:
+    cwe: CWE-95
+    kb_path: languages/javascript/eval-injection.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-js-innerhtml
+  message: '[VIBE-SEC] Assigning to innerHTML/outerHTML with untrusted data is XSS.
+    Use textContent or sanitize. KB: languages/javascript/react-security.md'
+  severity: ERROR
+  languages:
+  - javascript
+  - typescript
+  pattern-either:
+  - pattern: $EL.innerHTML = ...
+  - pattern: $EL.outerHTML = ...
+  - pattern: document.write(...)
+  metadata:
+    cwe: CWE-79
+    kb_path: languages/javascript/react-security.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-js-dangerously-set-innerhtml
+  message: '[VIBE-SEC] dangerouslySetInnerHTML is XSS-prone without strict sanitization.
+    KB: languages/javascript/react-security.md'
+  severity: ERROR
+  languages:
+  - javascript
+  - typescript
+  pattern: <... dangerouslySetInnerHTML=... />
+  metadata:
+    cwe: CWE-79
+    kb_path: languages/javascript/react-security.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-js-child-process-exec
+  message: '[VIBE-SEC] child_process exec/execSync with user input is command injection.
+    Prefer execFile/spawn with args array. KB: languages/javascript/ssrf-node.md'
+  severity: ERROR
+  languages:
+  - javascript
+  - typescript
+  pattern-either:
+  - pattern: child_process.exec(...)
+  - pattern: child_process.execSync(...)
+  - pattern: exec(...)
+  - pattern: execSync(...)
+  metadata:
+    cwe: CWE-78
+    kb_path: common/injection.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-js-prototype-pollution-merge
+  message: '[VIBE-SEC] Recursive merge / __proto__ assignment can prototype-pollute.
+    KB: languages/javascript/prototype-pollution.md'
+  severity: ERROR
+  languages:
+  - javascript
+  - typescript
+  pattern-either:
+  - pattern: $O['__proto__'] = ...
+  - pattern: $O.__proto__ = ...
+  - pattern: $O['constructor']['prototype'] = ...
+  metadata:
+    cwe: CWE-1321
+    kb_path: languages/javascript/prototype-pollution.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-js-jwt-none
+  message: '[VIBE-SEC] JWT algorithm confusion / none alg risks. Never accept alg
+    from token header unchecked. KB: languages/javascript/jwt-misuse.md'
+  severity: WARNING
+  languages:
+  - javascript
+  - typescript
+  pattern-either:
+  - pattern: 'jwt.verify($T, $S, {algorithms: [''none''], ...})'
+  - pattern: 'jwt.decode($T, {complete: true})'
+  metadata:
+    cwe: CWE-347
+    kb_path: languages/javascript/jwt-misuse.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-js-disable-tls
+  message: '[VIBE-SEC] NODE_TLS_REJECT_UNAUTHORIZED=0 disables TLS validation.'
+  severity: ERROR
+  languages:
+  - javascript
+  - typescript
+  pattern-either:
+  - pattern: process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'
+  - pattern: process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0"
+  metadata:
+    cwe: CWE-295
+    kb_path: common/server/tls-ssl-best-practices.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-js-sql-concat
+  message: '[VIBE-SEC] String-concatenated SQL is injection-prone. Use parameterized
+    queries. KB: languages/javascript/express-security.md'
+  severity: ERROR
+  languages:
+  - javascript
+  - typescript
+  pattern-either:
+  - pattern: $DB.query(`...${...}...`)
+  - pattern: $DB.execute(`...${...}...`)
+  - pattern: $DB.query('...' + ...)
+  - pattern: $DB.query("..." + ...)
+  metadata:
+    cwe: CWE-89
+    kb_path: languages/javascript/express-security.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-js-cors-star-credentials
+  message: '[VIBE-SEC] CORS origin ''*'' with credentials is invalid/dangerous. KB:
+    common/cors-deep.md'
+  severity: WARNING
+  languages:
+  - javascript
+  - typescript
+  pattern-either:
+  - pattern: 'cors({origin: ''*'', credentials: true, ...})'
+  - pattern: 'cors({origin: "*", credentials: true, ...})'
+  metadata:
+    cwe: CWE-942
+    kb_path: common/cors-deep.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-js-postmessage-star
+  message: '[VIBE-SEC] postMessage with targetOrigin ''*'' leaks data cross-origin.
+    KB: languages/javascript/service-worker-attacks.md'
+  severity: ERROR
+  languages:
+  - javascript
+  - typescript
+  pattern-either:
+  - pattern: $W.postMessage(..., '*')
+  - pattern: $W.postMessage(..., "*")
+  metadata:
+    cwe: CWE-345
+    kb_path: languages/javascript/xss.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'

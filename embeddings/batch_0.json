@@ -1,0 +1,5146 @@
+[
+  {
+    "file": "common_agent-permission-model_01_intro.md",
+    "source": "common/agent-permission-model.md",
+    "chunks": 7,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_agent-permission-model_02_1--permission-models-over.md",
+    "source": "common/agent-permission-model.md",
+    "chunks": 7,
+    "chunk": 2,
+    "heading": "1. Permission Models Overview",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_agent-permission-model_03_2--comparison-of-real-age.md",
+    "source": "common/agent-permission-model.md",
+    "chunks": 7,
+    "chunk": 3,
+    "heading": "2. Comparison of Real Agent Permission Models",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_agent-permission-model_04_3--recommended-approach.md",
+    "source": "common/agent-permission-model.md",
+    "chunks": 7,
+    "chunk": 4,
+    "heading": "3. Recommended Approach: Layered Permission Model",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_agent-permission-model_05_4--implementation-pattern.md",
+    "source": "common/agent-permission-model.md",
+    "chunks": 7,
+    "chunk": 5,
+    "heading": "4. Implementation Patterns",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_agent-permission-model_06_5--common-permission-mist.md",
+    "source": "common/agent-permission-model.md",
+    "chunks": 7,
+    "chunk": 6,
+    "heading": "5. Common Permission Mistakes",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_agent-permission-model_07_6--references.md",
+    "source": "common/agent-permission-model.md",
+    "chunks": 7,
+    "chunk": 7,
+    "heading": "6. References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_agent-security_01_intro.md",
+    "source": "common/agent-security.md",
+    "chunks": 10,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_agent-security_02_1--vulnerability-explanat.md",
+    "source": "common/agent-security.md",
+    "chunks": 10,
+    "chunk": 2,
+    "heading": "1. Vulnerability Explanation",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_agent-security_03_2--agent-threat-categorie.md",
+    "source": "common/agent-security.md",
+    "chunks": 10,
+    "chunk": 3,
+    "heading": "2. Agent Threat Categories",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_agent-security_04_3--how-ai---vibe-coding-g.md",
+    "source": "common/agent-security.md",
+    "chunks": 10,
+    "chunk": 4,
+    "heading": "3. How AI / Vibe Coding Generates This",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_agent-security_05_4--vulnerable-code---conf.md",
+    "source": "common/agent-security.md",
+    "chunks": 10,
+    "chunk": 5,
+    "heading": "4. Vulnerable Code / Config Examples",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_agent-security_06_5--secure-configuration.md",
+    "source": "common/agent-security.md",
+    "chunks": 10,
+    "chunk": 6,
+    "heading": "5. Secure Configuration & Fixes",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_agent-security_07_6--prevention-checklist.md",
+    "source": "common/agent-security.md",
+    "chunks": 10,
+    "chunk": 7,
+    "heading": "6. Prevention Checklist",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_agent-security_08_7--real-incidents---cves.md",
+    "source": "common/agent-security.md",
+    "chunks": 10,
+    "chunk": 8,
+    "heading": "7. Real Incidents / CVEs",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_agent-security_09_8--vibe-coding-red-flags.md",
+    "source": "common/agent-security.md",
+    "chunks": 10,
+    "chunk": 9,
+    "heading": "8. Vibe-Coding Red Flags",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_agent-security_10_references.md",
+    "source": "common/agent-security.md",
+    "chunks": 10,
+    "chunk": 10,
+    "heading": "References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_api-security_graphql-security_01_intro.md",
+    "source": "common/api-security/graphql-security.md",
+    "chunks": 10,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_graphql-security_02_overview.md",
+    "source": "common/api-security/graphql-security.md",
+    "chunks": 10,
+    "chunk": 2,
+    "heading": "Overview",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_graphql-security_03_table-of-contents.md",
+    "source": "common/api-security/graphql-security.md",
+    "chunks": 10,
+    "chunk": 3,
+    "heading": "Table of Contents",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_graphql-security_04_1--introspection-leaks.md",
+    "source": "common/api-security/graphql-security.md",
+    "chunks": 10,
+    "chunk": 4,
+    "heading": "1. Introspection Leaks",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_graphql-security_05_2--query-depth---complexi.md",
+    "source": "common/api-security/graphql-security.md",
+    "chunks": 10,
+    "chunk": 5,
+    "heading": "2. Query Depth & Complexity Limits",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_graphql-security_06_3--batching-attacks.md",
+    "source": "common/api-security/graphql-security.md",
+    "chunks": 10,
+    "chunk": 6,
+    "heading": "3. Batching Attacks",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_graphql-security_07_4--n-1-problem---data-lea.md",
+    "source": "common/api-security/graphql-security.md",
+    "chunks": 10,
+    "chunk": 7,
+    "heading": "4. N+1 Problem & Data Leakage",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_graphql-security_08_5--authentication---autho.md",
+    "source": "common/api-security/graphql-security.md",
+    "chunks": 10,
+    "chunk": 8,
+    "heading": "5. Authentication & Authorization in Resolvers",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_graphql-security_09_6--cves---real-world-exam.md",
+    "source": "common/api-security/graphql-security.md",
+    "chunks": 10,
+    "chunk": 9,
+    "heading": "6. CVEs & Real-World Examples",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_graphql-security_10_references.md",
+    "source": "common/api-security/graphql-security.md",
+    "chunks": 10,
+    "chunk": 10,
+    "heading": "References",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_grpc-security_01_intro.md",
+    "source": "common/api-security/grpc-security.md",
+    "chunks": 9,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_grpc-security_02_overview.md",
+    "source": "common/api-security/grpc-security.md",
+    "chunks": 9,
+    "chunk": 2,
+    "heading": "Overview",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_grpc-security_03_table-of-contents.md",
+    "source": "common/api-security/grpc-security.md",
+    "chunks": 9,
+    "chunk": 3,
+    "heading": "Table of Contents",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_grpc-security_04_1--tls---mtls.md",
+    "source": "common/api-security/grpc-security.md",
+    "chunks": 9,
+    "chunk": 4,
+    "heading": "1. TLS & mTLS",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_grpc-security_05_2--reflection-api.md",
+    "source": "common/api-security/grpc-security.md",
+    "chunks": 9,
+    "chunk": 5,
+    "heading": "2. Reflection API",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_grpc-security_06_3--message-size-limits.md",
+    "source": "common/api-security/grpc-security.md",
+    "chunks": 9,
+    "chunk": 6,
+    "heading": "3. Message Size Limits",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_grpc-security_07_4--authentication-interce.md",
+    "source": "common/api-security/grpc-security.md",
+    "chunks": 9,
+    "chunk": 7,
+    "heading": "4. Authentication Interceptors",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_grpc-security_08_5--cves---real-world-exam.md",
+    "source": "common/api-security/grpc-security.md",
+    "chunks": 9,
+    "chunk": 8,
+    "heading": "5. CVEs & Real-World Examples",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_grpc-security_09_references.md",
+    "source": "common/api-security/grpc-security.md",
+    "chunks": 9,
+    "chunk": 9,
+    "heading": "References",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_rest-api-security_01_intro.md",
+    "source": "common/api-security/rest-api-security.md",
+    "chunks": 9,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_rest-api-security_02_overview.md",
+    "source": "common/api-security/rest-api-security.md",
+    "chunks": 9,
+    "chunk": 2,
+    "heading": "Overview",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_rest-api-security_03_table-of-contents.md",
+    "source": "common/api-security/rest-api-security.md",
+    "chunks": 9,
+    "chunk": 3,
+    "heading": "Table of Contents",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_rest-api-security_04_1--authentication-methods.md",
+    "source": "common/api-security/rest-api-security.md",
+    "chunks": 9,
+    "chunk": 4,
+    "heading": "1. Authentication Methods",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_rest-api-security_05_2--rate-limiting.md",
+    "source": "common/api-security/rest-api-security.md",
+    "chunks": 9,
+    "chunk": 5,
+    "heading": "2. Rate Limiting",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_rest-api-security_06_3--pagination-security.md",
+    "source": "common/api-security/rest-api-security.md",
+    "chunks": 9,
+    "chunk": 6,
+    "heading": "3. Pagination Security",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_rest-api-security_07_4--hateoas-risks.md",
+    "source": "common/api-security/rest-api-security.md",
+    "chunks": 9,
+    "chunk": 7,
+    "heading": "4. HATEOAS Risks",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_rest-api-security_08_5--cves---real-world-exam.md",
+    "source": "common/api-security/rest-api-security.md",
+    "chunks": 9,
+    "chunk": 8,
+    "heading": "5. CVEs & Real-World Examples",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_rest-api-security_09_references.md",
+    "source": "common/api-security/rest-api-security.md",
+    "chunks": 9,
+    "chunk": 9,
+    "heading": "References",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_webhook-security_01_intro.md",
+    "source": "common/api-security/webhook-security.md",
+    "chunks": 9,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_webhook-security_02_overview.md",
+    "source": "common/api-security/webhook-security.md",
+    "chunks": 9,
+    "chunk": 2,
+    "heading": "Overview",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_webhook-security_03_table-of-contents.md",
+    "source": "common/api-security/webhook-security.md",
+    "chunks": 9,
+    "chunk": 3,
+    "heading": "Table of Contents",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_webhook-security_04_1--signature-verification.md",
+    "source": "common/api-security/webhook-security.md",
+    "chunks": 9,
+    "chunk": 4,
+    "heading": "1. Signature Verification",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_webhook-security_05_2--replay-attacks.md",
+    "source": "common/api-security/webhook-security.md",
+    "chunks": 9,
+    "chunk": 5,
+    "heading": "2. Replay Attacks",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_webhook-security_06_3--retry-bombing---amplif.md",
+    "source": "common/api-security/webhook-security.md",
+    "chunks": 9,
+    "chunk": 6,
+    "heading": "3. Retry Bombing & Amplification",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_webhook-security_07_4--secret-rotation.md",
+    "source": "common/api-security/webhook-security.md",
+    "chunks": 9,
+    "chunk": 7,
+    "heading": "4. Secret Rotation",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_webhook-security_08_5--cves---real-world-exam.md",
+    "source": "common/api-security/webhook-security.md",
+    "chunks": 9,
+    "chunk": 8,
+    "heading": "5. CVEs & Real-World Examples",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_api-security_webhook-security_09_references.md",
+    "source": "common/api-security/webhook-security.md",
+    "chunks": 9,
+    "chunk": 9,
+    "heading": "References",
+    "category": "api-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_broken-auth_01_intro.md",
+    "source": "common/broken-auth.md",
+    "chunks": 7,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_broken-auth_02_what-is-broken-authentica.md",
+    "source": "common/broken-auth.md",
+    "chunks": 7,
+    "chunk": 2,
+    "heading": "What Is Broken Authentication?",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_broken-auth_03_why-vibe-coding-makes-thi.md",
+    "source": "common/broken-auth.md",
+    "chunks": 7,
+    "chunk": 3,
+    "heading": "Why Vibe Coding Makes This Worse",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_broken-auth_04_common-vulnerabilities.md",
+    "source": "common/broken-auth.md",
+    "chunks": 7,
+    "chunk": 4,
+    "heading": "Common Vulnerabilities",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_broken-auth_05_prevention-checklist-for.md",
+    "source": "common/broken-auth.md",
+    "chunks": 7,
+    "chunk": 5,
+    "heading": "Prevention Checklist for AI Prompts",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_broken-auth_06_real-world-cves.md",
+    "source": "common/broken-auth.md",
+    "chunks": 7,
+    "chunk": 6,
+    "heading": "Real-World CVEs",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_broken-auth_07_references.md",
+    "source": "common/broken-auth.md",
+    "chunks": 7,
+    "chunk": 7,
+    "heading": "References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_business-logic_01_intro.md",
+    "source": "common/business-logic.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_business-logic_02_what-are-business-logic-v.md",
+    "source": "common/business-logic.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "What Are Business Logic Vulnerabilities?",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_business-logic_03_why-vibe-coding-makes-thi.md",
+    "source": "common/business-logic.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "Why Vibe Coding Makes This Worse",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_business-logic_04_common-business-logic-fla.md",
+    "source": "common/business-logic.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "Common Business Logic Flaws",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_business-logic_05_detection-strategies.md",
+    "source": "common/business-logic.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "Detection Strategies",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_business-logic_06_prevention-checklist-for.md",
+    "source": "common/business-logic.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "Prevention Checklist for AI Prompts",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_business-logic_07_real-world-cves.md",
+    "source": "common/business-logic.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "Real-World CVEs",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_business-logic_08_references.md",
+    "source": "common/business-logic.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_case-studies_british-airways-xss-breach.md",
+    "source": "common/case-studies/british-airways-xss-breach.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_case-studies_capital-one-ssrf-breach.md",
+    "source": "common/case-studies/capital-one-ssrf-breach.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_case-studies_equifax-apache-struts-breach.md",
+    "source": "common/case-studies/equifax-apache-struts-breach.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_case-studies_heartland-sql-injection-breach.md",
+    "source": "common/case-studies/heartland-sql-injection-breach.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_case-studies_log4shell-log4j-rce.md",
+    "source": "common/case-studies/log4shell-log4j-rce.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_case-studies_mongodb-ransomware-2017-misconfig.md",
+    "source": "common/case-studies/mongodb-ransomware-2017-misconfig.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_case-studies_notpetya-supply-chain-attack.md",
+    "source": "common/case-studies/notpetya-supply-chain-attack.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_case-studies_solarwinds-supply-chain-attack.md",
+    "source": "common/case-studies/solarwinds-supply-chain-attack.md",
+    "chunks": 1,
+    "category": "case-study",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_cloud-security_ai-container-security_01_intro.md",
+    "source": "common/cloud-security/ai-container-security.md",
+    "chunks": 11,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_cloud-security_ai-container-security_02_overview.md",
+    "source": "common/cloud-security/ai-container-security.md",
+    "chunks": 11,
+    "chunk": 2,
+    "heading": "Overview",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_cloud-security_ai-container-security_03_table-of-contents.md",
+    "source": "common/cloud-security/ai-container-security.md",
+    "chunks": 11,
+    "chunk": 3,
+    "heading": "Table of Contents",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_cloud-security_ai-container-security_04_1--vulnerability-explanat.md",
+    "source": "common/cloud-security/ai-container-security.md",
+    "chunks": 11,
+    "chunk": 4,
+    "heading": "1. Vulnerability Explanation",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_cloud-security_ai-container-security_05_2--how-ai---vibe-coding-g.md",
+    "source": "common/cloud-security/ai-container-security.md",
+    "chunks": 11,
+    "chunk": 5,
+    "heading": "2. How AI / Vibe Coding Generates This",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_cloud-security_ai-container-security_06_3--vulnerable-code-exampl.md",
+    "source": "common/cloud-security/ai-container-security.md",
+    "chunks": 11,
+    "chunk": 6,
+    "heading": "3. Vulnerable Code Examples",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_cloud-security_ai-container-security_07_4--secure-code-fix.md",
+    "source": "common/cloud-security/ai-container-security.md",
+    "chunks": 11,
+    "chunk": 7,
+    "heading": "4. Secure Code Fix",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_cloud-security_ai-container-security_08_5--prevention-checklist.md",
+    "source": "common/cloud-security/ai-container-security.md",
+    "chunks": 11,
+    "chunk": 8,
+    "heading": "5. Prevention Checklist",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_cloud-security_ai-container-security_09_6--real-cves---incidents.md",
+    "source": "common/cloud-security/ai-container-security.md",
+    "chunks": 11,
+    "chunk": 9,
+    "heading": "6. Real CVEs & Incidents",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_cloud-security_ai-container-security_10_7--vibe-coding-red-flags.md",
+    "source": "common/cloud-security/ai-container-security.md",
+    "chunks": 11,
+    "chunk": 10,
+    "heading": "7. Vibe-Coding Red Flags",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_cloud-security_ai-container-security_11_8--references.md",
+    "source": "common/cloud-security/ai-container-security.md",
+    "chunks": 11,
+    "chunk": 11,
+    "heading": "8. References",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_cloud-security_aws-security_01_intro.md",
+    "source": "common/cloud-security/aws-security.md",
+    "chunks": 9,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_aws-security_02_overview.md",
+    "source": "common/cloud-security/aws-security.md",
+    "chunks": 9,
+    "chunk": 2,
+    "heading": "Overview",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_aws-security_03_table-of-contents.md",
+    "source": "common/cloud-security/aws-security.md",
+    "chunks": 9,
+    "chunk": 3,
+    "heading": "Table of Contents",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_aws-security_04_1--iam-least-privilege.md",
+    "source": "common/cloud-security/aws-security.md",
+    "chunks": 9,
+    "chunk": 4,
+    "heading": "1. IAM Least Privilege",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_aws-security_05_2--s3-bucket-policies.md",
+    "source": "common/cloud-security/aws-security.md",
+    "chunks": 9,
+    "chunk": 5,
+    "heading": "2. S3 Bucket Policies",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_aws-security_06_3--lambda-security.md",
+    "source": "common/cloud-security/aws-security.md",
+    "chunks": 9,
+    "chunk": 6,
+    "heading": "3. Lambda Security",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_aws-security_07_4--api-gateway-authentica.md",
+    "source": "common/cloud-security/aws-security.md",
+    "chunks": 9,
+    "chunk": 7,
+    "heading": "4. API Gateway Authentication",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_aws-security_08_5--cves---real-world-exam.md",
+    "source": "common/cloud-security/aws-security.md",
+    "chunks": 9,
+    "chunk": 8,
+    "heading": "5. CVEs & Real-World Examples",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_aws-security_09_references.md",
+    "source": "common/cloud-security/aws-security.md",
+    "chunks": 9,
+    "chunk": 9,
+    "heading": "References",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_cloud-misconfig-deep_01_intro.md",
+    "source": "common/cloud-security/cloud-misconfig-deep.md",
+    "chunks": 9,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_cloud-misconfig-deep_02_overview.md",
+    "source": "common/cloud-security/cloud-misconfig-deep.md",
+    "chunks": 9,
+    "chunk": 2,
+    "heading": "Overview",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_cloud-misconfig-deep_03_table-of-contents.md",
+    "source": "common/cloud-security/cloud-misconfig-deep.md",
+    "chunks": 9,
+    "chunk": 3,
+    "heading": "Table of Contents",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_cloud-misconfig-deep_04_1--cloud-credential-leaks.md",
+    "source": "common/cloud-security/cloud-misconfig-deep.md",
+    "chunks": 9,
+    "chunk": 4,
+    "heading": "1. Cloud Credential Leaks in AI-Generated Code",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_cloud-misconfig-deep_05_2--environment-variable-e.md",
+    "source": "common/cloud-security/cloud-misconfig-deep.md",
+    "chunks": 9,
+    "chunk": 5,
+    "heading": "2. Environment Variable Exposure",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_cloud-misconfig-deep_06_3---env-in-git.md",
+    "source": "common/cloud-security/cloud-misconfig-deep.md",
+    "chunks": 9,
+    "chunk": 6,
+    "heading": "3. .env in Git",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_cloud-misconfig-deep_07_4--ai-generated-cloud-con.md",
+    "source": "common/cloud-security/cloud-misconfig-deep.md",
+    "chunks": 9,
+    "chunk": 7,
+    "heading": "4. AI-Generated Cloud Config Pitfalls",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_cloud-misconfig-deep_08_5--cves---real-world-exam.md",
+    "source": "common/cloud-security/cloud-misconfig-deep.md",
+    "chunks": 9,
+    "chunk": 8,
+    "heading": "5. CVEs & Real-World Examples",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_cloud-misconfig-deep_09_references.md",
+    "source": "common/cloud-security/cloud-misconfig-deep.md",
+    "chunks": 9,
+    "chunk": 9,
+    "heading": "References",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_docker-security_01_intro.md",
+    "source": "common/cloud-security/docker-security.md",
+    "chunks": 11,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_docker-security_02_overview.md",
+    "source": "common/cloud-security/docker-security.md",
+    "chunks": 11,
+    "chunk": 2,
+    "heading": "Overview",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_docker-security_03_table-of-contents.md",
+    "source": "common/cloud-security/docker-security.md",
+    "chunks": 11,
+    "chunk": 3,
+    "heading": "Table of Contents",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_docker-security_04_1--privileged-containers.md",
+    "source": "common/cloud-security/docker-security.md",
+    "chunks": 11,
+    "chunk": 4,
+    "heading": "1. Privileged Containers",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_docker-security_05_2--host-mounts.md",
+    "source": "common/cloud-security/docker-security.md",
+    "chunks": 11,
+    "chunk": 5,
+    "heading": "2. Host Mounts",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_docker-security_06_3--security-contexts---ca.md",
+    "source": "common/cloud-security/docker-security.md",
+    "chunks": 11,
+    "chunk": 6,
+    "heading": "3. Security Contexts & Capabilities",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_docker-security_07_4--image-scanning---suppl.md",
+    "source": "common/cloud-security/docker-security.md",
+    "chunks": 11,
+    "chunk": 7,
+    "heading": "4. Image Scanning & Supply Chain",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_docker-security_08_5--rootless-mode.md",
+    "source": "common/cloud-security/docker-security.md",
+    "chunks": 11,
+    "chunk": 8,
+    "heading": "5. Rootless Mode",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_docker-security_09_6--cves---real-world-exam.md",
+    "source": "common/cloud-security/docker-security.md",
+    "chunks": 11,
+    "chunk": 9,
+    "heading": "6. CVEs & Real-World Examples",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_docker-security_10_7--ai-generated-dockerfil.md",
+    "source": "common/cloud-security/docker-security.md",
+    "chunks": 11,
+    "chunk": 10,
+    "heading": "7. AI-Generated Dockerfile Risks",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_docker-security_11_references.md",
+    "source": "common/cloud-security/docker-security.md",
+    "chunks": 11,
+    "chunk": 11,
+    "heading": "References",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_kubernetes-security_01_intro.md",
+    "source": "common/cloud-security/kubernetes-security.md",
+    "chunks": 10,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_kubernetes-security_02_overview.md",
+    "source": "common/cloud-security/kubernetes-security.md",
+    "chunks": 10,
+    "chunk": 2,
+    "heading": "Overview",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_kubernetes-security_03_table-of-contents.md",
+    "source": "common/cloud-security/kubernetes-security.md",
+    "chunks": 10,
+    "chunk": 3,
+    "heading": "Table of Contents",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_kubernetes-security_04_1--rbac.md",
+    "source": "common/cloud-security/kubernetes-security.md",
+    "chunks": 10,
+    "chunk": 4,
+    "heading": "1. RBAC",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_kubernetes-security_05_2--pod-security-standards.md",
+    "source": "common/cloud-security/kubernetes-security.md",
+    "chunks": 10,
+    "chunk": 5,
+    "heading": "2. Pod Security Standards",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_kubernetes-security_06_3--network-policies.md",
+    "source": "common/cloud-security/kubernetes-security.md",
+    "chunks": 10,
+    "chunk": 6,
+    "heading": "3. Network Policies",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_kubernetes-security_07_4--seccomp---security-con.md",
+    "source": "common/cloud-security/kubernetes-security.md",
+    "chunks": 10,
+    "chunk": 7,
+    "heading": "4. Seccomp & Security Contexts",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_kubernetes-security_08_5--secret-management.md",
+    "source": "common/cloud-security/kubernetes-security.md",
+    "chunks": 10,
+    "chunk": 8,
+    "heading": "5. Secret Management",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_kubernetes-security_09_6--cves---real-world-exam.md",
+    "source": "common/cloud-security/kubernetes-security.md",
+    "chunks": 10,
+    "chunk": 9,
+    "heading": "6. CVEs & Real-World Examples",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_kubernetes-security_10_references.md",
+    "source": "common/cloud-security/kubernetes-security.md",
+    "chunks": 10,
+    "chunk": 10,
+    "heading": "References",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cloud-security_serverless-security_01_intro.md",
+    "source": "common/cloud-security/serverless-security.md",
+    "chunks": 9,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "high"
+  },
+  {
+    "file": "common_cloud-security_serverless-security_02_table-of-contents.md",
+    "source": "common/cloud-security/serverless-security.md",
+    "chunks": 9,
+    "chunk": 2,
+    "heading": "Table of Contents",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "high"
+  },
+  {
+    "file": "common_cloud-security_serverless-security_03_1--vulnerability-explanat.md",
+    "source": "common/cloud-security/serverless-security.md",
+    "chunks": 9,
+    "chunk": 3,
+    "heading": "1. Vulnerability Explanation",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "high"
+  },
+  {
+    "file": "common_cloud-security_serverless-security_04_2--how-ai-generates-insec.md",
+    "source": "common/cloud-security/serverless-security.md",
+    "chunks": 9,
+    "chunk": 4,
+    "heading": "2. How AI Generates Insecure Serverless Code",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "high"
+  },
+  {
+    "file": "common_cloud-security_serverless-security_05_3--vulnerable-code---secu.md",
+    "source": "common/cloud-security/serverless-security.md",
+    "chunks": 9,
+    "chunk": 5,
+    "heading": "3. Vulnerable Code + Secure Fix",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "high"
+  },
+  {
+    "file": "common_cloud-security_serverless-security_06_4--real-cves---incidents.md",
+    "source": "common/cloud-security/serverless-security.md",
+    "chunks": 9,
+    "chunk": 6,
+    "heading": "4. Real CVEs & Incidents",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "high"
+  },
+  {
+    "file": "common_cloud-security_serverless-security_07_5--prevention-checklist.md",
+    "source": "common/cloud-security/serverless-security.md",
+    "chunks": 9,
+    "chunk": 7,
+    "heading": "5. Prevention Checklist",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "high"
+  },
+  {
+    "file": "common_cloud-security_serverless-security_08_6--vibe-coding-red-flags.md",
+    "source": "common/cloud-security/serverless-security.md",
+    "chunks": 9,
+    "chunk": 8,
+    "heading": "6. Vibe-Coding Red Flags",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "high"
+  },
+  {
+    "file": "common_cloud-security_serverless-security_09_7--references.md",
+    "source": "common/cloud-security/serverless-security.md",
+    "chunks": 9,
+    "chunk": 9,
+    "heading": "7. References",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "high"
+  },
+  {
+    "file": "common_cloud-security_terraform-security_01_intro.md",
+    "source": "common/cloud-security/terraform-security.md",
+    "chunks": 11,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "high"
+  },
+  {
+    "file": "common_cloud-security_terraform-security_02_overview.md",
+    "source": "common/cloud-security/terraform-security.md",
+    "chunks": 11,
+    "chunk": 2,
+    "heading": "Overview",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "high"
+  },
+  {
+    "file": "common_cloud-security_terraform-security_03_1--vulnerability-explanat.md",
+    "source": "common/cloud-security/terraform-security.md",
+    "chunks": 11,
+    "chunk": 3,
+    "heading": "1. Vulnerability Explanation \u2014 AI-Generated Terraform Risks",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "high"
+  },
+  {
+    "file": "common_cloud-security_terraform-security_04_2--how-ai-generates-these.md",
+    "source": "common/cloud-security/terraform-security.md",
+    "chunks": 11,
+    "chunk": 4,
+    "heading": "2. How AI Generates These Vulnerabilities",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "high"
+  },
+  {
+    "file": "common_cloud-security_terraform-security_05_3--vulnerable-code-exampl.md",
+    "source": "common/cloud-security/terraform-security.md",
+    "chunks": 11,
+    "chunk": 5,
+    "heading": "3. Vulnerable Code Examples",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "high"
+  },
+  {
+    "file": "common_cloud-security_terraform-security_06_4--secure-code-fix.md",
+    "source": "common/cloud-security/terraform-security.md",
+    "chunks": 11,
+    "chunk": 6,
+    "heading": "4. Secure Code Fix",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "high"
+  },
+  {
+    "file": "common_cloud-security_terraform-security_07_5--real-cves--verified-vi.md",
+    "source": "common/cloud-security/terraform-security.md",
+    "chunks": 11,
+    "chunk": 7,
+    "heading": "5. Real CVEs (Verified via NVD)",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "high"
+  },
+  {
+    "file": "common_cloud-security_terraform-security_08_6--prevention-checklist.md",
+    "source": "common/cloud-security/terraform-security.md",
+    "chunks": 11,
+    "chunk": 8,
+    "heading": "6. Prevention Checklist",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "high"
+  },
+  {
+    "file": "common_cloud-security_terraform-security_09_7--vibe-coding-red-flags.md",
+    "source": "common/cloud-security/terraform-security.md",
+    "chunks": 11,
+    "chunk": 9,
+    "heading": "7. Vibe-Coding Red Flags (Terraform-Specific)",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "high"
+  },
+  {
+    "file": "common_cloud-security_terraform-security_10_semgrep-patterns-for-terr.md",
+    "source": "common/cloud-security/terraform-security.md",
+    "chunks": 11,
+    "chunk": 10,
+    "heading": "Semgrep Patterns for Terraform Security",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "high"
+  },
+  {
+    "file": "common_cloud-security_terraform-security_11_references.md",
+    "source": "common/cloud-security/terraform-security.md",
+    "chunks": 11,
+    "chunk": 11,
+    "heading": "References",
+    "category": "cloud-security",
+    "language": "common",
+    "severity": "high"
+  },
+  {
+    "file": "common_cors-deep_01_intro.md",
+    "source": "common/cors-deep.md",
+    "chunks": 10,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cors-deep_02_what-is-cors.md",
+    "source": "common/cors-deep.md",
+    "chunks": 10,
+    "chunk": 2,
+    "heading": "What Is CORS?",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cors-deep_03_why-vibe-coding-makes-thi.md",
+    "source": "common/cors-deep.md",
+    "chunks": 10,
+    "chunk": 3,
+    "heading": "Why Vibe Coding Makes This Worse",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cors-deep_04_cors-headers-reference.md",
+    "source": "common/cors-deep.md",
+    "chunks": 10,
+    "chunk": 4,
+    "heading": "CORS Headers Reference",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cors-deep_05_cors-vulnerability-catego.md",
+    "source": "common/cors-deep.md",
+    "chunks": 10,
+    "chunk": 5,
+    "heading": "CORS Vulnerability Categories",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cors-deep_06_vibe-coding-cors-misconfi.md",
+    "source": "common/cors-deep.md",
+    "chunks": 10,
+    "chunk": 6,
+    "heading": "Vibe Coding CORS Misconfigs \u2014 Common Patterns",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cors-deep_07_prevention-checklist.md",
+    "source": "common/cors-deep.md",
+    "chunks": 10,
+    "chunk": 7,
+    "heading": "Prevention Checklist",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cors-deep_08_real-world-cves---inciden.md",
+    "source": "common/cors-deep.md",
+    "chunks": 10,
+    "chunk": 8,
+    "heading": "Real-World CVEs & Incidents",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cors-deep_09_testing-cors.md",
+    "source": "common/cors-deep.md",
+    "chunks": 10,
+    "chunk": 9,
+    "heading": "Testing CORS",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_cors-deep_10_references.md",
+    "source": "common/cors-deep.md",
+    "chunks": 10,
+    "chunk": 10,
+    "heading": "References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_crypto_01_intro.md",
+    "source": "common/crypto.md",
+    "chunks": 9,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_crypto_02_what-are-cryptographic-fa.md",
+    "source": "common/crypto.md",
+    "chunks": 9,
+    "chunk": 2,
+    "heading": "What Are Cryptographic Failures?",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_crypto_03_why-vibe-coding-makes-thi.md",
+    "source": "common/crypto.md",
+    "chunks": 9,
+    "chunk": 3,
+    "heading": "Why Vibe Coding Makes This Worse",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_crypto_04_common-cryptographic-fail.md",
+    "source": "common/crypto.md",
+    "chunks": 9,
+    "chunk": 4,
+    "heading": "Common Cryptographic Failures",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_crypto_05_cryptographic-algorithm-c.md",
+    "source": "common/crypto.md",
+    "chunks": 9,
+    "chunk": 5,
+    "heading": "Cryptographic Algorithm Comparison",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_crypto_06_password-hashing-recommen.md",
+    "source": "common/crypto.md",
+    "chunks": 9,
+    "chunk": 6,
+    "heading": "Password Hashing Recommendations",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_crypto_07_prevention-checklist-for.md",
+    "source": "common/crypto.md",
+    "chunks": 9,
+    "chunk": 7,
+    "heading": "Prevention Checklist for AI Prompts",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_crypto_08_real-world-cves.md",
+    "source": "common/crypto.md",
+    "chunks": 9,
+    "chunk": 8,
+    "heading": "Real-World CVEs",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_crypto_09_references.md",
+    "source": "common/crypto.md",
+    "chunks": 9,
+    "chunk": 9,
+    "heading": "References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_csp-deep_01_intro.md",
+    "source": "common/csp-deep.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_csp-deep_02_what-is-csp.md",
+    "source": "common/csp-deep.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "What Is CSP?",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_csp-deep_03_why-vibe-coding-makes-thi.md",
+    "source": "common/csp-deep.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "Why Vibe Coding Makes This Worse",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_csp-deep_04_csp-vulnerability-categor.md",
+    "source": "common/csp-deep.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "CSP Vulnerability Categories",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_csp-deep_05_prevention-checklist.md",
+    "source": "common/csp-deep.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "Prevention Checklist",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_csp-deep_06_real-world-cves---inciden.md",
+    "source": "common/csp-deep.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "Real-World CVEs & Incidents",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_csp-deep_07_testing-csp.md",
+    "source": "common/csp-deep.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "Testing CSP",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_csp-deep_08_references.md",
+    "source": "common/csp-deep.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_database_nosql-security_01_intro.md",
+    "source": "common/database/nosql-security.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_database_nosql-security_02_1--vulnerability-explanat.md",
+    "source": "common/database/nosql-security.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "1. Vulnerability Explanation",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_database_nosql-security_03_2--nosql-injection-specif.md",
+    "source": "common/database/nosql-security.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "2. NoSQL Injection Specific",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_database_nosql-security_04_3--vulnerable-code---secu.md",
+    "source": "common/database/nosql-security.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "3. Vulnerable Code + Secure Fix per Database",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_database_nosql-security_05_4--real-incidents-and-cve.md",
+    "source": "common/database/nosql-security.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "4. Real Incidents and CVEs",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_database_nosql-security_06_5--prevention-checklist.md",
+    "source": "common/database/nosql-security.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "5. Prevention Checklist",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_database_nosql-security_07_6--vibe-coding-red-flags.md",
+    "source": "common/database/nosql-security.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "6. Vibe-Coding Red Flags",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_database_nosql-security_08_7--references.md",
+    "source": "common/database/nosql-security.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "7. References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_database_postgresql-mysql-security_01_intro.md",
+    "source": "common/database/postgresql-mysql-security.md",
+    "chunks": 10,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_database_postgresql-mysql-security_02_1--vulnerability-explanat.md",
+    "source": "common/database/postgresql-mysql-security.md",
+    "chunks": 10,
+    "chunk": 2,
+    "heading": "1. Vulnerability Explanation",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_database_postgresql-mysql-security_03_2--how-ai---vibe-coding-g.md",
+    "source": "common/database/postgresql-mysql-security.md",
+    "chunks": 10,
+    "chunk": 3,
+    "heading": "2. How AI / Vibe Coding Generates These Vulnerabilities",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_database_postgresql-mysql-security_04_3--vulnerable-code-exampl.md",
+    "source": "common/database/postgresql-mysql-security.md",
+    "chunks": 10,
+    "chunk": 4,
+    "heading": "3. Vulnerable Code Examples",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_database_postgresql-mysql-security_05_4--secure-code-fix.md",
+    "source": "common/database/postgresql-mysql-security.md",
+    "chunks": 10,
+    "chunk": 5,
+    "heading": "4. Secure Code Fix",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_database_postgresql-mysql-security_06_5--database-specific-hard.md",
+    "source": "common/database/postgresql-mysql-security.md",
+    "chunks": 10,
+    "chunk": 6,
+    "heading": "5. Database-Specific Hardening",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_database_postgresql-mysql-security_07_6--real-cves--web-verifie.md",
+    "source": "common/database/postgresql-mysql-security.md",
+    "chunks": 10,
+    "chunk": 7,
+    "heading": "6. Real CVEs (Web-Verified from NVD)",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_database_postgresql-mysql-security_08_7--prevention-checklist.md",
+    "source": "common/database/postgresql-mysql-security.md",
+    "chunks": 10,
+    "chunk": 8,
+    "heading": "7. Prevention Checklist",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_database_postgresql-mysql-security_09_8--vibe-coding-red-flags.md",
+    "source": "common/database/postgresql-mysql-security.md",
+    "chunks": 10,
+    "chunk": 9,
+    "heading": "8. Vibe-Coding Red Flags",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_database_postgresql-mysql-security_10_9--references.md",
+    "source": "common/database/postgresql-mysql-security.md",
+    "chunks": 10,
+    "chunk": 10,
+    "heading": "9. References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_deserialization_01_intro.md",
+    "source": "common/deserialization.md",
+    "chunks": 10,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_deserialization_02_what-is-insecure-deserial.md",
+    "source": "common/deserialization.md",
+    "chunks": 10,
+    "chunk": 2,
+    "heading": "What Is Insecure Deserialization?",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_deserialization_03_why-vibe-coding-makes-thi.md",
+    "source": "common/deserialization.md",
+    "chunks": 10,
+    "chunk": 3,
+    "heading": "Why Vibe Coding Makes This Worse",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_deserialization_04_python-pickle-deserializa.md",
+    "source": "common/deserialization.md",
+    "chunks": 10,
+    "chunk": 4,
+    "heading": "Python Pickle Deserialization",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_deserialization_05_java-deserialization.md",
+    "source": "common/deserialization.md",
+    "chunks": 10,
+    "chunk": 5,
+    "heading": "Java Deserialization",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_deserialization_06_yaml-deserialization.md",
+    "source": "common/deserialization.md",
+    "chunks": 10,
+    "chunk": 6,
+    "heading": "YAML Deserialization",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_deserialization_07_json-based-deserializatio.md",
+    "source": "common/deserialization.md",
+    "chunks": 10,
+    "chunk": 7,
+    "heading": "JSON-Based Deserialization Attacks",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_deserialization_08_prevention-checklist-for.md",
+    "source": "common/deserialization.md",
+    "chunks": 10,
+    "chunk": 8,
+    "heading": "Prevention Checklist for AI Prompts",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_deserialization_09_real-world-cves.md",
+    "source": "common/deserialization.md",
+    "chunks": 10,
+    "chunk": 9,
+    "heading": "Real-World CVEs",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_deserialization_10_references.md",
+    "source": "common/deserialization.md",
+    "chunks": 10,
+    "chunk": 10,
+    "heading": "References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_engineering_incident-response-deep_01_intro.md",
+    "source": "common/engineering/incident-response-deep.md",
+    "chunks": 22,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_engineering_incident-response-deep_02_1--ir-philosophy.md",
+    "source": "common/engineering/incident-response-deep.md",
+    "chunks": 22,
+    "chunk": 2,
+    "heading": "1. IR Philosophy",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_engineering_incident-response-deep_03_2--the-ir-process--deep-d.md",
+    "source": "common/engineering/incident-response-deep.md",
+    "chunks": 22,
+    "chunk": 3,
+    "heading": "2. The IR Process (Deep Dive)",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_engineering_incident-response-deep_04_3--communication.md",
+    "source": "common/engineering/incident-response-deep.md",
+    "chunks": 22,
+    "chunk": 4,
+    "heading": "3. Communication",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_engineering_incident-response-deep_05_4--practical-ir-for-start.md",
+    "source": "common/engineering/incident-response-deep.md",
+    "chunks": 22,
+    "chunk": 5,
+    "heading": "4. Practical IR for Startups",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_engineering_incident-response-deep_06_1--detection-signals.md",
+    "source": "common/engineering/incident-response-deep.md",
+    "chunks": 22,
+    "chunk": 6,
+    "heading": "1. Detection Signals",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_engineering_incident-response-deep_07_2--triage.md",
+    "source": "common/engineering/incident-response-deep.md",
+    "chunks": 22,
+    "chunk": 7,
+    "heading": "2. Triage",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_engineering_incident-response-deep_08_3--containment-steps.md",
+    "source": "common/engineering/incident-response-deep.md",
+    "chunks": 22,
+    "chunk": 8,
+    "heading": "3. Containment Steps",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_engineering_incident-response-deep_09_4--evidence-to-collect.md",
+    "source": "common/engineering/incident-response-deep.md",
+    "chunks": 22,
+    "chunk": 9,
+    "heading": "4. Evidence to Collect",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_engineering_incident-response-deep_10_5--eradication.md",
+    "source": "common/engineering/incident-response-deep.md",
+    "chunks": 22,
+    "chunk": 10,
+    "heading": "5. Eradication",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_engineering_incident-response-deep_11_6--recovery.md",
+    "source": "common/engineering/incident-response-deep.md",
+    "chunks": 22,
+    "chunk": 11,
+    "heading": "6. Recovery",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_engineering_incident-response-deep_12_7--post-mortem-template.md",
+    "source": "common/engineering/incident-response-deep.md",
+    "chunks": 22,
+    "chunk": 12,
+    "heading": "7. Post-Mortem Template",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_engineering_incident-response-deep_13_timeline.md",
+    "source": "common/engineering/incident-response-deep.md",
+    "chunks": 22,
+    "chunk": 13,
+    "heading": "Timeline",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_engineering_incident-response-deep_14_root-cause--five-whys.md",
+    "source": "common/engineering/incident-response-deep.md",
+    "chunks": 22,
+    "chunk": 14,
+    "heading": "Root Cause (Five Whys)",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_engineering_incident-response-deep_15_impact.md",
+    "source": "common/engineering/incident-response-deep.md",
+    "chunks": 22,
+    "chunk": 15,
+    "heading": "Impact",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_engineering_incident-response-deep_16_what-we-did-well.md",
+    "source": "common/engineering/incident-response-deep.md",
+    "chunks": 22,
+    "chunk": 16,
+    "heading": "What We Did Well",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_engineering_incident-response-deep_17_what-we-d-do-differently.md",
+    "source": "common/engineering/incident-response-deep.md",
+    "chunks": 22,
+    "chunk": 17,
+    "heading": "What We'd Do Differently",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_engineering_incident-response-deep_18_action-items.md",
+    "source": "common/engineering/incident-response-deep.md",
+    "chunks": 22,
+    "chunk": 18,
+    "heading": "Action Items",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_engineering_incident-response-deep_19_detection-gap.md",
+    "source": "common/engineering/incident-response-deep.md",
+    "chunks": 22,
+    "chunk": 19,
+    "heading": "Detection Gap",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_engineering_incident-response-deep_20_5--incident-classificatio.md",
+    "source": "common/engineering/incident-response-deep.md",
+    "chunks": 22,
+    "chunk": 20,
+    "heading": "5. Incident Classification",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_engineering_incident-response-deep_21_6--incident-response-matu.md",
+    "source": "common/engineering/incident-response-deep.md",
+    "chunks": 22,
+    "chunk": 21,
+    "heading": "6. Incident Response Maturity Model",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_engineering_incident-response-deep_22_7--references.md",
+    "source": "common/engineering/incident-response-deep.md",
+    "chunks": 22,
+    "chunk": 22,
+    "heading": "7. References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_engineering_risk-management_01_intro.md",
+    "source": "common/engineering/risk-management.md",
+    "chunks": 9,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_risk-management_02_1--risk---likelihood---im.md",
+    "source": "common/engineering/risk-management.md",
+    "chunks": 9,
+    "chunk": 2,
+    "heading": "1. Risk = Likelihood \u00d7 Impact \u2014 What This Means in Practice",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_risk-management_03_2--risk-assessment-method.md",
+    "source": "common/engineering/risk-management.md",
+    "chunks": 9,
+    "chunk": 3,
+    "heading": "2. Risk Assessment Methodologies",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_risk-management_04_3--risk-treatment-options.md",
+    "source": "common/engineering/risk-management.md",
+    "chunks": 9,
+    "chunk": 4,
+    "heading": "3. Risk Treatment Options",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_risk-management_05_4--threat-vs--risk-vs--vu.md",
+    "source": "common/engineering/risk-management.md",
+    "chunks": 9,
+    "chunk": 5,
+    "heading": "4. Threat vs. Risk vs. Vulnerability \u2014 The Difference Matters",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_risk-management_06_5--building-a-risk-regist.md",
+    "source": "common/engineering/risk-management.md",
+    "chunks": 9,
+    "chunk": 6,
+    "heading": "5. Building a Risk Register",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_risk-management_07_6--communication--how-to.md",
+    "source": "common/engineering/risk-management.md",
+    "chunks": 9,
+    "chunk": 7,
+    "heading": "6. Communication: How to Talk to Non-Security Stakeholders",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_risk-management_08_7--engineering-risk-decis.md",
+    "source": "common/engineering/risk-management.md",
+    "chunks": 9,
+    "chunk": 8,
+    "heading": "7. Engineering Risk Decisions",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_risk-management_09_8--references.md",
+    "source": "common/engineering/risk-management.md",
+    "chunks": 9,
+    "chunk": 9,
+    "heading": "8. References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_secrets-management_01_intro.md",
+    "source": "common/engineering/secrets-management.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_secrets-management_02_1--what-counts-as-a-secre.md",
+    "source": "common/engineering/secrets-management.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "1. What Counts as a Secret",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_secrets-management_03_2--common-anti-patterns.md",
+    "source": "common/engineering/secrets-management.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "2. Common Anti-Patterns",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_secrets-management_04_3--secrets-management-sol.md",
+    "source": "common/engineering/secrets-management.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "3. Secrets Management Solutions",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_secrets-management_05_4--secret-rotation.md",
+    "source": "common/engineering/secrets-management.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "4. Secret Rotation",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_secrets-management_06_5--encryption-key-lifecyc.md",
+    "source": "common/engineering/secrets-management.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "5. Encryption Key Lifecycle",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_secrets-management_07_6--secret-detection.md",
+    "source": "common/engineering/secrets-management.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "6. Secret Detection",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_secrets-management_08_7--references.md",
+    "source": "common/engineering/secrets-management.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "7. References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_secure-by-design_01_intro.md",
+    "source": "common/engineering/secure-by-design.md",
+    "chunks": 25,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_secure-by-design_02_table-of-contents.md",
+    "source": "common/engineering/secure-by-design.md",
+    "chunks": 25,
+    "chunk": 2,
+    "heading": "Table of Contents",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_secure-by-design_03_1--what--secure-by-design.md",
+    "source": "common/engineering/secure-by-design.md",
+    "chunks": 25,
+    "chunk": 3,
+    "heading": "1. What \"Secure by Design\" Means",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_secure-by-design_04_2--security-requirements.md",
+    "source": "common/engineering/secure-by-design.md",
+    "chunks": 25,
+    "chunk": 4,
+    "heading": "2. Security Requirements Engineering",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_secure-by-design_05_3--architecture-decision.md",
+    "source": "common/engineering/secure-by-design.md",
+    "chunks": 25,
+    "chunk": 5,
+    "heading": "3. Architecture Decision Records for Security",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_secure-by-design_06_status.md",
+    "source": "common/engineering/secure-by-design.md",
+    "chunks": 25,
+    "chunk": 6,
+    "heading": "Status",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_secure-by-design_07_context.md",
+    "source": "common/engineering/secure-by-design.md",
+    "chunks": 25,
+    "chunk": 7,
+    "heading": "Context",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_secure-by-design_08_decision.md",
+    "source": "common/engineering/secure-by-design.md",
+    "chunks": 25,
+    "chunk": 8,
+    "heading": "Decision",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_secure-by-design_09_alternatives-considered.md",
+    "source": "common/engineering/secure-by-design.md",
+    "chunks": 25,
+    "chunk": 9,
+    "heading": "Alternatives Considered",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_secure-by-design_10_consequences.md",
+    "source": "common/engineering/secure-by-design.md",
+    "chunks": 25,
+    "chunk": 10,
+    "heading": "Consequences",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_secure-by-design_11_compliance-mapping.md",
+    "source": "common/engineering/secure-by-design.md",
+    "chunks": 25,
+    "chunk": 11,
+    "heading": "Compliance Mapping",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_secure-by-design_12_status.md",
+    "source": "common/engineering/secure-by-design.md",
+    "chunks": 25,
+    "chunk": 12,
+    "heading": "Status",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_secure-by-design_13_context.md",
+    "source": "common/engineering/secure-by-design.md",
+    "chunks": 25,
+    "chunk": 13,
+    "heading": "Context",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_secure-by-design_14_decision.md",
+    "source": "common/engineering/secure-by-design.md",
+    "chunks": 25,
+    "chunk": 14,
+    "heading": "Decision",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_secure-by-design_15_alternatives-considered.md",
+    "source": "common/engineering/secure-by-design.md",
+    "chunks": 25,
+    "chunk": 15,
+    "heading": "Alternatives Considered",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_secure-by-design_16_consequences.md",
+    "source": "common/engineering/secure-by-design.md",
+    "chunks": 25,
+    "chunk": 16,
+    "heading": "Consequences",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_secure-by-design_17_compliance-mapping.md",
+    "source": "common/engineering/secure-by-design.md",
+    "chunks": 25,
+    "chunk": 17,
+    "heading": "Compliance Mapping",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_secure-by-design_18_4--trade-off-analysis.md",
+    "source": "common/engineering/secure-by-design.md",
+    "chunks": 25,
+    "chunk": 18,
+    "heading": "4. Trade-off Analysis",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_secure-by-design_19_5--design-patterns-for-se.md",
+    "source": "common/engineering/secure-by-design.md",
+    "chunks": 25,
+    "chunk": 19,
+    "heading": "5. Design Patterns for Security",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_secure-by-design_20_6--secure-defaults.md",
+    "source": "common/engineering/secure-by-design.md",
+    "chunks": 25,
+    "chunk": 20,
+    "heading": "6. Secure Defaults",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_secure-by-design_21_7--fail-securely-vs-fail.md",
+    "source": "common/engineering/secure-by-design.md",
+    "chunks": 25,
+    "chunk": 21,
+    "heading": "7. Fail Securely vs Fail Open",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_secure-by-design_22_8--input-validation-at-tr.md",
+    "source": "common/engineering/secure-by-design.md",
+    "chunks": 25,
+    "chunk": 22,
+    "heading": "8. Input Validation at Trust Boundaries",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_secure-by-design_23_9--secure-by-design-in-pr.md",
+    "source": "common/engineering/secure-by-design.md",
+    "chunks": 25,
+    "chunk": 23,
+    "heading": "9. Secure by Design in Practice: A Worked Example",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_secure-by-design_24_10--references.md",
+    "source": "common/engineering/secure-by-design.md",
+    "chunks": 25,
+    "chunk": 24,
+    "heading": "10. References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_secure-by-design_25_11--further-reading.md",
+    "source": "common/engineering/secure-by-design.md",
+    "chunks": 25,
+    "chunk": 25,
+    "heading": "11. Further Reading",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-architecture-patterns_01_intro.md",
+    "source": "common/engineering/security-architecture-patterns.md",
+    "chunks": 7,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-architecture-patterns_02_1--network-segmentation.md",
+    "source": "common/engineering/security-architecture-patterns.md",
+    "chunks": 7,
+    "chunk": 2,
+    "heading": "1. Network Segmentation",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-architecture-patterns_03_2--identity---access-mana.md",
+    "source": "common/engineering/security-architecture-patterns.md",
+    "chunks": 7,
+    "chunk": 3,
+    "heading": "2. Identity & Access Management",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-architecture-patterns_04_3--encryption-strategies.md",
+    "source": "common/engineering/security-architecture-patterns.md",
+    "chunks": 7,
+    "chunk": 4,
+    "heading": "3. Encryption Strategies",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-architecture-patterns_05_4--logging---monitoring-a.md",
+    "source": "common/engineering/security-architecture-patterns.md",
+    "chunks": 7,
+    "chunk": 5,
+    "heading": "4. Logging & Monitoring Architecture",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-architecture-patterns_06_5--api-security-architect.md",
+    "source": "common/engineering/security-architecture-patterns.md",
+    "chunks": 7,
+    "chunk": 6,
+    "heading": "5. API Security Architecture",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-architecture-patterns_07_6--references.md",
+    "source": "common/engineering/security-architecture-patterns.md",
+    "chunks": 7,
+    "chunk": 7,
+    "heading": "6. References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-as-code_01_intro.md",
+    "source": "common/engineering/security-as-code.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-as-code_02_1--what-is-security-as-co.md",
+    "source": "common/engineering/security-as-code.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "1. What Is Security as Code",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-as-code_03_2--policy-as-code-with-op.md",
+    "source": "common/engineering/security-as-code.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "2. Policy as Code with OPA",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-as-code_04_3--infrastructure-as-code.md",
+    "source": "common/engineering/security-as-code.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "3. Infrastructure as Code Security",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-as-code_05_4--automated-remediation.md",
+    "source": "common/engineering/security-as-code.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "4. Automated Remediation",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-as-code_06_5--pipeline-security.md",
+    "source": "common/engineering/security-as-code.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "5. Pipeline Security",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-as-code_07_6--security-as-code-workf.md",
+    "source": "common/engineering/security-as-code.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "6. Security as Code Workflow (Putting It Together)",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-as-code_08_7--references.md",
+    "source": "common/engineering/security-as-code.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "7. References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-metrics_01_intro.md",
+    "source": "common/engineering/security-metrics.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-metrics_02_1--why-measure-security.md",
+    "source": "common/engineering/security-metrics.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "1. Why Measure Security",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-metrics_03_2--key-security-metrics.md",
+    "source": "common/engineering/security-metrics.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "2. Key Security Metrics",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-metrics_04_3--metrics-for-different.md",
+    "source": "common/engineering/security-metrics.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "3. Metrics for Different Audiences",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-metrics_05_4--building-a-security-da.md",
+    "source": "common/engineering/security-metrics.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "4. Building a Security Dashboard",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-metrics_06_5--common-pitfalls.md",
+    "source": "common/engineering/security-metrics.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "5. Common Pitfalls",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-metrics_07_6--metrics-driven-improve.md",
+    "source": "common/engineering/security-metrics.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "6. Metrics-Driven Improvement Cycle",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-metrics_08_7--references.md",
+    "source": "common/engineering/security-metrics.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "7. References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-principles_01_intro.md",
+    "source": "common/engineering/security-principles.md",
+    "chunks": 14,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-principles_02_table-of-contents.md",
+    "source": "common/engineering/security-principles.md",
+    "chunks": 14,
+    "chunk": 2,
+    "heading": "Table of Contents",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-principles_03_1--why-principles-matter.md",
+    "source": "common/engineering/security-principles.md",
+    "chunks": 14,
+    "chunk": 3,
+    "heading": "1. Why Principles Matter",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-principles_04_2--principle-1--defense-i.md",
+    "source": "common/engineering/security-principles.md",
+    "chunks": 14,
+    "chunk": 4,
+    "heading": "2. Principle 1: Defense in Depth",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-principles_05_3--principle-2--least-pri.md",
+    "source": "common/engineering/security-principles.md",
+    "chunks": 14,
+    "chunk": 5,
+    "heading": "3. Principle 2: Least Privilege",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-principles_06_4--principle-3--fail-safe.md",
+    "source": "common/engineering/security-principles.md",
+    "chunks": 14,
+    "chunk": 6,
+    "heading": "4. Principle 3: Fail Safe",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-principles_07_5--principle-4--economy-o.md",
+    "source": "common/engineering/security-principles.md",
+    "chunks": 14,
+    "chunk": 7,
+    "heading": "5. Principle 4: Economy of Mechanism",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-principles_08_6--principle-5--complete.md",
+    "source": "common/engineering/security-principles.md",
+    "chunks": 14,
+    "chunk": 8,
+    "heading": "6. Principle 5: Complete Mediation",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-principles_09_7--principle-6--open-desi.md",
+    "source": "common/engineering/security-principles.md",
+    "chunks": 14,
+    "chunk": 9,
+    "heading": "7. Principle 6: Open Design",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-principles_10_8--principle-7--least-com.md",
+    "source": "common/engineering/security-principles.md",
+    "chunks": 14,
+    "chunk": 10,
+    "heading": "8. Principle 7: Least Common Mechanism",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-principles_11_9--principle-8--psycholog.md",
+    "source": "common/engineering/security-principles.md",
+    "chunks": 14,
+    "chunk": 11,
+    "heading": "9. Principle 8: Psychological Acceptability",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-principles_12_10--principle-9--secure-b.md",
+    "source": "common/engineering/security-principles.md",
+    "chunks": 14,
+    "chunk": 12,
+    "heading": "10. Principle 9: Secure by Default",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-principles_13_11--applying-principles-t.md",
+    "source": "common/engineering/security-principles.md",
+    "chunks": 14,
+    "chunk": 13,
+    "heading": "11. Applying Principles Together",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_security-principles_14_12--further-reading.md",
+    "source": "common/engineering/security-principles.md",
+    "chunks": 14,
+    "chunk": 14,
+    "heading": "12. Further Reading",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_threat-modeling_01_intro.md",
+    "source": "common/engineering/threat-modeling.md",
+    "chunks": 13,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_threat-modeling_02_table-of-contents.md",
+    "source": "common/engineering/threat-modeling.md",
+    "chunks": 13,
+    "chunk": 2,
+    "heading": "Table of Contents",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_threat-modeling_03_1--what-is-threat-modelin.md",
+    "source": "common/engineering/threat-modeling.md",
+    "chunks": 13,
+    "chunk": 3,
+    "heading": "1. What Is Threat Modeling?",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_threat-modeling_04_2--the-stride-methodology.md",
+    "source": "common/engineering/threat-modeling.md",
+    "chunks": 13,
+    "chunk": 4,
+    "heading": "2. The STRIDE Methodology",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_threat-modeling_05_3--the-pasta-methodology.md",
+    "source": "common/engineering/threat-modeling.md",
+    "chunks": 13,
+    "chunk": 5,
+    "heading": "3. The PASTA Methodology",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_threat-modeling_06_4--the-linddun-methodolog.md",
+    "source": "common/engineering/threat-modeling.md",
+    "chunks": 13,
+    "chunk": 6,
+    "heading": "4. The LINDDUN Methodology",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_threat-modeling_07_5--choosing-a-methodology.md",
+    "source": "common/engineering/threat-modeling.md",
+    "chunks": 13,
+    "chunk": 7,
+    "heading": "5. Choosing a Methodology",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_threat-modeling_08_6--data-flow-diagrams.md",
+    "source": "common/engineering/threat-modeling.md",
+    "chunks": 13,
+    "chunk": 8,
+    "heading": "6. Data Flow Diagrams",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_threat-modeling_09_7--practical-exercise--th.md",
+    "source": "common/engineering/threat-modeling.md",
+    "chunks": 13,
+    "chunk": 9,
+    "heading": "7. Practical Exercise: Threat Modeling a Web App",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_threat-modeling_10_8--tools-for-threat-model.md",
+    "source": "common/engineering/threat-modeling.md",
+    "chunks": 13,
+    "chunk": 10,
+    "heading": "8. Tools for Threat Modeling",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_threat-modeling_11_9--integrating-threat-mod.md",
+    "source": "common/engineering/threat-modeling.md",
+    "chunks": 13,
+    "chunk": 11,
+    "heading": "9. Integrating Threat Modeling into Agile",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_threat-modeling_12_10--common-mistakes.md",
+    "source": "common/engineering/threat-modeling.md",
+    "chunks": 13,
+    "chunk": 12,
+    "heading": "10. Common Mistakes",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_threat-modeling_13_11--further-reading.md",
+    "source": "common/engineering/threat-modeling.md",
+    "chunks": 13,
+    "chunk": 13,
+    "heading": "11. Further Reading",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_zero-trust-architecture_01_intro.md",
+    "source": "common/engineering/zero-trust-architecture.md",
+    "chunks": 10,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_zero-trust-architecture_02_table-of-contents.md",
+    "source": "common/engineering/zero-trust-architecture.md",
+    "chunks": 10,
+    "chunk": 2,
+    "heading": "Table of Contents",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_zero-trust-architecture_03_1--what-zero-trust-is--an.md",
+    "source": "common/engineering/zero-trust-architecture.md",
+    "chunks": 10,
+    "chunk": 3,
+    "heading": "1. What Zero Trust Is (and Isn't)",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_zero-trust-architecture_04_2--core-principles.md",
+    "source": "common/engineering/zero-trust-architecture.md",
+    "chunks": 10,
+    "chunk": 4,
+    "heading": "2. Core Principles",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_zero-trust-architecture_05_3--the-five-pillars-of-ze.md",
+    "source": "common/engineering/zero-trust-architecture.md",
+    "chunks": 10,
+    "chunk": 5,
+    "heading": "3. The Five Pillars of Zero Trust",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_zero-trust-architecture_06_4--beyondcorp--google-s-i.md",
+    "source": "common/engineering/zero-trust-architecture.md",
+    "chunks": 10,
+    "chunk": 6,
+    "heading": "4. BeyondCorp: Google's Implementation",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_zero-trust-architecture_07_5--zero-trust-for-ai-augm.md",
+    "source": "common/engineering/zero-trust-architecture.md",
+    "chunks": 10,
+    "chunk": 7,
+    "heading": "5. Zero Trust for AI-Augmented Systems",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_zero-trust-architecture_08_6--implementation-roadmap.md",
+    "source": "common/engineering/zero-trust-architecture.md",
+    "chunks": 10,
+    "chunk": 8,
+    "heading": "6. Implementation Roadmap for Startups",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_zero-trust-architecture_09_7--common-pitfalls.md",
+    "source": "common/engineering/zero-trust-architecture.md",
+    "chunks": 10,
+    "chunk": 9,
+    "heading": "7. Common Pitfalls",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_engineering_zero-trust-architecture_10_8--further-reading.md",
+    "source": "common/engineering/zero-trust-architecture.md",
+    "chunks": 10,
+    "chunk": 10,
+    "heading": "8. Further Reading",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_http-headers-security_01_intro.md",
+    "source": "common/http-headers-security.md",
+    "chunks": 10,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_http-headers-security_02_what-are-http-security-he.md",
+    "source": "common/http-headers-security.md",
+    "chunks": 10,
+    "chunk": 2,
+    "heading": "What Are HTTP Security Headers?",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_http-headers-security_03_why-vibe-coding-makes-thi.md",
+    "source": "common/http-headers-security.md",
+    "chunks": 10,
+    "chunk": 3,
+    "heading": "Why Vibe Coding Makes This Worse",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_http-headers-security_04_the-essential-security-he.md",
+    "source": "common/http-headers-security.md",
+    "chunks": 10,
+    "chunk": 4,
+    "heading": "The Essential Security Headers",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_http-headers-security_05_additional-important-secu.md",
+    "source": "common/http-headers-security.md",
+    "chunks": 10,
+    "chunk": 5,
+    "heading": "Additional Important Security Headers",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_http-headers-security_06_header-priority---quick-r.md",
+    "source": "common/http-headers-security.md",
+    "chunks": 10,
+    "chunk": 6,
+    "heading": "Header Priority & Quick Reference",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_http-headers-security_07_prevention-checklist.md",
+    "source": "common/http-headers-security.md",
+    "chunks": 10,
+    "chunk": 7,
+    "heading": "Prevention Checklist",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_http-headers-security_08_real-world-cves---inciden.md",
+    "source": "common/http-headers-security.md",
+    "chunks": 10,
+    "chunk": 8,
+    "heading": "Real-World CVEs & Incidents",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_http-headers-security_09_testing-security-headers.md",
+    "source": "common/http-headers-security.md",
+    "chunks": 10,
+    "chunk": 9,
+    "heading": "Testing Security Headers",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_http-headers-security_10_references.md",
+    "source": "common/http-headers-security.md",
+    "chunks": 10,
+    "chunk": 10,
+    "heading": "References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_http-smuggling_01_intro.md",
+    "source": "common/http-smuggling.md",
+    "chunks": 11,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_http-smuggling_02_what-is-http-request-smug.md",
+    "source": "common/http-smuggling.md",
+    "chunks": 11,
+    "chunk": 2,
+    "heading": "What Is HTTP Request Smuggling?",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_http-smuggling_03_how-it-works.md",
+    "source": "common/http-smuggling.md",
+    "chunks": 11,
+    "chunk": 3,
+    "heading": "How It Works",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_http-smuggling_04_common-smuggling-techniqu.md",
+    "source": "common/http-smuggling.md",
+    "chunks": 11,
+    "chunk": 4,
+    "heading": "Common Smuggling Techniques",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_http-smuggling_05_why-vibe-coding-makes-thi.md",
+    "source": "common/http-smuggling.md",
+    "chunks": 11,
+    "chunk": 5,
+    "heading": "Why Vibe Coding Makes This Worse",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_http-smuggling_06_vulnerable-configurations.md",
+    "source": "common/http-smuggling.md",
+    "chunks": 11,
+    "chunk": 6,
+    "heading": "Vulnerable Configurations",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_http-smuggling_07_fixed-configurations.md",
+    "source": "common/http-smuggling.md",
+    "chunks": 11,
+    "chunk": 7,
+    "heading": "Fixed Configurations",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_http-smuggling_08_impact-examples.md",
+    "source": "common/http-smuggling.md",
+    "chunks": 11,
+    "chunk": 8,
+    "heading": "Impact Examples",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_http-smuggling_09_prevention-checklist-for.md",
+    "source": "common/http-smuggling.md",
+    "chunks": 11,
+    "chunk": 9,
+    "heading": "Prevention Checklist for AI Prompts",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_http-smuggling_10_real-world-cves.md",
+    "source": "common/http-smuggling.md",
+    "chunks": 11,
+    "chunk": 10,
+    "heading": "Real-World CVEs",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_http-smuggling_11_references.md",
+    "source": "common/http-smuggling.md",
+    "chunks": 11,
+    "chunk": 11,
+    "heading": "References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_idor.md",
+    "source": "common/idor.md",
+    "chunks": 1,
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_incident-response_01_intro.md",
+    "source": "common/incident-response.md",
+    "chunks": 18,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_incident-response_02_1--ir-phases--nist-800-61.md",
+    "source": "common/incident-response.md",
+    "chunks": 18,
+    "chunk": 2,
+    "heading": "1. IR Phases (NIST 800-61 Aligned)",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_incident-response_03_2--detection.md",
+    "source": "common/incident-response.md",
+    "chunks": 18,
+    "chunk": 3,
+    "heading": "2. Detection",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_incident-response_04_3--containment.md",
+    "source": "common/incident-response.md",
+    "chunks": 18,
+    "chunk": 4,
+    "heading": "3. Containment",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_incident-response_05_4--eradication.md",
+    "source": "common/incident-response.md",
+    "chunks": 18,
+    "chunk": 5,
+    "heading": "4. Eradication",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_incident-response_06_5--recovery.md",
+    "source": "common/incident-response.md",
+    "chunks": 18,
+    "chunk": 6,
+    "heading": "5. Recovery",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_incident-response_07_6--post-mortem.md",
+    "source": "common/incident-response.md",
+    "chunks": 18,
+    "chunk": 7,
+    "heading": "6. Post-Mortem",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_incident-response_08_incident-summary.md",
+    "source": "common/incident-response.md",
+    "chunks": 18,
+    "chunk": 8,
+    "heading": "Incident Summary",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_incident-response_09_timeline.md",
+    "source": "common/incident-response.md",
+    "chunks": 18,
+    "chunk": 9,
+    "heading": "Timeline",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_incident-response_10_root-cause-analysis.md",
+    "source": "common/incident-response.md",
+    "chunks": 18,
+    "chunk": 10,
+    "heading": "Root Cause Analysis",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_incident-response_11_affected-systems---data.md",
+    "source": "common/incident-response.md",
+    "chunks": 18,
+    "chunk": 11,
+    "heading": "Affected Systems & Data",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_incident-response_12_containment-actions.md",
+    "source": "common/incident-response.md",
+    "chunks": 18,
+    "chunk": 12,
+    "heading": "Containment Actions",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_incident-response_13_remediation.md",
+    "source": "common/incident-response.md",
+    "chunks": 18,
+    "chunk": 13,
+    "heading": "Remediation",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_incident-response_14_lessons-learned.md",
+    "source": "common/incident-response.md",
+    "chunks": 18,
+    "chunk": 14,
+    "heading": "Lessons Learned",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_incident-response_15_action-items.md",
+    "source": "common/incident-response.md",
+    "chunks": 18,
+    "chunk": 15,
+    "heading": "Action Items",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_incident-response_16_7--ai-generated-code--spe.md",
+    "source": "common/incident-response.md",
+    "chunks": 18,
+    "chunk": 16,
+    "heading": "7. AI-Generated Code: Special Considerations",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_incident-response_17_8--ir-toolkit.md",
+    "source": "common/incident-response.md",
+    "chunks": 18,
+    "chunk": 17,
+    "heading": "8. IR Toolkit",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_incident-response_18_references.md",
+    "source": "common/incident-response.md",
+    "chunks": 18,
+    "chunk": 18,
+    "heading": "References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_index.md",
+    "source": "common/index.md",
+    "chunks": 1,
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_injection_01_intro.md",
+    "source": "common/injection.md",
+    "chunks": 11,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_injection_02_what-is-injection.md",
+    "source": "common/injection.md",
+    "chunks": 11,
+    "chunk": 2,
+    "heading": "What Is Injection?",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_injection_03_why-vibe-coding-makes-thi.md",
+    "source": "common/injection.md",
+    "chunks": 11,
+    "chunk": 3,
+    "heading": "Why Vibe Coding Makes This Worse",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_injection_04_sql-injection.md",
+    "source": "common/injection.md",
+    "chunks": 11,
+    "chunk": 4,
+    "heading": "SQL Injection",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_injection_05_nosql-injection.md",
+    "source": "common/injection.md",
+    "chunks": 11,
+    "chunk": 5,
+    "heading": "NoSQL Injection",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_injection_06_os-command-injection.md",
+    "source": "common/injection.md",
+    "chunks": 11,
+    "chunk": 6,
+    "heading": "OS Command Injection",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_injection_07_ldap-injection.md",
+    "source": "common/injection.md",
+    "chunks": 11,
+    "chunk": 7,
+    "heading": "LDAP Injection",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_injection_08_expression-language--el.md",
+    "source": "common/injection.md",
+    "chunks": 11,
+    "chunk": 8,
+    "heading": "Expression Language (EL) / OGNL Injection",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_injection_09_real-world-cves.md",
+    "source": "common/injection.md",
+    "chunks": 11,
+    "chunk": 9,
+    "heading": "Real-World CVEs",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_injection_10_prevention-checklist-for.md",
+    "source": "common/injection.md",
+    "chunks": 11,
+    "chunk": 10,
+    "heading": "Prevention Checklist for AI Prompts",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_injection_11_references.md",
+    "source": "common/injection.md",
+    "chunks": 11,
+    "chunk": 11,
+    "heading": "References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_logging-forensics_01_intro.md",
+    "source": "common/logging-forensics.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_logging-forensics_02_what-is-security-logging.md",
+    "source": "common/logging-forensics.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "What Is Security Logging?",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_logging-forensics_03_why-vibe-coding-makes-thi.md",
+    "source": "common/logging-forensics.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "Why Vibe Coding Makes This Worse",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_logging-forensics_04_vulnerability-categories.md",
+    "source": "common/logging-forensics.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "Vulnerability Categories",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_logging-forensics_05_prevention-checklist.md",
+    "source": "common/logging-forensics.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "Prevention Checklist",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_logging-forensics_06_real-world-cves---inciden.md",
+    "source": "common/logging-forensics.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "Real-World CVEs & Incidents",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_logging-forensics_07_testing-your-logging.md",
+    "source": "common/logging-forensics.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "Testing Your Logging",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_logging-forensics_08_references.md",
+    "source": "common/logging-forensics.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_logging_01_intro.md",
+    "source": "common/logging.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_logging_02_what-are-logging---monito.md",
+    "source": "common/logging.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "What Are Logging & Monitoring Failures?",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_logging_03_why-vibe-coding-makes-thi.md",
+    "source": "common/logging.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "Why Vibe Coding Makes This Worse",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_logging_04_vulnerable-patterns.md",
+    "source": "common/logging.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "Vulnerable Patterns",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_logging_05_secure-logging-patterns.md",
+    "source": "common/logging.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "Secure Logging Patterns",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_logging_06_prevention-checklist-for.md",
+    "source": "common/logging.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "Prevention Checklist for AI Prompts",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_logging_07_real-world-cves.md",
+    "source": "common/logging.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "Real-World CVEs",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_logging_08_references.md",
+    "source": "common/logging.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_mass-assignment_01_intro.md",
+    "source": "common/mass-assignment.md",
+    "chunks": 9,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_mass-assignment_02_what-is-mass-assignment.md",
+    "source": "common/mass-assignment.md",
+    "chunks": 9,
+    "chunk": 2,
+    "heading": "What Is Mass Assignment?",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_mass-assignment_03_why-vibe-coding-makes-thi.md",
+    "source": "common/mass-assignment.md",
+    "chunks": 9,
+    "chunk": 3,
+    "heading": "Why Vibe Coding Makes This Worse",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_mass-assignment_04_vulnerable-code-examples.md",
+    "source": "common/mass-assignment.md",
+    "chunks": 9,
+    "chunk": 4,
+    "heading": "Vulnerable Code Examples",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_mass-assignment_05_fixed-code-examples.md",
+    "source": "common/mass-assignment.md",
+    "chunks": 9,
+    "chunk": 5,
+    "heading": "Fixed Code Examples",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_mass-assignment_06_common-mass-assignment-ta.md",
+    "source": "common/mass-assignment.md",
+    "chunks": 9,
+    "chunk": 6,
+    "heading": "Common Mass Assignment Targets",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_mass-assignment_07_prevention-checklist-for.md",
+    "source": "common/mass-assignment.md",
+    "chunks": 9,
+    "chunk": 7,
+    "heading": "Prevention Checklist for AI Prompts",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_mass-assignment_08_real-world-cves.md",
+    "source": "common/mass-assignment.md",
+    "chunks": 9,
+    "chunk": 8,
+    "heading": "Real-World CVEs",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_mass-assignment_09_references.md",
+    "source": "common/mass-assignment.md",
+    "chunks": 9,
+    "chunk": 9,
+    "heading": "References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_mcp-security_01_intro.md",
+    "source": "common/mcp-security.md",
+    "chunks": 10,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_mcp-security_02_1--vulnerability-explanat.md",
+    "source": "common/mcp-security.md",
+    "chunks": 10,
+    "chunk": 2,
+    "heading": "1. Vulnerability Explanation",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_mcp-security_03_2--owasp-mcp-top-10-summa.md",
+    "source": "common/mcp-security.md",
+    "chunks": 10,
+    "chunk": 3,
+    "heading": "2. OWASP MCP Top 10 Summary",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_mcp-security_04_3--how-ai---vibe-coding-g.md",
+    "source": "common/mcp-security.md",
+    "chunks": 10,
+    "chunk": 4,
+    "heading": "3. How AI / Vibe Coding Generates This Risk",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_mcp-security_05_4--vulnerable-code-exampl.md",
+    "source": "common/mcp-security.md",
+    "chunks": 10,
+    "chunk": 5,
+    "heading": "4. Vulnerable Code Examples",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_mcp-security_06_5--secure-code-fix.md",
+    "source": "common/mcp-security.md",
+    "chunks": 10,
+    "chunk": 6,
+    "heading": "5. Secure Code Fix",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_mcp-security_07_6--prevention-checklist.md",
+    "source": "common/mcp-security.md",
+    "chunks": 10,
+    "chunk": 7,
+    "heading": "6. Prevention Checklist",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_mcp-security_08_7--real-cves.md",
+    "source": "common/mcp-security.md",
+    "chunks": 10,
+    "chunk": 8,
+    "heading": "7. Real CVEs",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_mcp-security_09_8--vibe-coding-red-flags.md",
+    "source": "common/mcp-security.md",
+    "chunks": 10,
+    "chunk": 9,
+    "heading": "8. Vibe-Coding Red Flags",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_mcp-security_10_references.md",
+    "source": "common/mcp-security.md",
+    "chunks": 10,
+    "chunk": 10,
+    "heading": "References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_mcp-threat-modeling_01_intro.md",
+    "source": "common/mcp-threat-modeling.md",
+    "chunks": 6,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_mcp-threat-modeling_02_1--mcp-architecture-overv.md",
+    "source": "common/mcp-threat-modeling.md",
+    "chunks": 6,
+    "chunk": 2,
+    "heading": "1. MCP Architecture Overview",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_mcp-threat-modeling_03_2--threat-categories.md",
+    "source": "common/mcp-threat-modeling.md",
+    "chunks": 6,
+    "chunk": 3,
+    "heading": "2. Threat Categories",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_mcp-threat-modeling_04_3--mitigation-strategies.md",
+    "source": "common/mcp-threat-modeling.md",
+    "chunks": 6,
+    "chunk": 4,
+    "heading": "3. Mitigation Strategies per Threat",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_mcp-threat-modeling_05_4--incident-response-for.md",
+    "source": "common/mcp-threat-modeling.md",
+    "chunks": 6,
+    "chunk": 5,
+    "heading": "4. Incident Response for MCP Compromise",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_mcp-threat-modeling_06_5--references.md",
+    "source": "common/mcp-threat-modeling.md",
+    "chunks": 6,
+    "chunk": 6,
+    "heading": "5. References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_memory-safety_01_intro.md",
+    "source": "common/memory-safety.md",
+    "chunks": 10,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_memory-safety_02_what-are-memory-safety-vu.md",
+    "source": "common/memory-safety.md",
+    "chunks": 10,
+    "chunk": 2,
+    "heading": "What Are Memory Safety Vulnerabilities?",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_memory-safety_03_why-vibe-coding-makes-thi.md",
+    "source": "common/memory-safety.md",
+    "chunks": 10,
+    "chunk": 3,
+    "heading": "Why Vibe Coding Makes This Worse",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_memory-safety_04_buffer-overflow.md",
+    "source": "common/memory-safety.md",
+    "chunks": 10,
+    "chunk": 4,
+    "heading": "Buffer Overflow",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_memory-safety_05_use-after-free--uaf.md",
+    "source": "common/memory-safety.md",
+    "chunks": 10,
+    "chunk": 5,
+    "heading": "Use-After-Free (UAF)",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_memory-safety_06_out-of-bounds-read.md",
+    "source": "common/memory-safety.md",
+    "chunks": 10,
+    "chunk": 6,
+    "heading": "Out-of-Bounds Read",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_memory-safety_07_memory-safe-languages.md",
+    "source": "common/memory-safety.md",
+    "chunks": 10,
+    "chunk": 7,
+    "heading": "Memory-Safe Languages",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_memory-safety_08_prevention-checklist-for.md",
+    "source": "common/memory-safety.md",
+    "chunks": 10,
+    "chunk": 8,
+    "heading": "Prevention Checklist for AI Prompts",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_memory-safety_09_real-world-cves.md",
+    "source": "common/memory-safety.md",
+    "chunks": 10,
+    "chunk": 9,
+    "heading": "Real-World CVEs",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_memory-safety_10_references.md",
+    "source": "common/memory-safety.md",
+    "chunks": 10,
+    "chunk": 10,
+    "heading": "References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_misconfiguration_01_intro.md",
+    "source": "common/misconfiguration.md",
+    "chunks": 9,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_misconfiguration_02_what-is-security-misconfi.md",
+    "source": "common/misconfiguration.md",
+    "chunks": 9,
+    "chunk": 2,
+    "heading": "What Is Security Misconfiguration?",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_misconfiguration_03_why-vibe-coding-makes-thi.md",
+    "source": "common/misconfiguration.md",
+    "chunks": 9,
+    "chunk": 3,
+    "heading": "Why Vibe Coding Makes This Worse",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_misconfiguration_04_common-misconfigurations.md",
+    "source": "common/misconfiguration.md",
+    "chunks": 9,
+    "chunk": 4,
+    "heading": "Common Misconfigurations",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_misconfiguration_05_fixed-configurations.md",
+    "source": "common/misconfiguration.md",
+    "chunks": 9,
+    "chunk": 5,
+    "heading": "Fixed Configurations",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_misconfiguration_06_security-headers-checklis.md",
+    "source": "common/misconfiguration.md",
+    "chunks": 9,
+    "chunk": 6,
+    "heading": "Security Headers Checklist",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_misconfiguration_07_prevention-checklist-for.md",
+    "source": "common/misconfiguration.md",
+    "chunks": 9,
+    "chunk": 7,
+    "heading": "Prevention Checklist for AI Prompts",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_misconfiguration_08_real-world-cves.md",
+    "source": "common/misconfiguration.md",
+    "chunks": 9,
+    "chunk": 8,
+    "heading": "Real-World CVEs",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_misconfiguration_09_references.md",
+    "source": "common/misconfiguration.md",
+    "chunks": 9,
+    "chunk": 9,
+    "heading": "References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_mq_message-queue-security_01_intro.md",
+    "source": "common/mq/message-queue-security.md",
+    "chunks": 10,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "high"
+  },
+  {
+    "file": "common_mq_message-queue-security_02_table-of-contents.md",
+    "source": "common/mq/message-queue-security.md",
+    "chunks": 10,
+    "chunk": 2,
+    "heading": "Table of Contents",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "high"
+  },
+  {
+    "file": "common_mq_message-queue-security_03_1--rabbitmq-security.md",
+    "source": "common/mq/message-queue-security.md",
+    "chunks": 10,
+    "chunk": 3,
+    "heading": "1. RabbitMQ Security",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "high"
+  },
+  {
+    "file": "common_mq_message-queue-security_04_2--kafka-security.md",
+    "source": "common/mq/message-queue-security.md",
+    "chunks": 10,
+    "chunk": 4,
+    "heading": "2. Kafka Security",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "high"
+  },
+  {
+    "file": "common_mq_message-queue-security_05_3--redis-message---pubsub.md",
+    "source": "common/mq/message-queue-security.md",
+    "chunks": 10,
+    "chunk": 5,
+    "heading": "3. Redis Message / PubSub Security",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "high"
+  },
+  {
+    "file": "common_mq_message-queue-security_06_4--how-ai---vibe-coding-g.md",
+    "source": "common/mq/message-queue-security.md",
+    "chunks": 10,
+    "chunk": 6,
+    "heading": "4. How AI / Vibe Coding Generates Insecure Configs",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "high"
+  },
+  {
+    "file": "common_mq_message-queue-security_07_5--real-cves.md",
+    "source": "common/mq/message-queue-security.md",
+    "chunks": 10,
+    "chunk": 7,
+    "heading": "5. Real CVEs",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "high"
+  },
+  {
+    "file": "common_mq_message-queue-security_08_6--prevention-checklist.md",
+    "source": "common/mq/message-queue-security.md",
+    "chunks": 10,
+    "chunk": 8,
+    "heading": "6. Prevention Checklist",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "high"
+  },
+  {
+    "file": "common_mq_message-queue-security_09_7--vibe-coding-red-flags.md",
+    "source": "common/mq/message-queue-security.md",
+    "chunks": 10,
+    "chunk": 9,
+    "heading": "7. Vibe-Coding Red Flags",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "high"
+  },
+  {
+    "file": "common_mq_message-queue-security_10_8--references.md",
+    "source": "common/mq/message-queue-security.md",
+    "chunks": 10,
+    "chunk": 10,
+    "heading": "8. References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "high"
+  },
+  {
+    "file": "common_oauth2-security_01_intro.md",
+    "source": "common/oauth2-security.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_oauth2-security_02_what-is-oauth-2-0.md",
+    "source": "common/oauth2-security.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "What Is OAuth 2.0?",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_oauth2-security_03_why-vibe-coding-makes-thi.md",
+    "source": "common/oauth2-security.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "Why Vibe Coding Makes This Worse",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_oauth2-security_04_major-oauth-2-0-vulnerabi.md",
+    "source": "common/oauth2-security.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "Major OAuth 2.0 Vulnerability Categories",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_oauth2-security_05_prevention-checklist.md",
+    "source": "common/oauth2-security.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "Prevention Checklist",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_oauth2-security_06_real-world-cves---inciden.md",
+    "source": "common/oauth2-security.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "Real-World CVEs & Incidents",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_oauth2-security_07_testing-for-oauth-vulnera.md",
+    "source": "common/oauth2-security.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "Testing for OAuth Vulnerabilities",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_oauth2-security_08_references.md",
+    "source": "common/oauth2-security.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_oidc-saml-security_01_intro.md",
+    "source": "common/oidc-saml-security.md",
+    "chunks": 7,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_oidc-saml-security_02_1--vulnerability-explanat.md",
+    "source": "common/oidc-saml-security.md",
+    "chunks": 7,
+    "chunk": 2,
+    "heading": "1. Vulnerability Explanation",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_oidc-saml-security_03_2--vulnerable-code---secu.md",
+    "source": "common/oidc-saml-security.md",
+    "chunks": 7,
+    "chunk": 3,
+    "heading": "2. Vulnerable Code + Secure Fix",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_oidc-saml-security_04_3--real-cves--web-verifie.md",
+    "source": "common/oidc-saml-security.md",
+    "chunks": 7,
+    "chunk": 4,
+    "heading": "3. Real CVEs (Web-Verified)",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_oidc-saml-security_05_4--prevention-checklist.md",
+    "source": "common/oidc-saml-security.md",
+    "chunks": 7,
+    "chunk": 5,
+    "heading": "4. Prevention Checklist",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_oidc-saml-security_06_5--vibe-coding-red-flags.md",
+    "source": "common/oidc-saml-security.md",
+    "chunks": 7,
+    "chunk": 6,
+    "heading": "5. Vibe-Coding Red Flags",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_oidc-saml-security_07_references.md",
+    "source": "common/oidc-saml-security.md",
+    "chunks": 7,
+    "chunk": 7,
+    "heading": "References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_open-redirect.md",
+    "source": "common/open-redirect.md",
+    "chunks": 1,
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_path-traversal.md",
+    "source": "common/path-traversal.md",
+    "chunks": 1,
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_prototype-pollution_01_intro.md",
+    "source": "common/prototype-pollution.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_prototype-pollution_02_what-is-prototype-polluti.md",
+    "source": "common/prototype-pollution.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "What Is Prototype Pollution?",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_prototype-pollution_03_why-vibe-coding-makes-thi.md",
+    "source": "common/prototype-pollution.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "Why Vibe Coding Makes This Worse",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_prototype-pollution_04_vulnerable-code-examples.md",
+    "source": "common/prototype-pollution.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "Vulnerable Code Examples",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_prototype-pollution_05_fixed-code-examples.md",
+    "source": "common/prototype-pollution.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "Fixed Code Examples",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_prototype-pollution_06_prevention-checklist-for.md",
+    "source": "common/prototype-pollution.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "Prevention Checklist for AI Prompts",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_prototype-pollution_07_real-world-cves.md",
+    "source": "common/prototype-pollution.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "Real-World CVEs",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_prototype-pollution_08_references.md",
+    "source": "common/prototype-pollution.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_race-conditions_01_intro.md",
+    "source": "common/race-conditions.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_race-conditions_02_what-are-race-conditions.md",
+    "source": "common/race-conditions.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "What Are Race Conditions?",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_race-conditions_03_why-vibe-coding-makes-thi.md",
+    "source": "common/race-conditions.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "Why Vibe Coding Makes This Worse",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_race-conditions_04_vulnerable-code-examples.md",
+    "source": "common/race-conditions.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "Vulnerable Code Examples",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_race-conditions_05_common-race-condition-pat.md",
+    "source": "common/race-conditions.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "Common Race Condition Patterns",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_race-conditions_06_prevention-checklist-for.md",
+    "source": "common/race-conditions.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "Prevention Checklist for AI Prompts",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_race-conditions_07_real-world-cves.md",
+    "source": "common/race-conditions.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "Real-World CVEs",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_race-conditions_08_references.md",
+    "source": "common/race-conditions.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_rag-poisoning_01_intro.md",
+    "source": "common/rag-poisoning.md",
+    "chunks": 10,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_rag-poisoning_02_table-of-contents.md",
+    "source": "common/rag-poisoning.md",
+    "chunks": 10,
+    "chunk": 2,
+    "heading": "Table of Contents",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_rag-poisoning_03_1--what-is-rag-poisoning.md",
+    "source": "common/rag-poisoning.md",
+    "chunks": 10,
+    "chunk": 3,
+    "heading": "1. What is RAG Poisoning",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_rag-poisoning_04_2--attack-vectors.md",
+    "source": "common/rag-poisoning.md",
+    "chunks": 10,
+    "chunk": 4,
+    "heading": "2. Attack Vectors",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_rag-poisoning_05_3--how-rag-poisoning-work.md",
+    "source": "common/rag-poisoning.md",
+    "chunks": 10,
+    "chunk": 5,
+    "heading": "3. How RAG Poisoning Works Step-by-Step",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_rag-poisoning_06_how-to-verify-your-accoun.md",
+    "source": "common/rag-poisoning.md",
+    "chunks": 10,
+    "chunk": 6,
+    "heading": "How to verify your account",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_rag-poisoning_07_4--real-incidents---resea.md",
+    "source": "common/rag-poisoning.md",
+    "chunks": 10,
+    "chunk": 7,
+    "heading": "4. Real Incidents & Research",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_rag-poisoning_08_5--defense-strategies.md",
+    "source": "common/rag-poisoning.md",
+    "chunks": 10,
+    "chunk": 8,
+    "heading": "5. Defense Strategies",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_rag-poisoning_09_6--prevention-checklist.md",
+    "source": "common/rag-poisoning.md",
+    "chunks": 10,
+    "chunk": 9,
+    "heading": "6. Prevention Checklist",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_rag-poisoning_10_7--references.md",
+    "source": "common/rag-poisoning.md",
+    "chunks": 10,
+    "chunk": 10,
+    "heading": "7. References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_redos.md",
+    "source": "common/redos.md",
+    "chunks": 1,
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "critical"
+  },
+  {
+    "file": "common_secure-cicd_01_intro.md",
+    "source": "common/secure-cicd.md",
+    "chunks": 9,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_secure-cicd_02_1--pipeline-security-fund.md",
+    "source": "common/secure-cicd.md",
+    "chunks": 9,
+    "chunk": 2,
+    "heading": "1. Pipeline Security Fundamentals",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_secure-cicd_03_2--secret-scanning-in-ci.md",
+    "source": "common/secure-cicd.md",
+    "chunks": 9,
+    "chunk": 3,
+    "heading": "2. Secret Scanning in CI",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_secure-cicd_04_3--dependency-scanning-in.md",
+    "source": "common/secure-cicd.md",
+    "chunks": 9,
+    "chunk": 4,
+    "heading": "3. Dependency Scanning in Build",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_secure-cicd_05_4--artifact-signing.md",
+    "source": "common/secure-cicd.md",
+    "chunks": 9,
+    "chunk": 5,
+    "heading": "4. Artifact Signing",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_secure-cicd_06_5--sbom-generation.md",
+    "source": "common/secure-cicd.md",
+    "chunks": 9,
+    "chunk": 6,
+    "heading": "5. SBOM Generation",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_secure-cicd_07_6--ci-cd-security-for-ai.md",
+    "source": "common/secure-cicd.md",
+    "chunks": 9,
+    "chunk": 7,
+    "heading": "6. CI/CD Security for AI-Generated Code",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_secure-cicd_08_7--supply-chain-levels-fo.md",
+    "source": "common/secure-cicd.md",
+    "chunks": 9,
+    "chunk": 8,
+    "heading": "7. Supply Chain Levels for Software Artifacts (SLSA)",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_secure-cicd_09_references.md",
+    "source": "common/secure-cicd.md",
+    "chunks": 9,
+    "chunk": 9,
+    "heading": "References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_secure-code-review_01_intro.md",
+    "source": "common/secure-code-review.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_secure-code-review_02_1--the-security-code-revi.md",
+    "source": "common/secure-code-review.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "1. The Security Code Review Process",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_secure-code-review_03_2--red-flags--immediate-b.md",
+    "source": "common/secure-code-review.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "2. Red Flags (Immediate Blockers)",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_secure-code-review_04_3--automated-review-tools.md",
+    "source": "common/secure-code-review.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "3. Automated Review Tools",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_secure-code-review_05_4--language-specific-red.md",
+    "source": "common/secure-code-review.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "4. Language-Specific Red Flags",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_secure-code-review_06_5--reviewing-ai-generated.md",
+    "source": "common/secure-code-review.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "5. Reviewing AI-Generated Code: Specific Guidance",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_secure-code-review_07_6--quick-reference--top-1.md",
+    "source": "common/secure-code-review.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "6. Quick Reference: Top 10 OWASP:2021 \u00d7 AI Code",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_secure-code-review_08_references.md",
+    "source": "common/secure-code-review.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_security-testing_01_intro.md",
+    "source": "common/security-testing.md",
+    "chunks": 8,
+    "chunk": 1,
+    "heading": "intro",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_security-testing_02_1--testing-types-overview.md",
+    "source": "common/security-testing.md",
+    "chunks": 8,
+    "chunk": 2,
+    "heading": "1. Testing Types Overview",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_security-testing_03_2--tool-per-language-matr.md",
+    "source": "common/security-testing.md",
+    "chunks": 8,
+    "chunk": 3,
+    "heading": "2. Tool Per Language Matrix",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_security-testing_04_3--fuzzing-methodology.md",
+    "source": "common/security-testing.md",
+    "chunks": 8,
+    "chunk": 4,
+    "heading": "3. Fuzzing Methodology",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_security-testing_05_4--penetration-testing-wo.md",
+    "source": "common/security-testing.md",
+    "chunks": 8,
+    "chunk": 5,
+    "heading": "4. Penetration Testing Workflow",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_security-testing_06_5--ci-cd-integration.md",
+    "source": "common/security-testing.md",
+    "chunks": 8,
+    "chunk": 6,
+    "heading": "5. CI/CD Integration",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_security-testing_07_6--vibe-coding-security-t.md",
+    "source": "common/security-testing.md",
+    "chunks": 8,
+    "chunk": 7,
+    "heading": "6. Vibe Coding Security Testing Considerations",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  },
+  {
+    "file": "common_security-testing_08_references.md",
+    "source": "common/security-testing.md",
+    "chunks": 8,
+    "chunk": 8,
+    "heading": "References",
+    "category": "common-vuln",
+    "language": "common",
+    "severity": "medium"
+  }
+]

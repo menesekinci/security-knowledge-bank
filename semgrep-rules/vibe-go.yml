@@ -1,0 +1,65 @@
+rules:
+- id: vibe-go-sql-sprintf
+  message: "[VIBE-SEC] fmt.Sprintf into SQL is injection-prone. Use database/sql placeholders. KB: languages/go/sql-injection.md"
+  severity: ERROR
+  languages: [go]
+  pattern-either:
+  - pattern: $DB.Query(fmt.Sprintf(...))
+  - pattern: $DB.Exec(fmt.Sprintf(...))
+  - pattern: $DB.QueryRow(fmt.Sprintf(...))
+  metadata:
+    cwe: CWE-89
+    kb_path: languages/go/sql-injection.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]
+
+- id: vibe-go-text-template
+  message: "[VIBE-SEC] text/template does not auto-escape HTML — XSS risk in web contexts. Prefer html/template. KB: languages/go/template-injection.md"
+  severity: WARNING
+  languages: [go]
+  patterns:
+  - pattern-either:
+    - pattern: template.New(...)
+    - pattern: template.Must(...)
+  - pattern-inside: |
+      import "text/template"
+      ...
+  metadata:
+    cwe: CWE-79
+    kb_path: languages/go/template-injection.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]
+
+- id: vibe-go-tls-insecure
+  message: "[VIBE-SEC] InsecureSkipVerify disables TLS verification. KB: languages/go/http-security-deep.md"
+  severity: ERROR
+  languages: [go]
+  pattern: "tls.Config{..., InsecureSkipVerify: true, ...}"
+  metadata:
+    cwe: CWE-295
+    kb_path: languages/go/http-security-deep.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]
+
+- id: vibe-go-math-rand
+  message: "[VIBE-SEC] math/rand is not crypto-safe for tokens/secrets. Use crypto/rand. KB: languages/go/crypto-mistakes.md"
+  severity: WARNING
+  languages: [go]
+  pattern-either:
+  - pattern: rand.Intn(...)
+  metadata:
+    cwe: CWE-338
+    kb_path: languages/go/crypto-mistakes.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]
+
+- id: vibe-go-http-serve
+  message: "[VIBE-SEC] http.ListenAndServe without timeouts risks slowloris. Set ReadHeaderTimeout etc. KB: languages/go/http-security-deep.md"
+  severity: WARNING
+  languages: [go]
+  pattern: http.ListenAndServe(...)
+  metadata:
+    cwe: CWE-400
+    kb_path: languages/go/http-security-deep.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]

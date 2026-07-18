@@ -1,0 +1,38 @@
+{
+  "total_rules": 155,
+  "total_files": 18,
+  "by_file": {
+    "vibe-python.yml": 12,
+    "vibe-javascript.yml": 10,
+    "vibe-java.yml": 5,
+    "vibe-go.yml": 5,
+    "vibe-csharp.yml": 4,
+    "vibe-c.yml": 5,
+    "vibe-php.yml": 6,
+    "vibe-ruby.yml": 4,
+    "vibe-rust.yml": 3,
+    "vibe-solidity.yml": 4,
+    "vibe-typescript.yml": 3,
+    "vibe-kotlin.yml": 2,
+    "vibe-swift.yml": 2,
+    "vibe-dangerous.yml": 14,
+    "vibe-framework.yml": 38,
+    "vibe-v25.yml": 15,
+    "vibe-v3.yml": 12,
+    "vibe-v4.yml": 11
+  },
+  "unique_ids": 117,
+  "generator": "scripts/generate_quality_semgrep.py + expand_framework_semgrep.py",
+  "paths_exclude": [
+    "**/test/**",
+    "**/tests/**",
+    "**/node_modules/**",
+    "**/.venv/**",
+    "**/venv/**",
+    "**/vendor/**",
+    "**/*_test.py",
+    "**/*_test.go",
+    "**/__tests__/**"
+  ],
+  "note": "v4 expansion: Angular, Svelte, Terraform, Serverless, AI Hallucination, RAG, WebAuthn, LB/WAF, OIDC/SAML"
+}

@@ -1,0 +1,237 @@
+rules:
+# ──────────────────────────────────────────
+# MCP Security
+# ──────────────────────────────────────────
+- id: vibe-v25-mcp-command-injection
+  message: "[VIBE-SEC][v25] MCP server with subprocess/exec — command injection risk in tool handlers. KB: common/mcp-security.md"
+  severity: ERROR
+  languages: [python, javascript, typescript]
+  pattern-either:
+  - pattern: subprocess.run(...)
+  - pattern: subprocess.Popen(...)
+  - pattern: child_process.exec(...)
+  - pattern: child_process.execSync(...)
+  - pattern: execSync(...)
+  metadata:
+    cwe: CWE-78
+    vibe-v25: true
+    kb_path: common/mcp-security.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]
+
+- id: vibe-v25-mcp-path-traversal
+  message: "[VIBE-SEC][v25] MCP tool reading files with user-controlled path — path traversal risk. KB: common/mcp-security.md"
+  severity: WARNING
+  languages: [python, javascript, typescript]
+  pattern-either:
+  - pattern: "open(os.path.join($BASE, $USER_PATH), ...)"
+  - pattern: "open($BASE + $USER_PATH, ...)"
+  - pattern: "fs.readFileSync($BASE + $USER_PATH, ...)"
+  - pattern: "fs.readFile($BASE + $USER_PATH, ...)"
+  metadata:
+    cwe: CWE-22
+    vibe-v25: true
+    kb_path: common/mcp-security.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]
+
+- id: vibe-v25-mcp-allow-origins-star
+  message: "[VIBE-SEC][v25] MCP server with permissive CORS — allows any origin to connect. KB: common/mcp-security.md"
+  severity: WARNING
+  languages: [python, javascript, typescript]
+  patterns:
+  - pattern-either:
+    - pattern: "allow_origins=[\"*\"]"
+    - pattern: "allow_origins=['*']"
+    - pattern: "origin: '*'"
+    - pattern: "origin: \"*\""
+    - pattern: "Access-Control-Allow-Origin: *"
+  metadata:
+    cwe: CWE-942
+    vibe-v25: true
+    kb_path: common/mcp-security.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]
+
+# ──────────────────────────────────────────
+# AI Agent Security
+# ──────────────────────────────────────────
+- id: vibe-v25-agent-creds-in-code
+  message: "[VIBE-SEC][v25] Hardcoded API key/secret in agent config file. KB: common/agent-security.md"
+  severity: ERROR
+  languages: [python, javascript, typescript, java, go, ruby]
+  patterns:
+  - pattern-either:
+    - pattern: "api_key = \"...\""
+    - pattern: "apiKey: \"...\""
+    - pattern: "API_KEY = \"...\""
+    - pattern: "api_secret = \"...\""
+    - pattern: "accessToken: \"...\""
+    - pattern: "token = \"...\""
+  metadata:
+    cwe: CWE-798
+    vibe-v25: true
+    kb_path: common/agent-security.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]
+
+# ──────────────────────────────────────────
+# Docker / Container Security
+# ──────────────────────────────────────────
+- id: vibe-v25-docker-latest-tag
+  message: "[VIBE-SEC][v25] Docker image with :latest tag — non-reproducible, may contain unpatched vulns. KB: common/cloud-security/ai-container-security.md"
+  severity: WARNING
+  languages: [dockerfile]
+  patterns:
+  - pattern-either:
+    - pattern: "FROM ...:latest"
+  metadata:
+    cwe: CWE-1188
+    vibe-v25: true
+    kb_path: common/cloud-security/ai-container-security.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/vendor/**"]
+
+- id: vibe-v25-docker-root-user
+  message: "[VIBE-SEC][v25] Dockerfile runs as root — always add USER directive. KB: common/cloud-security/ai-container-security.md"
+  severity: WARNING
+  languages: [dockerfile]
+  pattern: "USER root"
+  metadata:
+    cwe: CWE-250
+    vibe-v25: true
+    kb_path: common/cloud-security/ai-container-security.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/vendor/**"]
+
+- id: vibe-v25-docker-apt-no-clean
+  message: "[VIBE-SEC][v25] apt-get without --no-install-recommends / rm -rf /var/lib/apt. KB: common/cloud-security/ai-container-security.md"
+  severity: WARNING
+  languages: [dockerfile]
+  pattern-either:
+  - pattern: "apt-get install -y ..."
+  - pattern: "apt install -y ..."
+  metadata:
+    cwe: CWE-1188
+    vibe-v25: true
+    kb_path: common/cloud-security/ai-container-security.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/vendor/**"]
+
+- id: vibe-v25-k8s-privileged
+  message: "[VIBE-SEC][v25] K8s container with privileged: true — full host access. KB: common/cloud-security/ai-container-security.md"
+  severity: ERROR
+  languages: [yaml]
+  pattern: "privileged: true"
+  metadata:
+    cwe: CWE-250
+    vibe-v25: true
+    kb_path: common/cloud-security/ai-container-security.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/vendor/**"]
+
+- id: vibe-v25-k8s-host-network
+  message: "[VIBE-SEC][v25] K8s pod with hostNetwork: true — bypasses network policies. KB: common/cloud-security/ai-container-security.md"
+  severity: WARNING
+  languages: [yaml]
+  pattern: "hostNetwork: true"
+  metadata:
+    cwe: CWE-284
+    vibe-v25: true
+    kb_path: common/cloud-security/ai-container-security.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/vendor/**"]
+
+# ──────────────────────────────────────────
+# Vue / Nuxt Security
+# ──────────────────────────────────────────
+- id: vibe-v25-vue-v-html
+  message: "[VIBE-SEC][v25] v-html with user input — XSS risk. Use v-text or {{ }}. KB: languages/javascript/vue-nuxt-security.md"
+  severity: ERROR
+  languages: [generic]
+  pattern-either:
+  - pattern-regex: "v-html\\s*="
+  metadata:
+    cwe: CWE-79
+    vibe-v25: true
+    kb_path: languages/javascript/vue-nuxt-security.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]
+
+# ──────────────────────────────────────────
+# FastAPI Security
+# ──────────────────────────────────────────
+- id: vibe-v25-fastapi-debug
+  message: "[VIBE-SEC][v25] FastAPI debug=True — exposes interactive debugger in production. KB: languages/python/fastapi-security.md"
+  severity: ERROR
+  languages: [python]
+  patterns:
+  - pattern-either:
+    - pattern: "FastAPI(..., debug=True, ...)"
+    - pattern: "FastAPI(debug=True)"
+  metadata:
+    cwe: CWE-489
+    vibe-v25: true
+    kb_path: languages/python/fastapi-security.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]
+
+- id: vibe-v25-fastapi-cors-star
+  message: "[VIBE-SEC][v25] FastAPI CORSMiddleware allow_origins=['*'] — dangerous. KB: languages/python/fastapi-security.md"
+  severity: WARNING
+  languages: [python]
+  patterns:
+  - pattern-either:
+    - pattern: "allow_origins=[\"*\"]"
+    - pattern: "allow_origins=['*']"
+  metadata:
+    cwe: CWE-942
+    vibe-v25: true
+    kb_path: languages/python/fastapi-security.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]
+
+- id: vibe-v25-fastapi-swagger-public
+  message: "[VIBE-SEC][v25] FastAPI docs endpoint explicitly served at a fixed path (docs_url/redoc_url) — ensure Swagger/ReDoc is protected or disabled in production. KB: languages/python/fastapi-security.md"
+  severity: WARNING
+  languages: [python]
+  patterns:
+  - pattern-either:
+    - pattern: "FastAPI(..., docs_url=\"...\", ...)"
+    - pattern: "FastAPI(..., redoc_url=\"...\", ...)"
+  metadata:
+    cwe: CWE-200
+    vibe-v25: true
+    kb_path: languages/python/fastapi-security.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]
+
+# ──────────────────────────────────────────
+# React / Next.js Deep
+# ──────────────────────────────────────────
+- id: vibe-v25-next-server-action-no-auth
+  message: "[VIBE-SEC][v25] Next.js server action without auth check — anyone can call it. KB: languages/typescript/react-nextjs-deep.md"
+  severity: ERROR
+  languages: [typescript, javascript]
+  pattern: "'use server';"
+  metadata:
+    cwe: CWE-284
+    vibe-v25: true
+    kb_path: languages/typescript/react-nextjs-deep.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]
+
+- id: vibe-v25-react-dynamic-src
+  message: "[VIBE-SEC][v25] Dynamic <img src/> or <iframe src/> with user input — verify allowlist. KB: languages/typescript/react-nextjs-deep.md"
+  severity: WARNING
+  languages: [javascript, typescript]
+  patterns:
+  - pattern-either:
+    - pattern: "src={$X}"
+    - pattern: "src={`...${...}...`}"
+  metadata:
+    cwe: CWE-79
+    vibe-v25: true
+    kb_path: languages/typescript/react-nextjs-deep.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]

@@ -1,0 +1,191 @@
+rules:
+# ──────────────────────────────────────────
+# Database Security
+# ──────────────────────────────────────────
+- id: vibe-v3-db-conn-hardcoded
+  message: "[VIBE-SEC][v3] Hardcoded database connection string — credentials in source code. KB: common/database/postgresql-mysql-security.md"
+  severity: ERROR
+  languages: [generic]
+  pattern-either:
+  - pattern-regex: "postgresql://[^:/\\s]+:[^@\\s]+@"
+  - pattern-regex: "mysql://[^:/\\s]+:[^@\\s]+@"
+  - pattern-regex: "mongodb://[^:/\\s]+:[^@\\s]+@"
+  - pattern-regex: "redis://:[^@\\s]+@"
+  - pattern-regex: "jdbc:postgresql://[^\\s]+:[^@\\s]+@"
+  - pattern-regex: "jdbc:mysql://[^\\s]+:[^@\\s]+@"
+  metadata:
+    cwe: CWE-798
+    vibe-v3: true
+    kb_path: common/database/postgresql-mysql-security.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]
+
+- id: vibe-v3-db-ssl-disabled
+  message: "[VIBE-SEC][v3] Database SSL/TLS disabled — data in transit not encrypted. KB: common/database/postgresql-mysql-security.md"
+  severity: WARNING
+  languages: [generic]
+  pattern-either:
+  - pattern-regex: "sslmode=disable"
+  - pattern-regex: "useSSL=false"
+  - pattern-regex: "allowPublicKeyRetrieval=true"
+  - pattern-regex: "ssl=false"
+  - pattern-regex: "encrypt=false"
+  metadata:
+    cwe: CWE-311
+    vibe-v3: true
+    kb_path: common/database/postgresql-mysql-security.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]
+
+- id: vibe-v3-nosql-injection
+  message: "[VIBE-SEC][v3] NoSQL injection risk — user input in query operators. KB: common/database/nosql-security.md"
+  severity: ERROR
+  languages: [javascript, typescript, python]
+  pattern-either:
+  - pattern: ".find({ $where: ... })"
+  - pattern: ".find({ ... $ne ... })"
+  - pattern: ".find({ ... $gt ... })"
+  - pattern: ".find({ ... $regex ... })"
+  metadata:
+    cwe: CWE-943
+    vibe-v3: true
+    kb_path: common/database/nosql-security.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]
+
+# ──────────────────────────────────────────
+# Web Server Security
+# ──────────────────────────────────────────
+- id: vibe-v3-nginx-server-tokens
+  message: "[VIBE-SEC][v3] Nginx server_tokens on exposes version info. KB: common/server/nginx-apache-security.md"
+  severity: WARNING
+  languages: [generic]
+  pattern: "server_tokens on"
+  metadata:
+    cwe: CWE-200
+    vibe-v3: true
+    kb_path: common/server/nginx-apache-security.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/vendor/**"]
+
+- id: vibe-v3-nginx-autoindex
+  message: "[VIBE-SEC][v3] Nginx directory listing enabled (autoindex on). KB: common/server/nginx-apache-security.md"
+  severity: WARNING
+  languages: [generic]
+  pattern: "autoindex on"
+  metadata:
+    cwe: CWE-548
+    vibe-v3: true
+    kb_path: common/server/nginx-apache-security.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/vendor/**"]
+
+- id: vibe-v3-tls-old-version
+  message: "[VIBE-SEC][v3] TLS 1.0/1.1 enabled — use TLS 1.2+. KB: common/server/tls-ssl-best-practices.md"
+  severity: ERROR
+  languages: [generic]
+  pattern-either:
+  - pattern: "ssl_protocols TLSv1 TLSv1.1"
+  - pattern: "SSLProtocol TLSv1"
+  - pattern: "ssl_protocols TLSv1"
+  - pattern: "SSLProtocol all"
+  metadata:
+    cwe: CWE-327
+    vibe-v3: true
+    kb_path: common/server/tls-ssl-best-practices.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/vendor/**"]
+
+- id: vibe-v3-ssl-verify-false
+  message: "[VIBE-SEC][v3] SSL certificate verification disabled — MITM risk. KB: common/server/tls-ssl-best-practices.md"
+  severity: ERROR
+  languages: [python, javascript, typescript, java, go, ruby]
+  pattern-either:
+  - pattern: "verify=False"
+  - pattern: "check_hostname=False"
+  - pattern: "ssl._create_unverified_context()"
+  metadata:
+    cwe: CWE-295
+    vibe-v3: true
+    kb_path: common/server/tls-ssl-best-practices.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]
+
+# ──────────────────────────────────────────
+# Redis / Message Queue Security
+# ──────────────────────────────────────────
+- id: vibe-v3-redis-no-auth
+  message: "[VIBE-SEC][v3] Redis without AUTH — anyone can access data. KB: common/mq/message-queue-security.md"
+  severity: ERROR
+  languages: [generic]
+  patterns:
+  - pattern-either:
+    - pattern-regex: "^# requirepass"
+    - pattern-regex: "^requirepass\\s*$"
+  metadata:
+    cwe: CWE-287
+    vibe-v3: true
+    kb_path: common/mq/message-queue-security.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/vendor/**"]
+
+- id: vibe-v3-redis-dangerous-cmds
+  message: "[VIBE-SEC][v3] Redis rename-command directive for FLUSHALL/CONFIG detected — confirm the command is fully disabled (renamed to an empty string \"\"), not merely aliased to another still-usable name. KB: common/mq/message-queue-security.md"
+  severity: WARNING
+  languages: [generic]
+  patterns:
+  - pattern-either:
+    - pattern-regex: "^rename-command FLUSHALL"
+    - pattern-regex: "^rename-command CONFIG"
+  metadata:
+    cwe: CWE-284
+    vibe-v3: true
+    kb_path: common/mq/message-queue-security.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/vendor/**"]
+
+- id: vibe-v3-rabbitmq-default-creds
+  message: "[VIBE-SEC][v3] RabbitMQ default guest/guest credentials — change immediately. KB: common/mq/message-queue-security.md"
+  severity: ERROR
+  languages: [generic]
+  patterns:
+  - pattern-either:
+    - pattern-regex: "default_user\\s*=\\s*guest"
+    - pattern-regex: "default_pass\\s*=\\s*guest"
+  metadata:
+    cwe: CWE-798
+    vibe-v3: true
+    kb_path: common/mq/message-queue-security.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/vendor/**"]
+
+# ──────────────────────────────────────────
+# Linux Server Hardening
+# ──────────────────────────────────────────
+- id: vibe-v3-ssh-root-login
+  message: "[VIBE-SEC][v3] SSH root login permitted — disable with PermitRootLogin no. KB: common/server/linux-server-hardening.md"
+  severity: WARNING
+  languages: [generic]
+  patterns:
+  - pattern-either:
+    - pattern-regex: "^PermitRootLogin\\s+yes"
+    - pattern-regex: "^PermitRootLogin\\s+prohibit-password"
+  metadata:
+    cwe: CWE-250
+    vibe-v3: true
+    kb_path: common/server/linux-server-hardening.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/vendor/**"]
+
+- id: vibe-v3-ssh-password-auth
+  message: "[VIBE-SEC][v3] SSH password authentication enabled — use key-based auth. KB: common/server/linux-server-hardening.md"
+  severity: WARNING
+  languages: [generic]
+  patterns:
+  - pattern-regex: "^PasswordAuthentication\\s+yes"
+  metadata:
+    cwe: CWE-1391
+    vibe-v3: true
+    kb_path: common/server/linux-server-hardening.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/vendor/**"]

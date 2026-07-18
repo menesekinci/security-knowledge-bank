@@ -1,0 +1,24 @@
+rules:
+- id: vibe-swift-userdefaults-secret
+  message: "[VIBE-SEC] UserDefaults is not secure storage for secrets — use Keychain. KB: languages/swift/keychain-storage.md"
+  severity: WARNING
+  languages: [swift]
+  pattern-either:
+  - pattern: "UserDefaults.standard.set($SECRET, forKey: ...)"
+  - pattern: "UserDefaults.standard.string(forKey: ...)"
+  metadata:
+    cwe: CWE-312
+    kb_path: languages/swift/keychain-storage.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]
+
+- id: vibe-swift-http-ats
+  message: "[VIBE-SEC] NSAllowsArbitraryLoads disables ATS (MITM risk). KB: languages/swift/ios-security-deep.md"
+  severity: WARNING
+  languages: [swift]
+  pattern-regex: NSAllowsArbitraryLoads
+  metadata:
+    cwe: CWE-319
+    kb_path: languages/swift/ios-security-deep.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]

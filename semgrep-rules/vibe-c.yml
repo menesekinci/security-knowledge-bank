@@ -1,0 +1,69 @@
+rules:
+- id: vibe-c-gets
+  message: "[VIBE-SEC] gets() is never safe (unbounded buffer). Use fgets. KB: languages/c-cpp/unsafe-functions.md"
+  severity: ERROR
+  languages: [c, cpp]
+  pattern: gets(...)
+  metadata:
+    cwe: CWE-242
+    kb_path: languages/c-cpp/unsafe-functions.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]
+
+- id: vibe-c-strcpy
+  message: "[VIBE-SEC] strcpy/strcat are unbounded. Prefer strncpy/strlcpy with explicit bounds. KB: languages/c-cpp/buffer-overflow.md"
+  severity: ERROR
+  languages: [c, cpp]
+  pattern-either:
+  - pattern: strcpy(...)
+  - pattern: strcat(...)
+  - pattern: sprintf(...)
+  - pattern: vsprintf(...)
+  metadata:
+    cwe: CWE-120
+    kb_path: languages/c-cpp/buffer-overflow.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]
+
+- id: vibe-c-format-string
+  message: "[VIBE-SEC] printf(user_controlled) is a format-string bug. Use printf(\"%s\", buf). KB: languages/c-cpp/format-string.md"
+  severity: ERROR
+  languages: [c, cpp]
+  patterns:
+  - pattern-either:
+    - pattern: printf($VAR)
+    - pattern: "fprintf($F, $VAR)"
+    - pattern: "sprintf($B, $VAR)"
+  - metavariable-pattern:
+      metavariable: $VAR
+      patterns:
+      - pattern-not: "\"...\""
+  metadata:
+    cwe: CWE-134
+    kb_path: languages/c-cpp/format-string.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]
+
+- id: vibe-c-system
+  message: "[VIBE-SEC] system() with untrusted input is command injection. KB: languages/c-cpp/unsafe-functions.md"
+  severity: ERROR
+  languages: [c, cpp]
+  pattern: system(...)
+  metadata:
+    cwe: CWE-78
+    kb_path: languages/c-cpp/unsafe-functions.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]
+
+- id: vibe-c-scanf
+  message: "[VIBE-SEC] scanf %s without width is buffer overflow. KB: languages/c-cpp/buffer-overflow.md"
+  severity: WARNING
+  languages: [c, cpp]
+  pattern-either:
+  - pattern: "scanf(\"%s\", ...)"
+  - pattern: "scanf(\"%s\", $V)"
+  metadata:
+    cwe: CWE-120
+    kb_path: languages/c-cpp/buffer-overflow.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]

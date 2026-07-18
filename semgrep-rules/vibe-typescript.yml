@@ -1,0 +1,66 @@
+rules:
+- id: vibe-ts-as-any
+  message: '[VIBE-SEC] `as any` disables type safety — often hides auth/input bugs.
+    KB: languages/typescript/type-safety-bypass.md'
+  severity: WARNING
+  languages:
+  - typescript
+  pattern-either:
+  - pattern: $X as any
+  - pattern: <any>$X
+  metadata:
+    cwe: CWE-704
+    kb_path: languages/typescript/type-safety-bypass.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-ts-ts-ignore
+  message: '[VIBE-SEC] @ts-ignore / @ts-nocheck suppress real type errors. KB: languages/typescript/type-safety-bypass.md'
+  severity: WARNING
+  languages:
+  - typescript
+  pattern-regex: '@ts-ignore|@ts-nocheck'
+  metadata:
+    cwe: CWE-670
+    kb_path: languages/typescript/type-safety-bypass.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-ts-eval-like
+  message: '[VIBE-SEC] eval/new Function in TS still executes at runtime. KB: languages/javascript/eval-injection.md'
+  severity: ERROR
+  languages:
+  - typescript
+  pattern-either:
+  - pattern: eval(...)
+  - pattern: new Function(...)
+  metadata:
+    cwe: CWE-95
+    kb_path: languages/typescript/type-safety-bypass.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'

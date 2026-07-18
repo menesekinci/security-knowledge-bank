@@ -1,0 +1,167 @@
+rules:
+- id: vibe-python-eval
+  message: "[VIBE-SEC] eval() executes arbitrary code — never pass untrusted input. Prefer ast.literal_eval for data. KB: languages/python/eval-exec.md"
+  severity: ERROR
+  languages: [python]
+  pattern: eval(...)
+  metadata:
+    cwe: CWE-95
+    kb_path: languages/python/eval-exec.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]
+
+- id: vibe-python-exec
+  message: "[VIBE-SEC] exec() executes arbitrary code. KB: languages/python/eval-exec.md"
+  severity: ERROR
+  languages: [python]
+  pattern: exec(...)
+  metadata:
+    cwe: CWE-95
+    kb_path: languages/python/eval-exec.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]
+
+- id: vibe-python-pickle-loads
+  message: "[VIBE-SEC] pickle.loads/load can RCE on untrusted data. Use JSON or safer serializers. KB: languages/python/pickle-rce.md"
+  severity: ERROR
+  languages: [python]
+  pattern-either:
+  - pattern: pickle.loads(...)
+  - pattern: pickle.load(...)
+  - pattern: cPickle.loads(...)
+  - pattern: cPickle.load(...)
+  metadata:
+    cwe: CWE-502
+    kb_path: languages/python/pickle-rce.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]
+
+- id: vibe-python-yaml-load
+  message: "[VIBE-SEC] yaml.load without SafeLoader can execute arbitrary constructors. Use yaml.safe_load. KB: languages/python/insecure-deserialization-alt.md"
+  severity: ERROR
+  languages: [python]
+  patterns:
+  - pattern: yaml.load(...)
+  - pattern-not: "yaml.load(..., Loader=yaml.SafeLoader)"
+  - pattern-not: "yaml.load(..., Loader=yaml.CSafeLoader)"
+  - pattern-not: yaml.safe_load(...)
+  metadata:
+    cwe: CWE-502
+    kb_path: languages/python/insecure-deserialization-alt.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]
+
+- id: vibe-python-shell-true
+  message: "[VIBE-SEC] subprocess with shell=True enables command injection. Pass argv list and shell=False. KB: languages/python/command-injection.md"
+  severity: ERROR
+  languages: [python]
+  pattern-either:
+  - pattern: "subprocess.$FUNC(..., shell=True, ...)"
+  - pattern: "subprocess.$FUNC(..., shell=True)"
+  - pattern: os.system(...)
+  - pattern: os.popen(...)
+  metadata:
+    cwe: CWE-78
+    kb_path: languages/python/command-injection.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]
+
+- id: vibe-python-sql-format
+  message: "[VIBE-SEC] String-formatted SQL is injection-prone. Use parameterized queries. KB: languages/python/sql-injection.md"
+  severity: ERROR
+  languages: [python]
+  pattern-either:
+  - pattern: cursor.execute(f"...")
+  - pattern: cursor.execute(f'...')
+  - pattern: "cursor.execute(... % ...)"
+  - pattern: "cursor.execute(... .format(...))"
+  - pattern: ".$METHOD(f\"SELECT ...\")"
+  - pattern: ".$METHOD(f\"INSERT ...\")"
+  - pattern: ".$METHOD(f\"UPDATE ...\")"
+  - pattern: ".$METHOD(f\"DELETE ...\")"
+  metadata:
+    cwe: CWE-89
+    kb_path: languages/python/sql-injection.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]
+
+- id: vibe-python-assert-security
+  message: "[VIBE-SEC] assert is stripped with -O; never use for auth/security checks."
+  severity: WARNING
+  languages: [python]
+  pattern-either:
+  - pattern: "assert $AUTH"
+  - pattern: "assert $USER.is_admin"
+  - pattern: "assert $USER.is_authenticated"
+  metadata:
+    cwe: CWE-617
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]
+
+- id: vibe-python-debug-true
+  message: "[VIBE-SEC] DEBUG=True or Flask debug mode must not ship to production. KB: languages/python/flask-django-misconfig.md"
+  severity: WARNING
+  languages: [python]
+  pattern-either:
+  - pattern: "DEBUG = True"
+  - pattern: "app.run(..., debug=True, ...)"
+  - pattern: app.run(debug=True)
+  metadata:
+    cwe: CWE-489
+    kb_path: languages/python/flask-django-misconfig.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]
+
+- id: vibe-python-mark-safe
+  message: "[VIBE-SEC] mark_safe / Markup on user data can cause XSS/SSTI. KB: languages/python/template-injection.md"
+  severity: ERROR
+  languages: [python]
+  pattern-either:
+  - pattern: mark_safe(...)
+  - pattern: Markup(...)
+  metadata:
+    cwe: CWE-79
+    kb_path: languages/python/template-injection.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]
+
+- id: vibe-python-hashlib-md5-sha1
+  message: "[VIBE-SEC] MD5/SHA1 are weak for security-sensitive hashing. Use hashlib.sha256+ or password hashers. KB: languages/python/crypto-mistakes.md"
+  severity: WARNING
+  languages: [python]
+  pattern-either:
+  - pattern: hashlib.md5(...)
+  - pattern: hashlib.sha1(...)
+  metadata:
+    cwe: CWE-328
+    kb_path: languages/python/crypto-mistakes.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]
+
+- id: vibe-python-random-for-secrets
+  message: "[VIBE-SEC] random module is not cryptographically secure. Use secrets module. KB: languages/python/crypto-mistakes.md"
+  severity: WARNING
+  languages: [python]
+  pattern-either:
+  - pattern: random.random()
+  - pattern: random.randint(...)
+  - pattern: random.choice(...)
+  - pattern: random.randrange(...)
+  metadata:
+    cwe: CWE-338
+    kb_path: languages/python/crypto-mistakes.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]
+
+- id: vibe-python-requests-verify-false
+  message: "[VIBE-SEC] TLS verification disabled (verify=False) enables MITM. KB: languages/python/ssrf-python.md"
+  severity: ERROR
+  languages: [python]
+  pattern-either:
+  - pattern: "requests.$METHOD(..., verify=False, ...)"
+  - pattern: "requests.$METHOD(..., verify=False)"
+  metadata:
+    cwe: CWE-295
+    kb_path: languages/python/ssrf-python.md
+  paths:
+    exclude: ["**/test/**", "**/tests/**", "**/node_modules/**", "**/.venv/**", "**/venv/**", "**/vendor/**", "**/*_test.py", "**/*_test.go", "**/__tests__/**"]

@@ -1,0 +1,66 @@
+rules:
+- id: vibe-rust-unsafe
+  message: '[VIBE-SEC] unsafe blocks bypass borrow checker — audit carefully. KB:
+    languages/rust/'
+  severity: WARNING
+  languages:
+  - rust
+  pattern: unsafe { ... }
+  metadata:
+    cwe: CWE-119
+    kb_path: languages/rust/unsafe-rust.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-rust-transmute
+  message: '[VIBE-SEC] mem::transmute is extremely dangerous type punning.'
+  severity: ERROR
+  languages:
+  - rust
+  pattern-either:
+  - pattern: std::mem::transmute(...)
+  - pattern: mem::transmute(...)
+  metadata:
+    cwe: CWE-843
+    kb_path: languages/rust/unsafe-rust.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
+- id: vibe-rust-from-raw-parts
+  message: '[VIBE-SEC] slice::from_raw_parts requires upheld safety invariants.'
+  severity: WARNING
+  languages:
+  - rust
+  pattern-either:
+  - pattern: std::slice::from_raw_parts(...)
+  - pattern: slice::from_raw_parts(...)
+  metadata:
+    cwe: CWE-119
+    kb_path: languages/rust/unsafe-rust.md
+  paths:
+    exclude:
+    - '**/test/**'
+    - '**/tests/**'
+    - '**/node_modules/**'
+    - '**/.venv/**'
+    - '**/venv/**'
+    - '**/vendor/**'
+    - '**/*_test.py'
+    - '**/*_test.go'
+    - '**/__tests__/**'
